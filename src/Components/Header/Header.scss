@@ -4,4 +4,20 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 500px;
+        height: 100%;
+        background: black;
+    }
+
+    h1{
+        font-size: 110px;
+        z-index: 10;
+    }
 }

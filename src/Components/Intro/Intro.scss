@@ -1,0 +1,43 @@
+.intro-container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .intro-flex{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+        .intro-content{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            h2{
+                width: 100%;
+                text-align: center;
+                font-size: 42px;
+            }
+        }
+
+        .intro-img{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img{
+                width: 60%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+}
