@@ -1,0 +1,31 @@
+.navbar{
+    position: fixed;
+    left: 0;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+
+    .navbar-flex{
+        width: 100%;
+        max-width: 1240px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        nav{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3vw;
+            
+            a{
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
