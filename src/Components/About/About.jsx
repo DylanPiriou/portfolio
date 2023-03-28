@@ -14,7 +14,7 @@ export default function About() {
                 <div className="about-stack-content">
                     <div className="about-stack-flex">
                         <div className="about-stack-btn">
-                            <button>CONTACT ME</button>
+                            <button><span>CONTACT ME</span></button>
                         </div>
                         <div className="about-stack-grid">
                             <p>HTML5 · CSS3 · SCSS</p>
