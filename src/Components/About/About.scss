@@ -3,18 +3,14 @@
 .about-container{
     width: 100%;
     height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     margin-bottom: 15vh;
 
     .about-flex{
         width: 100%;
         height: 100%;
-        display: flex;
+        @include flex-center;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
 
         .about-content-box{
             height: 50%;
@@ -56,24 +52,18 @@
             .about-stack-content{
                 width: 100%;
                 height: 50vh;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex-center;
 
                 .about-stack-flex{
                     width: 100%;
                     height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-center;
                 }
 
                 .about-stack-btn{
                     width: 40%;
                     height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-center;
 
                     button{
                         width: 220px;
@@ -88,9 +78,7 @@
                             display: inline-block;
                             width: 100%;
                             height: 100%;
-                            display: flex;
-                            align-items: center;
-                            justify-content: center;
+                            @include flex-center;
                             position: relative;
                             transition: transform .2s linear;
 
@@ -101,9 +89,7 @@
                                 bottom: 0;
                                 width: 100%;
                                 height: 100%;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
+                                @include flex-center;
                             }
                         }
 
@@ -120,10 +106,8 @@
                 .about-stack-grid{
                     width: 60%;
                     height: 100%;
-                    display: flex;
+                    @include flex-center;
                     flex-direction: column;
-                    align-items: flex-start;
-                    justify-content: center;
 
                     p{
                         width: 100%;

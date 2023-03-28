@@ -7,9 +7,9 @@ export default function Header() {
         <h1>
             LETS
             <br />
-            BUILD THE WEB
+            BUILD THE <span className="serif">WEB</span>
             <br />
-            TOGETHER
+            <span class="colored">TOGETHER</span>
         </h1>
     </header>
   )

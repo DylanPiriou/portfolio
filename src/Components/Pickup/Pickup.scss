@@ -1,9 +1,9 @@
+@import "/src/settings.scss";
+
 .pickup{
     width: 100%;
     height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     margin-bottom: 15vh;
     padding: 0 10vw;
     background: #000;

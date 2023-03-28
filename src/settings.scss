@@ -1,12 +1,28 @@
-// Import des fonts
+// fonts
 @import url('https://fonts.cdnfonts.com/css/montreal');
 @import url('https://fonts.cdnfonts.com/css/gallient');
 
 $font-family: 'Montreal', sans-serif;
 $alt-ffamily: 'Gallient', sans-serif;
                                                                             
-// Couleurs
+// couleurs
 $main-color: #f8f8f8;
 $prim-color: #CFFF20;
 $alt-fontColor: #bebebe;
 $main-bgColor: #111111;
+
+//mixin
+@mixin flex-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin serif-font{
+    text-transform: lowercase;
+    font-family: $alt-ffamily;
+}
+
+@mixin colored-font{
+    color: $prim-color;
+}
