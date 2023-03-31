@@ -1,16 +1,21 @@
 import React from 'react';
 import "./Header.scss";
+import MainButton from '../MainButton/MainButton';
 
 export default function Header() {
+  const dataBtn = {
+    data: "DISCOVER MY WORK →"
+  }
   return (
     <header>
         <h1>
-            LETS
+            Lets
             <br />
-            BUILD THE <span className="serif">WEB</span>
+            build the <span className="serif">web</span>
             <br />
-            <span class="colored">TOGETHER</span>
+            <span class="colored">together</span>
         </h1>
+        <MainButton dataBtn={dataBtn}/>
     </header>
   )
 }

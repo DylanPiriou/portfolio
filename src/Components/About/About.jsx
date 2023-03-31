@@ -1,7 +1,11 @@
 import React from 'react';
 import "./About.scss";
+import MainButton from '../MainButton/MainButton';
 
 export default function About() {
+    const dataBtn = {
+        data: "CONTACT ME"
+    }
   return (
     <div className="about-container">
         <div className="about-flex">
@@ -14,7 +18,7 @@ export default function About() {
                 <div className="about-stack-content">
                     <div className="about-stack-flex">
                         <div className="about-stack-btn">
-                            <button><span>CONTACT ME</span></button>
+                            <MainButton dataBtn={dataBtn}/>
                         </div>
                         <div className="about-stack-grid">
                             <p>HTML5 · CSS3 · SCSS</p>
