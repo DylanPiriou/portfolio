@@ -2,6 +2,7 @@
 
 .home{
     width: 100%;
+    max-width: 1240px;
     height: auto;
     @include flex-center;
     flex-direction: column;

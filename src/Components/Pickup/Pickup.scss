@@ -5,12 +5,39 @@
     height: 80vh;
     @include flex-center;
     margin-bottom: 15vh;
-    padding: 0 10vw;
-    background: #000;
+    position: relative;
+    
+    .banner{
+        position: absolute;
+        width: 99.1vw;
+        height: 100%;
+        @include flex-center;
+        padding: 0 20vw;
+        background: #000;
 
-    h2{
-        width: 100%;
-        text-align: center;
-        font-size: 42px;
+        h2{
+            width: 100%;
+            text-align: center;
+            font-size: 42px;
+    
+            .crossed{
+                position: relative;
+    
+                &::before{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 50%;
+                    width: 100%;
+                    height: 4px;
+                    background: $prim-color;
+                }
+            }
+    
+            .serif-font{
+                @include serif-font;
+            }
+        }
     }
+
 }

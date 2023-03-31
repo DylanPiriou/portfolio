@@ -7,11 +7,11 @@ export default function Intro() {
         <div className="intro-flex">
             <div className="intro-content">
                 <h2>
-                    I am a french front-end
+                    I am a <span className="serif-font">french</span> front-end
                     <br />
-                    web developer 
+                    <span className="serif-font">web</span> developer 
                     <br />
-                    specializing in React.js
+                    specializing in <span className="colored-font">React.js</span>
                 </h2>
             </div>
             <div className="intro-img">

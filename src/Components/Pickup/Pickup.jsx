@@ -4,7 +4,9 @@ import "./Pickup.scss";
 export default function Pickup() {
   return (
     <section className="pickup">
-        <h2>I turn coffee into code, and code into beautiful & powerful websites.</h2>
+      <div className="banner">
+        <h2>I turn <span className="crossed">coffee</span> into code, and code into <span className="serif-font">beautiful</span> & <span className="serif-font">powerful</span> websites.</h2>
+      </div>
     </section>
   )
 }
