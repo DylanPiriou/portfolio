@@ -9,16 +9,20 @@
     
     .banner{
         position: absolute;
-        width: 99.1vw;
+        width: 99vw;
         height: 100%;
         @include flex-center;
-        padding: 0 20vw;
+        flex-direction: column;
+        gap: 5vh;
+        padding: 0 10vw;
         background: #000;
 
         h2{
             width: 100%;
+            max-width: 860px;
             text-align: center;
-            font-size: 42px;
+            font-size: clamp(32px, 6vw, 42px);
+            font-weight: 100;
     
             .crossed{
                 position: relative;

@@ -2,24 +2,26 @@
 
 .intro-container{
     width: 100%;
-    height: 80vh;
     @include flex-center;
     margin-bottom: 15vh;
-
+    
     .intro-flex{
         width: 100%;
-        height: 100%;
         @include flex-center;
+        gap: 5vh 0;
+        flex-wrap: wrap;
         
         .intro-content{
-            width: 50%;
+            width: 100%;
             height: 100%;
+            flex: 1;
             @include flex-center;
 
             h2{
                 width: 100%;
                 text-align: center;
                 font-size: 42px;
+                font-weight: 100;
 
                 .serif-font{
                     @include serif-font;
@@ -32,27 +34,12 @@
         }
 
         .intro-img{
-            width: 50%;
-            height: 90%;
+            flex: 1;
             @include flex-center;
-            position: relative;
-
-            &::before{
-                content: "";
-                position: absolute;
-                left: 50%;
-                top: 50%;
-                transform: translate(-50%, -50%);
-                width: 55%;
-                height: 95%;
-                background: transparent;
-                border: 1px solid $main-color;
-                z-index: 1;
-            }
-
+            
             img{
-                width: 60%;
-                height: 100%;
+                width: 50%;
+                min-width: 250px;
                 object-fit: cover;
                 filter: grayscale(1);
             }
