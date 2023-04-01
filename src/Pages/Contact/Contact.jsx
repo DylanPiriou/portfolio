@@ -1,7 +1,20 @@
-import React from 'react'
+import React from 'react';
+import "./Contact.scss";
+import Navbar from '../../Components/Navbar/Navbar';
+import Form from '../../Components/Form/Form';
 
 export default function Contact() {
   return (
-    <div>Contact</div>
+    <>
+      <Navbar/>
+      <div className="contact">
+        <div className="contact-flex">
+          <div className="img-box"></div>
+          <div className="form-box">
+            <Form/>
+          </div>
+        </div>
+      </div>
+    </>
   )
 }

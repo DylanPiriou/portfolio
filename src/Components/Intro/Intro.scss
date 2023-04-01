@@ -42,6 +42,7 @@
                 min-width: 250px;
                 object-fit: cover;
                 filter: grayscale(1);
+                transform: perspective(1000px) rotateY(-10deg);
             }
         }
     }

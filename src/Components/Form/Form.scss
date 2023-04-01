@@ -1,0 +1,23 @@
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2vw;
+    background: green;
+
+    .input-form{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 100%;
+        background: red;
+
+        input,
+        textarea{
+            width: 100%;
+        }
+    }
+}
