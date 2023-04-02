@@ -31,8 +31,8 @@ header{
 
     h1{
         font-size: clamp(42px, 10vw, 110px);
-        line-height: clamp(6vh, 8vw, 13vh);
-        font-weight: 600;
+        line-height: clamp(5vh, 8vw, 13vh);
+        font-weight: 800;
         z-index: 1;
 
         .serif{
@@ -45,10 +45,11 @@ header{
             text-align: end;
             line-height: 0;
             @include colored-font;
+            font-weight: 800;
         }
     }
 
-    img{
+    .main-hero{
         position: absolute;
         top: 0;
         left: 5vw;
@@ -66,4 +67,16 @@ header{
             }
         }
     }
+
+    .dots{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        min-width: 1000px;
+        height: 100%;
+        opacity: 0.3;
+        z-index: -1;
+    }
+
 }

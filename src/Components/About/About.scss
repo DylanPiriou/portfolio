@@ -32,8 +32,8 @@
                 width: 80%;
                 color: rgb(165, 165, 165);
                 line-height: 30px;
-                font-size: 14px;
-                font-weight: 400;
+                font-size: clamp(14px, 2vw, 16px);
+                font-weight: 300;
 
                 @media (max-width: 1040px){
                     &{

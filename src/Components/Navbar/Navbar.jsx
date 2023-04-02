@@ -19,13 +19,19 @@ export default function Navbar() {
         <div className="navbar-flex">
             <span>@dylanpiriou/</span>
             <nav ref={nav}>
-                <NavLink to="/">HOME</NavLink>
-                <NavLink to="/projects">PROJECTS</NavLink>
-                <NavLink to="/contact">CONTACT</NavLink>
+                <NavLink to="/">
+                  <span data-link="HOME">HOME</span>
+                </NavLink>
+                <NavLink to="/projects">
+                  <span data-link="PROJECTS">PROJECTS</span>
+                </NavLink>
+                <NavLink to="/contact">
+                  <span data-link="CONTACT">CONTACT</span>
+                </NavLink>
             </nav>
             <div className="burger-menu" ref={burger} onClick={() => handleBurger()}>
-              <img className="burger-icon" src="/public/burgermenu.svg" alt="" ref={burgerIcon} />
-              <img className="close-icon" src="/public/cross.svg" alt="" ref={closeIcon} />
+              <img className="burger-icon" src="/burgermenu.svg" alt="" ref={burgerIcon} />
+              <img className="close-icon" src="/cross.svg" alt="" ref={closeIcon} />
             </div>
         </div>
     </div>

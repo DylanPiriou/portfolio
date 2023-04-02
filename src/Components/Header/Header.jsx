@@ -16,7 +16,8 @@ export default function Header() {
             <span class="colored">together</span>
         </h1>
         <MainButton dataBtn={dataBtn}/>
-        <img src="/public/main-hero.jpg" alt="" />
+        <img className="main-hero" src="/main-hero.jpg" alt="" />
+        <img className="dots" src="/Group2.svg" alt="" />
     </header>
   )
 }
