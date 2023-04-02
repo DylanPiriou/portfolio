@@ -1,15 +1,16 @@
 // fonts
-@import url('https://fonts.cdnfonts.com/css/montreal');
+// @import url('https://fonts.cdnfonts.com/css/montreal');
 @import url('https://fonts.cdnfonts.com/css/gallient');
+@import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
 
-$font-family: 'Monteal', sans-serif;
+$font-family: 'Cabinet Grotesk', sans-serif;
 $alt-ffamily: 'Gallient', sans-serif;
                                                                             
 // couleurs
 $main-color: #f8f8f8;
 $prim-color: #ceff1d;
 $alt-fontColor: #bebebe;
-$main-bgColor: #0c0c0c;
+$main-bgColor: #111111;
 
 //mixin
 @mixin flex-center{
@@ -20,8 +21,10 @@ $main-bgColor: #0c0c0c;
 
 @mixin serif-font{
     font-family: $alt-ffamily;
+    font-weight: bold;
 }
 
 @mixin colored-font{
     color: $prim-color;
+    font-weight: bold;
 }
