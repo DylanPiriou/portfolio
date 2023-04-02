@@ -4,10 +4,14 @@ import "./Navbar.scss";
 
 export default function Navbar() {
   const burger = useRef();
+  const burgerIcon = useRef();
+  const closeIcon = useRef();
   const nav = useRef();
 
   const handleBurger = () => {
     burger.current.classList.toggle("active");
+    burgerIcon.current.classList.toggle("active")
+    closeIcon.current.classList.toggle("active");
     nav.current.classList.toggle("active");
   }
   return (
@@ -20,8 +24,8 @@ export default function Navbar() {
                 <NavLink to="/contact">CONTACT</NavLink>
             </nav>
             <div className="burger-menu" ref={burger} onClick={() => handleBurger()}>
-              <div className="line" id="top-line"></div>
-              <div className="line" id="bottom-line"></div>
+              <img className="burger-icon" src="/public/burgermenu.svg" alt="" ref={burgerIcon} />
+              <img className="close-icon" src="/public/cross.svg" alt="" ref={closeIcon} />
             </div>
         </div>
     </div>

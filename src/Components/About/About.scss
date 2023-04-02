@@ -6,6 +6,7 @@
     height: auto;
     @include flex-center;
     flex-grow: 1;
+    padding-left: 5vw;
 
     .about-flex{
         width: 100%;
@@ -13,15 +14,10 @@
         @include flex-center;
         flex-direction: column;
 
-        @media (max-width: 1040px){
-            &{
-                padding: 0 5vw;
-            }
-        }
-
         .about-content-box{
             width: 100%;
             margin-bottom: 15vh;
+            padding-right: 5vw;
 
             h2{
                 font-size: 42px;
