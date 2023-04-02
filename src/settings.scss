@@ -2,7 +2,7 @@
 @import url('https://fonts.cdnfonts.com/css/montreal');
 @import url('https://fonts.cdnfonts.com/css/gallient');
 
-$font-family: 'Montreal', sans-serif;
+$font-family: 'Monteal', sans-serif;
 $alt-ffamily: 'Gallient', sans-serif;
                                                                             
 // couleurs
@@ -19,7 +19,6 @@ $main-bgColor: #0c0c0c;
 }
 
 @mixin serif-font{
-    text-transform: lowercase;
     font-family: $alt-ffamily;
 }
 

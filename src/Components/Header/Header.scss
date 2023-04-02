@@ -7,22 +7,30 @@ header{
     @include flex-center;
     flex-direction: column;
     gap: 60px;
-    // margin-bottom: 15vh;
     position: relative;
 
     &::before{
         content: "";
         position: absolute;
-        top: 10vh;
+        bottom: 10vh;
         left: 0;
         width: 400px;
-        aspect-ratio: 1;
+        height: 600px;
         z-index: -1;
-        background: black
+        background: rgb(0, 0, 0)
+    }
+
+    @media (max-width: 1040px){
+        &{
+            padding: 0 5vw;
+        }
+        &::before{
+            display: none;
+        }
     }
 
     h1{
-        font-size: clamp(52px, 10vw, 110px);
+        font-size: clamp(42px, 10vw, 110px);
         line-height: clamp(6vh, 8vw, 13vh);
         z-index: 1;
 

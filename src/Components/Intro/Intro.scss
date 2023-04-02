@@ -12,15 +12,21 @@
         flex-wrap: wrap;
         
         .intro-content{
-            width: 100%;
+            width: 50%;
             height: 100%;
-            flex: 1;
+            // flex: 1;
             @include flex-center;
+
+            @media (max-width: 1040px){
+                &{
+                    width: 100%;
+                }
+            }
 
             h2{
                 width: 100%;
                 text-align: center;
-                font-size: 42px;
+                font-size: clamp(28px, 6vw, 42px);
                 font-weight: 100;
 
                 .serif-font{
@@ -30,16 +36,21 @@
                 .colored-font{
                     @include colored-font;
                 }
+
+                @media (max-width: 1040px){
+                    &{
+                        padding: 0 5vw;
+                    }
+                }
             }
         }
 
         .intro-img{
-            flex: 1;
             @include flex-center;
             
             img{
                 width: 70%;
-                min-width: 250px;
+                // min-width: 350px;
                 object-fit: cover;
                 border-radius: 50%;
             }

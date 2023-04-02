@@ -2,6 +2,7 @@ import React from 'react';
 import "./Contact.scss";
 import Navbar from '../../Components/Navbar/Navbar';
 import Form from '../../Components/Form/Form';
+import Footer from "../../Components/Footer/Footer";
 
 export default function Contact() {
   return (
@@ -15,6 +16,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   )
 }

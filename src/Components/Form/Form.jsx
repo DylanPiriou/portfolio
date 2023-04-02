@@ -13,7 +13,7 @@ export default function Form() {
             <input type="text" name="" id="name" />
         </div>
         <div className="input-form">
-            <label htmlFor="mail">E-mail address</label>
+            <label htmlFor="mail">Email address</label>
             <input type="email" name="" id="mail" />
         </div>
         <div className="input-form">
