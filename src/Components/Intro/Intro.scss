@@ -2,9 +2,10 @@
 
 .intro-container{
     width: 100%;
-    min-height: 60vh;
+    min-height: 70vh;
     @include flex-center;
-    margin-bottom: 15vh;
+    padding: 10vh 0;
+    margin-bottom: 10vh;
     
     .intro-flex{
         width: 100%;
@@ -50,7 +51,7 @@
             @include flex-center;
             
             img{
-                width: 70%;
+                width: 60%;
                 // min-width: 350px;
                 object-fit: cover;
                 border-radius: 50%;

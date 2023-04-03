@@ -15,7 +15,7 @@ export default function Intro() {
                 </h2>
             </div>
             <div className="intro-img">
-                <img src="/dylanok.svg" alt="" />
+                <img src="/dylanpro.svg" alt="" />
             </div>
         </div>
     </section>

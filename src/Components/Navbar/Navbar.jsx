@@ -17,11 +17,11 @@ export default function Navbar() {
   return (
     <div className="navbar">
         <div className="navbar-flex">
-            <span>@dylanpiriou/</span>
+            <NavLink className="name" to="/">@dylanpiriou/</NavLink>
             <nav ref={nav}>
-                <NavLink to="/">
-                  <span data-link="HOME">HOME</span>
-                </NavLink>
+                <a href="#about">
+                  <span data-link="ABOUT">ABOUT</span>
+                </a>
                 <NavLink to="/projects">
                   <span data-link="PROJECTS">PROJECTS</span>
                 </NavLink>

@@ -6,7 +6,13 @@
     height: auto;
     @include flex-center;
     flex-grow: 1;
-    padding-left: 5vw;
+    scroll-margin-top: 15vh;
+
+    @media (max-width: 1040px){
+        &{
+            padding: 0 5vw;
+        }
+    }
 
     .about-flex{
         width: 100%;

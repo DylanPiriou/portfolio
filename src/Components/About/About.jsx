@@ -7,7 +7,7 @@ export default function About() {
         data: "DISCOVER MY WORK →"
       }
   return (
-    <div className="about-container">
+    <section className="about-container" id="about">
         <div className="about-flex">
             <div className="about-content-box">
                 <h2>About</h2>
@@ -30,6 +30,6 @@ export default function About() {
                 </div>
             </div>
         </div>
-    </div>
+    </section>
   )
 }

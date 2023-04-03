@@ -18,6 +18,11 @@
         align-items: center;
         justify-content: space-between;
 
+        .name{
+            text-decoration: none;
+            color: $main-color;
+        }
+
         nav{
             @include flex-center;
             gap: 30px;
