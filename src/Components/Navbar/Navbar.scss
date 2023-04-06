@@ -1,18 +1,19 @@
 @import "/src/settings.scss";
 
 .navbar{
-    position: fixed;
-    left: 0;
+    // position: fixed;
+    // left: 0;
     width: 100%;
     height: 8vh;
     @include flex-center;
-    padding: 0 10vw;
-    background: black;
+    padding: 0 40px;
+    flex: 1;
+    border-bottom: 1px solid white;
     z-index: 999;
 
     .navbar-flex{
         width: 100%;
-        max-width: 1140px;
+        // max-width: 1140px;
         height: 100%;
         display: flex;
         align-items: center;
@@ -20,7 +21,7 @@
 
         .name{
             text-decoration: none;
-            color: $main-color;
+            color: $white;
         }
 
         nav{
@@ -100,7 +101,7 @@
                     top: 0;
                     width: 5px;
                     height: 100%;
-                    background: $prim-color;
+                    background: $green1;
                 }
 
                 a{

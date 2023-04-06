@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import "./Header.scss";
 import MainButton from '../MainButton/MainButton';
 
@@ -16,7 +16,9 @@ export default function Header() {
             <span class="colored">together</span>
         </h1>
         <MainButton dataBtn={dataBtn}/>
-        <img className="main-hero" src="/main-hero.jpg" alt="" />
+        <div className="main-hero">
+          <img src="/main-hero.jpg" alt="" />
+        </div>
         <img className="dots" src="/Group2.svg" alt="" />
     </header>
   )

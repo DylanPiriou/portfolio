@@ -1,0 +1,60 @@
+@import "/src/settings.scss";
+
+.project-card{
+    min-height: 20vh;
+    flex: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px 0 80px;
+    font-size: 62px;
+    text-transform: uppercase;
+    color: $white;
+    text-decoration: none;
+    position: relative;
+
+    &:not(:first-of-type){
+        border-top: 1px solid $white;
+    }
+
+    h3{
+        width: 100%;
+        z-index: 1;
+        position: relative;
+
+        &::before{
+            content: "0"attr(data-id);
+            position: absolute;
+            left: -40px;
+            top: 10px;
+            font-size: 32px;
+            color: $green1;
+        }
+
+        &::after{
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            background: $green2;
+            height: 50%;
+            z-index: -1;
+            transition: width .5s ease-in-out;
+        }
+
+        img{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+            width: 50px;
+        }
+    }
+
+    &:hover h3::after{
+        width: 100%;
+    }
+
+}

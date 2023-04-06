@@ -20,15 +20,15 @@ form{
         textarea{
             width: 100%;
             border: none;
-            border-bottom: 1px solid $main-color;
+            border-bottom: 1px solid $white;
             background: black;
-            color: $main-color;
+            color: $white;
             font-family: $font-family;
 
             &:active,
             &:focus{
                 outline: none;
-                border-bottom: 1px solid $prim-color;
+                border-bottom: 1px solid $green1;
             }
         }
 

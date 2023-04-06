@@ -1,0 +1,96 @@
+[
+    {
+        "id": 1,
+        "title": "MovieHub",
+        "subtitle": "Cinema application like Netflix.",
+        "cover": "/1.jpg",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "ReactJS",
+            "API"
+        ],
+        "stack": "Frontend",
+        "date": "2022",
+        "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
+
+    },
+    {
+        "id": 2,
+        "title": "Bluel",
+        "subtitle": "Dynamic web page for a Photographer.",
+        "cover": "/2.jpg",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "API"
+        ],
+        "stack": "Frontend",
+        "date": "2023",
+        "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
+
+    },
+    {
+        "id": 3,
+        "title": "Carducci",
+        "subtitle": "Debug and optimize a photographer's website.",
+        "cover": "/1.jpg",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ],
+        "stack": "Frontend",
+        "date": "2023",
+        "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
+
+    },
+    {
+        "id": 4,
+        "title": "Kasa",
+        "subtitle": "Real estate rental web application.",
+        "cover": "/2.jpg",
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "ReactJS"
+        ],
+        "stack": "Frontend",
+        "date": "2023",
+        "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
+
+    },
+    {
+        "id": 5,
+        "title": "Grimoire",
+        "subtitle": "Backend of a book review website.",
+        "cover": "/1.jpg",
+        "tags": [
+            "NodeJS",
+            "Express",
+            "MongoDB",
+            "ReactJS"
+        ],
+        "stack": "Backend",
+        "date": "2023",
+        "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
+
+    },
+    {
+        "id": 6,
+        "title": "Project 6",
+        "subtitle": "Illa si quantum natura quae potest quale tempus quodam sensus.",
+        "cover": "/2.jpg",
+        "pictures": [
+            "/img-template.jpg",
+            "/img-template.jpg"
+        ],
+        "stack": "Backend",
+        "date": "2023",
+        "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
+
+    }
+]

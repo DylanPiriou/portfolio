@@ -10,16 +10,16 @@ html{
     scroll-behavior: smooth;
     position: relative;
 
-    &::before{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 10px;
-        height: 100%;
-        background: $prim-color;
-        z-index: 1;
-    }
+    // &::before{
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 10px;
+    //     height: 100%;
+    //     background: $green1;
+    //     z-index: 1;
+    // }
 
     @media (max-width: 1040px){
         &::before{
@@ -37,8 +37,8 @@ body{
     justify-content: center;
     padding: 0 5vw;
     font-family: $font-family;
-    color: $main-color;
-    background: $main-bgColor;
+    color: $white;
+    background: $black;
 
     @media (max-width: 1040px){
         &{

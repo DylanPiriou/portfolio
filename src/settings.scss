@@ -7,10 +7,11 @@ $font-family: 'Cabinet Grotesk', sans-serif;
 $alt-ffamily: 'Gallient', sans-serif;
                                                                             
 // couleurs
-$main-color: #f8f8f8;
-$prim-color: #ceff1d;
-$alt-fontColor: #bebebe;
-$main-bgColor: #111111;
+$white: #f8f8f8;
+$black: #111111;
+$green1: #ceff1d;
+$green2: #6E7263;
+$grey: #bebebe;
 
 //mixin
 @mixin flex-center{
@@ -25,6 +26,6 @@ $main-bgColor: #111111;
 }
 
 @mixin colored-font{
-    color: $prim-color;
+    color: $green1;
     font-weight: bold;
 }
