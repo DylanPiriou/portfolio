@@ -1,11 +1,12 @@
 import React from 'react';
 import "./Footer.scss";
+import { getCurrentYear } from '../../utils/getCurrentYear';
 
 export default function Footer() {
   return (
     <footer>
         <div className="footer-wrapper">
-          <span>2023/</span>
+          <span>{getCurrentYear()}/</span>
           <div className="footer-flex">
             <p>portfolio.</p>
             <small>all rights reserved.</small>

@@ -16,6 +16,7 @@ button{
         height: 100%;
         @include flex-center;
         font-family: $font-family;
+        font-size: 20px;
         position: relative;
         transition: transform .2s linear;
 

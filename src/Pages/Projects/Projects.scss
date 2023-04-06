@@ -28,31 +28,6 @@
             h2{
                 font-weight: 200;
             }
-            
-            ul{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 20px;
-
-                .filter-btn{
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 5px;
-
-                    input{
-                        -webkit-appearance: none;
-                        -moz-appearance: none;
-                        appearance: none;
-
-                        &:checked{
-                        border-radius: 50%;
-                        border: 5px solid $green1;
-                        }
-                    }
-                }
-            }
         }
 
         .projects-container{

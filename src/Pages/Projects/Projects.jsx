@@ -3,6 +3,7 @@ import "./Projects.scss";
 import Navbar from '../../Components/Navbar/Navbar';
 import Data from "../../Data/data.json";
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
+import Filters from '../../Components/Filters/Filters';
 
 export default function Projects() {
   const dataTitle = {
@@ -10,14 +11,18 @@ export default function Projects() {
     word2: "works"
   }
 
+  // Fonction qui permet de stocker l'url de l'image survolée dans le state.
   const [imgUrl, setImgUrl] = useState("");
   const handleHover = (img) => {
     setImgUrl(img);
   }
+
+  // Etat pour les filtres. "All" par défaut.
   const [filter, setFilter] = useState("All");
 
+  // Permet d'afficher l'image du premier projet lorsqu'on arrive sur la page.
   useEffect(() => {
-    setImgUrl("/1.jpg")
+    setImgUrl(Data[0].cover)
   }, [])
   
   return (
@@ -26,38 +31,7 @@ export default function Projects() {
           <Navbar/>
           <div className="top-container">
             <h2>Selected Projects</h2>
-            <ul className="filter-btns__wrapper">
-              <div className="filter-btn" onClick={() => setFilter("All")}>
-                <label htmlFor="All">All</label>
-                <input
-                type="radio"
-                name="All"
-                value="All"
-                checked={filter === "All"}
-                onChange={() => setFilter("All")}
-                />
-              </div>
-              <div className="filter-btn" onClick={() => setFilter("Frontend")}>
-              <label htmlFor="Frontend">Frontend</label>
-                <input
-                type="radio"
-                name="Frontend"
-                value="Frontend"
-                checked={filter === "Frontend"}
-                onChange={() => setFilter("Frontend")}
-                />
-              </div>
-              <div className="filter-btn" onClick={() => setFilter("Backend")}>
-              <label htmlFor="Backend">Backend</label>
-                <input
-                type="radio"
-                name="Backend"
-                value="Backend"
-                checked={filter === "Backend"}
-                onChange={() => setFilter("Backend")}
-                />
-              </div>
-            </ul>
+            <Filters filter={filter} setFilter={setFilter} />
           </div>
 
           <div className="projects-container">
@@ -65,7 +39,7 @@ export default function Projects() {
               <div className="titles-wrapper">
                 {Data && Data.map(data => {
                   if(filter === "All" || filter === data.stack){
-                    return <ProjectCard data={data} handleHover={handleHover} />
+                    return <ProjectCard key={data.id} data={data} handleHover={handleHover} />
                   }
                 })}
               </div>
