@@ -22,6 +22,11 @@
             align-items: center;
             justify-content: space-between;
             padding: 0 40px;
+            border-top: 1px solid $white;
+
+            h2{
+                font-weight: 200;
+            }
             
             ul{
                 display: flex;
@@ -96,7 +101,7 @@
                     height: 100%;
                     background-position: center;
                     background-size: cover;
-
+                    transition: all .5s ease;
                 }
 
             }

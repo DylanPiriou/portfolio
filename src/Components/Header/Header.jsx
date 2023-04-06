@@ -9,17 +9,12 @@ export default function Header() {
   return (
     <header>
         <h1>
-            Lets
+            <span>Lets build the</span>
             <br />
-            build the <span className="serif">web</span>
-            <br />
-            <span class="colored">together</span>
+            <span>web together</span>
         </h1>
+        <p><strong>Dylan Piriou</strong> - French web front-end developer</p>
         <MainButton dataBtn={dataBtn}/>
-        <div className="main-hero">
-          <img src="/main-hero.jpg" alt="" />
-        </div>
-        <img className="dots" src="/Group2.svg" alt="" />
     </header>
   )
 }

@@ -33,6 +33,22 @@
 
     },
     {
+        "id": 5,
+        "title": "Grimoire",
+        "subtitle": "Backend of a book review website.",
+        "cover": "/1.jpg",
+        "tags": [
+            "NodeJS",
+            "Express",
+            "MongoDB",
+            "ReactJS"
+        ],
+        "stack": "Backend",
+        "date": "2023",
+        "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
+
+    },
+    {
         "id": 3,
         "title": "Carducci",
         "subtitle": "Debug and optimize a photographer's website.",
@@ -59,22 +75,6 @@
             "ReactJS"
         ],
         "stack": "Frontend",
-        "date": "2023",
-        "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
-
-    },
-    {
-        "id": 5,
-        "title": "Grimoire",
-        "subtitle": "Backend of a book review website.",
-        "cover": "/1.jpg",
-        "tags": [
-            "NodeJS",
-            "Express",
-            "MongoDB",
-            "ReactJS"
-        ],
-        "stack": "Backend",
         "date": "2023",
         "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
 

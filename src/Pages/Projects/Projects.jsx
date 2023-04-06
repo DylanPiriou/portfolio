@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import "./Projects.scss";
 import Navbar from '../../Components/Navbar/Navbar';
 import Data from "../../Data/data.json";
@@ -15,10 +15,13 @@ export default function Projects() {
     setImgUrl(img);
   }
   const [filter, setFilter] = useState("All");
+
+  useEffect(() => {
+    setImgUrl("/1.jpg")
+  }, [])
   
   return (
     <section className="projects">
-      {/* <Navbar/> */}
         <div className="projects-grid">
           <Navbar/>
           <div className="top-container">

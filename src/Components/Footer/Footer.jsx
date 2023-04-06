@@ -4,8 +4,13 @@ import "./Footer.scss";
 export default function Footer() {
   return (
     <footer>
-        <p>Copyright DP 2023. All rights reserved.</p>
-        <a href="#">Check out the code on GitHub</a>
+        <div className="footer-wrapper">
+          <span>2023/</span>
+          <div className="footer-flex">
+            <p>portfolio.</p>
+            <small>all rights reserved.</small>
+          </div>
+        </div>
     </footer>
   )
 }
