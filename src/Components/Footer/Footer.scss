@@ -1,9 +1,12 @@
 @import "/src/settings.scss";
 
 footer{
-    width: 100vw;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
     height: 20%;
     @include flex-center;
+    background: $black;
 
     .footer-wrapper{
         display: flex;

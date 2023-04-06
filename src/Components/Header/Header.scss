@@ -1,30 +1,36 @@
 @import "/src/settings.scss";
 
 header{
-    width: 100%;
+    width: 89%;
+    left: 0;
     flex: 10;
     padding: 10vh 0 0 10vw;
-    position: relative;
-
-    &::before{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 90%;
-        height: 100%;
-        z-index: -1;
-        background: $green2;
-    }
+    background: $green2;
 
     h1{
-        font-size: 92px;
-        line-height: 80%;
+        font-size: 110px;
+        line-height: 70%;
         font-weight: 300;
+        position: relative;
+
+        &::before{
+            content: "";
+            position: absolute;
+            left: -10vw;
+            top: 0;
+            background: $green1;
+            width: 5px;
+            height: 100%;
+        }
+
+        .serif-font{
+            @include serif-font;
+            font-size: 80%;
+        }
     }
 
     p{
         font-weight: 200;
-        padding: 2vh 0 10vh;
+        padding: 3vh 0 10vh;
     }
 }

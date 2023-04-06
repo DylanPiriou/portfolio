@@ -10,6 +10,7 @@ export default function Home() {
       <Navbar/>
       <Header/>
       <Footer/>
+      <img className="hero-illustration" src="/dylanpro.svg" alt="dylan piriou" />
     </div>
   )
 }

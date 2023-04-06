@@ -9,9 +9,9 @@ export default function Header() {
   return (
     <header>
         <h1>
-            <span>Lets build the</span>
+            <span>Lets <span className="serif-font">build</span> the</span>
             <br />
-            <span>web together</span>
+            <span><span className="serif-font">web</span> together</span>
         </h1>
         <p><strong>Dylan Piriou</strong> - French web front-end developer</p>
         <MainButton dataBtn={dataBtn}/>
