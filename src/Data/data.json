@@ -84,13 +84,14 @@
         "title": "Project 6",
         "subtitle": "Illa si quantum natura quae potest quale tempus quodam sensus.",
         "cover": "/2.jpg",
-        "pictures": [
-            "/img-template.jpg",
-            "/img-template.jpg"
+        "tags": [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "ReactJS"
         ],
         "stack": "Backend",
         "date": "2023",
         "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
-
     }
 ]

@@ -1,0 +1,129 @@
+@import "/src/settings.scss";
+
+.projectDetails{
+    width: 100vw;
+    max-width: 1340px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    .project-wrapper{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .project-img{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+    
+            img{
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .project-data{
+            width: 60%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5vh;
+
+            .project-title{
+                width: 100%;
+                height: 20%;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid $white;
+                padding-left: 2vw;
+    
+                h2{
+                    font-size: 72px;
+                    text-transform: uppercase;
+                }
+
+                .arrow-flex{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+
+                    .arrow-box{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 30px;
+                        border-radius: 50px;
+                        border: 1px solid $green1;
+
+                        img{
+                            width: 30px;
+                        }
+
+                        &:hover img{
+                            transform: scale(.95);
+                        }
+
+                    }
+
+                }
+            }
+    
+            .project-content{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                padding-left: 2vw;
+    
+                h3{
+                    font-size: 42px;
+                    font-weight: 400;
+                    text-transform: capitalize;
+                }
+    
+                p{
+                    margin-bottom: 5vh;
+                    color: $grey;
+                    line-height: 130%;
+                }
+    
+                ul{
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-start;
+    
+                    li{
+                        list-style-type: none;
+                        padding: 5px 20px;
+                        border-radius: 50px;
+                        border: 1px solid $white;
+                    }
+                }
+
+                .project-btns{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex: 1;
+                    gap: 10px;
+                }
+            }
+        }
+
+    }
+}
