@@ -1,12 +1,17 @@
 @import "/src/settings.scss";
 
 form{
-    width: 100%;
+    width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 3vh;
+    align-items: flex-start;
+    justify-content: space-evenly;
+
+    h3{
+        font-size: 92px;
+        text-transform: uppercase;
+    }
 
     .input-form{
         width: 100%;
@@ -14,14 +19,14 @@ form{
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        gap: 1vh;
+        gap: 5vh;
 
         input,
         textarea{
             width: 100%;
             border: none;
-            border-bottom: 1px solid $white;
-            background: black;
+            border-bottom: 1px solid $grey;
+            background: none;
             color: $white;
             font-family: $font-family;
 
@@ -30,10 +35,6 @@ form{
                 outline: none;
                 border-bottom: 1px solid $green1;
             }
-        }
-
-        input{
-            height: 5vh;
         }
 
         textarea{

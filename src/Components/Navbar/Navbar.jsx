@@ -1,8 +1,13 @@
 import React, { useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import "./Navbar.scss";
 
 export default function Navbar() {
+
+  const location = useLocation();
+  const param = location.pathname.split("/").pop();
+
+  // Logique du burger menu
   const burger = useRef();
   const burgerIcon = useRef();
   const closeIcon = useRef();
@@ -14,14 +19,15 @@ export default function Navbar() {
     closeIcon.current.classList.toggle("active");
     nav.current.classList.toggle("active");
   }
+
   return (
     <div className="navbar">
         <div className="navbar-flex">
-            <NavLink className="name" to="/">@dylanpiriou/</NavLink>
+            <NavLink className="name" to="/">@dylanpiriou/{param}</NavLink>
             <nav ref={nav}>
-                <a href="#about">
+                <NavLink to="/about">
                   <span data-link="ABOUT">ABOUT</span>
-                </a>
+                </NavLink>
                 <NavLink to="/projects">
                   <span data-link="PROJECTS">PROJECTS</span>
                 </NavLink>

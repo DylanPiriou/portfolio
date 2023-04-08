@@ -2,11 +2,12 @@
 
 .navbar{
     width: 100%;
-    flex: 1;
+    height: 10vh;
+    // flex: 1;
     @include flex-center;
     padding: 0 40px;
     background: $black;
-    border-bottom: 1px solid $white;
+    border-bottom: 1px solid $grey;
     z-index: 999;
 
     .navbar-flex{

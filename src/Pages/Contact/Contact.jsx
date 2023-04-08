@@ -6,17 +6,23 @@ import Footer from "../../Components/Footer/Footer";
 
 export default function Contact() {
   return (
-    <>
+    <section className="contact">
       <Navbar/>
-      <div className="contact">
-        <div className="contact-flex">
-          <div className="img-box"></div>
-          <div className="form-box">
-            <Form/>
-          </div>
+      <div className="top-container">
+        <h2>Keep in touch</h2>
+        <div className="networks-container">
+          <a href="">MAIL</a>
+          <a href="">MOBILE</a>
+          <a href="">LINKEDIN</a>
+          <a href="">GITHUB</a>
         </div>
       </div>
-      <Footer/>
-    </>
+      <div className="form-container">
+        <div className="img-box">
+          <img src="/phone.jpg" alt="" />
+        </div>
+        <Form/>
+      </div>
+    </section>
   )
 }
