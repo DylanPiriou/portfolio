@@ -31,6 +31,10 @@
         .name{
             text-decoration: none;
             color: $white;
+
+            .param{
+                color: $green1;
+            }
         }
 
         nav{

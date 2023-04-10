@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
         <div className="navbar-flex">
-            <NavLink className="name" to="/">@dylanpiriou/{param}</NavLink>
+            <NavLink className="name" to="/">@dylanpiriou/<span className="param">{param}</span></NavLink>
             <nav ref={nav}>
                 <NavLink to="/about">
                   <span data-link="ABOUT">ABOUT</span>

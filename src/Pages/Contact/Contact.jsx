@@ -3,6 +3,7 @@ import "./Contact.scss";
 import Navbar from '../../Components/Navbar/Navbar';
 import Form from '../../Components/Form/Form';
 import Footer from "../../Components/Footer/Footer";
+import Networks from '../../Components/Networks/Networks';
 
 export default function Contact() {
   return (
@@ -11,10 +12,7 @@ export default function Contact() {
       <div className="top-container">
         <h2>Keep in touch</h2>
         <div className="networks-container">
-          <a href="">MAIL</a>
-          <a href="">MOBILE</a>
-          <a href="">LINKEDIN</a>
-          <a href="">GITHUB</a>
+          <Networks/>
         </div>
       </div>
       <div className="form-container">

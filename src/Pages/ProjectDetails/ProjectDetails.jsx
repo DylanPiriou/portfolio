@@ -69,10 +69,7 @@ export default function ProjectDetails() {
                   return <li>{tag}</li>
                 })}
               </ul>
-              <div className="project-btns">
-                <MainButton dataBtn={dataBtn}/>
-                <AltButton/>
-              </div>
+              <MainButton dataBtn={dataBtn}/>
             </div>
           </div>
         </div>
