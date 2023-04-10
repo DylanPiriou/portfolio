@@ -8,12 +8,13 @@
     flex-direction: column;
     align-items: flex-end;
     justify-content: center;
-    overflow: hidden;
-    position: relative;
 
     .hero-illustration{
         position: absolute;
         right: 0;
         bottom: 0;
+        width: 85vh;
+        opacity: 0.3;
+        z-index: -1;
     }
 }

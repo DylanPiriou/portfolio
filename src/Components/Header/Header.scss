@@ -2,53 +2,44 @@
 
 header{
     width: 100%;
-    flex: 10;
-    padding: 10vh 0 0 5vw;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     .title-container{
+        width: 100%;
+        height: 100%;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
 
         h1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 5vh;
             font-size: 110px;
-            
-            line-height: 70%;
-            font-weight: 300;
+            line-height: 80%;
+            font-weight: 400;
+            text-transform: uppercase;
             position: relative;
-    
-            &::before{
-                content: "";
-                position: absolute;
-                left: -5vw;
-                top: 0;
-                background: $green1;
-                width: 5px;
-                height: 100%;
-            }
-    
-            .serif-font{
-                @include serif-font;
-                font-size: 80%;
+            z-index: 999;
+
+            span{
+                width: 100%;
+
+                &:first-of-type{
+                    text-align: left;
+                }
+
+                &:last-child{
+                    text-align: right;
+                }
             }
         }
-
-        .subtitle{
-            width: 400px;
-            font-weight: 200;
-            padding: 2vh 0 15vh;
-        }
-
-        .btn-box{
-            width: 320px;
-        }
     }
-
-    .intro{
-        width: 40%;
-        text-align: right;
-    }
-
 }
 
