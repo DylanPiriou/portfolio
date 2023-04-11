@@ -16,6 +16,7 @@ ul{
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
+            transition: all .1s ease;
 
             &:checked{
             border-radius: 50%;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Form.scss";
 import MainButton from "../../Components/MainButton/MainButton";
 
@@ -6,16 +6,52 @@ export default function Form() {
     const dataBtn = {
         data: "SEND"
       }
+
+    const [mail, setMail ] = useState("");
+    const [message, setMessage] = useState("");
+
+    const handleMail = (e) => {
+        e.preventDefault();
+        console.log(e.target.value);
+        setMail(e.target.value)
+    }
+    const handleMessage = (e) => {
+        e.preventDefault();
+        console.log(e.target.value);
+        setMessage(e.target.value);  
+    }
+
   return (
     <form>
         <h3>Drop me a line</h3>
         <div className="input-form">
             <label htmlFor="email">Your email</label>
-            <input type="email" name="email" id="mail" />
+            <div className="input-wrapper">
+                <i class="fa-solid fa-user"></i>
+                <input
+                type="email"
+                name="email"
+                id="mail"
+                placeholder="johndoe@gmail.com"
+                value={mail}
+                onChange={(e) => handleMail(e)}
+                />
+            </div>
         </div>
         <div className="input-form">
             <label htmlFor="message">Your message</label>
-            <textarea name="message" id="message" cols="30" rows="4"></textarea>
+            <div className="input-wrapper">
+                <i class="fa-solid fa-envelope"></i>
+                <textarea name="message"
+                id="message"
+                cols="30"
+                rows="1"
+                placeholder="Hello ! Would you join my team ? :)"
+                value={message}
+                onChange={(e) => handleMessage(e)}
+                >
+                </textarea>
+            </div>
         </div>
         <MainButton dataBtn={dataBtn}/>
     </form>

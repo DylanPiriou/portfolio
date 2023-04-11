@@ -8,6 +8,16 @@ header{
     align-items: center;
     position: relative;
 
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(to right, transparent, $black1, transparent)
+    }
+
     .title-container{
         width: 100%;
         height: 100%;
@@ -24,12 +34,14 @@ header{
             margin-bottom: 5vh;
             font-size: clamp(38px, 12vw, 100px);
             line-height: 80%;
-            font-weight: 400;
+            font-weight: 500;
             text-transform: uppercase;
-            position: relative;
-            z-index: 1;
+            overflow: hidden;
+            color: $green;
 
-            span{
+            z-index: 1;
+            
+            .text-wrapper{
                 width: 100%;
 
                 &:first-of-type{
@@ -39,6 +51,16 @@ header{
                 &:last-child{
                     text-align: right;
                 }
+
+                .letter{
+                    display: inline-block;
+                    transition: transform .1s linear;
+
+                    &:hover{
+                        transform: scale(1.05);
+                    }
+                }
+
             }
         }
     }

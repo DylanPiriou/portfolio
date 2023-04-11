@@ -8,10 +8,11 @@ form{
     align-items: flex-start;
     justify-content: space-evenly;
     padding-right: 40px;
-
+    
     h3{
         font-size: 92px;
         text-transform: uppercase;
+        color: $green;
     }
 
     .input-form{
@@ -20,26 +21,47 @@ form{
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        gap: 5vh;
+        gap: 2vh;
 
-        input,
-        textarea{
+        .input-wrapper{
             width: 100%;
-            border: none;
-            border-bottom: 1px solid $grey;
-            background: none;
-            color: $white;
-            font-family: $font-family;
+            height: 5vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgb(8, 8, 8);
+            position: relative;
 
-            &:is(:active, :focus){
-                border-bottom: 1px solid $green1;
+            input,
+            textarea{
+                width: 100%;
+                border: none;
                 outline: none;
+                background: none;
+                color: $white;
+                font-family: $font-family;
+                transition: all .3s ease;
+                
+                
+            }
+            &:is(:focus-within){
+                outline: 1px solid $green;
+            }
+            
+
+            textarea{
+                resize: none;
             }
 
-        }
-
-        textarea{
-            resize: none;
+            i{
+                height: 100%;
+                aspect-ratio: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 14px;
+                color: $white;
+            }
         }
     }
 }
