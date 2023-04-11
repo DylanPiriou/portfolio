@@ -22,6 +22,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            flex-wrap: wrap;
             padding: 0 40px;
 
             h2{
@@ -30,7 +31,7 @@
         }
 
         .projects-container{
-            height: 80vh;
+            height: 75vh;
             width: 100%;
             display: flex;
             align-items: center;
@@ -72,6 +73,12 @@
                     align-items: center;
                     justify-content: flex-start;
                 }
+
+                @media screen and (max-width: 860px) {
+                    &{
+                        width: 100%;
+                    }
+                }
             }
 
             .img-container{
@@ -87,6 +94,12 @@
                     background-position: center;
                     background-size: cover;
                     transition: all .5s ease;
+                }
+
+                @media screen and (max-width: 860px) {
+                    &{
+                        display: none;
+                    }
                 }
 
             }

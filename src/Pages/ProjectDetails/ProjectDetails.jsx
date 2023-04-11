@@ -34,7 +34,7 @@ export default function ProjectDetails() {
   }
 
   const dataBtn = {
-    data: "DROP ME A LINE"
+    data: "DROP ME A LINE →"
   }
 
   return (
@@ -46,7 +46,9 @@ export default function ProjectDetails() {
           <div className="project-img">
             <img src={project.cover} alt="" />
           </div>
+
           <div className="project-data">
+
             <div className="project-title">
               <h2>{project.title}</h2>
               <div className="arrow-flex">
@@ -58,12 +60,10 @@ export default function ProjectDetails() {
                 </div>
               </div>
             </div>
+
             <div className="project-content">
-              <h3>title</h3>
-              <p>{project.subtitle}</p>
-              <h3>description</h3>
+              <h3>{project.subtitle}</h3>
               <p>{project.description}</p>
-              <h3>Stack</h3>
               <ul>
                 {project.tags.map(tag => {
                   return <li>{tag}</li>
@@ -71,7 +71,9 @@ export default function ProjectDetails() {
               </ul>
               <MainButton dataBtn={dataBtn}/>
             </div>
+
           </div>
+
         </div>
       </section>
     ) : (

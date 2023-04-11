@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import "./Header.scss";
 import MainButton from '../MainButton/MainButton';
 
@@ -6,6 +6,7 @@ export default function Header() {
   const dataBtn = {
     data: "DISCOVER MY WORK →"
   }
+
   return (
     <header>
       <div className="title-container">

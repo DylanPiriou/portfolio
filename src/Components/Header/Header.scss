@@ -6,6 +6,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     .title-container{
         width: 100%;
@@ -21,12 +22,12 @@ header{
             align-items: center;
             justify-content: center;
             margin-bottom: 5vh;
-            font-size: 100px;
+            font-size: clamp(38px, 12vw, 100px);
             line-height: 80%;
             font-weight: 400;
             text-transform: uppercase;
             position: relative;
-            z-index: 999;
+            z-index: 1;
 
             span{
                 width: 100%;

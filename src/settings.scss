@@ -22,7 +22,7 @@ $grey: #bebebe;
 
 @mixin serif-font{
     font-family: $alt-ffamily;
-    font-weight: bold;
+    text-transform: lowercase;
 }
 
 @mixin colored-font{

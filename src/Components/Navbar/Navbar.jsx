@@ -29,7 +29,7 @@ export default function Navbar() {
                   <span data-link="ABOUT">ABOUT</span>
                 </NavLink>
                 <NavLink to="/projects">
-                  <span data-link="PROJECTS">PROJECTS</span>
+                  <span data-link="WORK">WORK</span>
                 </NavLink>
                 <NavLink to="/contact">
                   <span data-link="CONTACT">CONTACT</span>

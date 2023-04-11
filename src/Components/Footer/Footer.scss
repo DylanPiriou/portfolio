@@ -22,8 +22,15 @@ footer{
         justify-content: center;
 
         span{
-            font-size: 62px;
-            font-weight: 300;
+            font-size: clamp(32px, 8vw, 52px);
+            font-weight: 400;
+        }
+
+        .footer-flex{
+            display: flex;
+            flex-direction: column;
+            font-size: clamp(12px, 3vw, 16px);
+            font-weight: 200;
         }
     }
 }

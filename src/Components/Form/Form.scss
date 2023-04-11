@@ -31,11 +31,11 @@ form{
             color: $white;
             font-family: $font-family;
 
-            &:active,
-            &:focus{
-                outline: none;
+            &:is(:active, :focus){
                 border-bottom: 1px solid $green1;
+                outline: none;
             }
+
         }
 
         textarea{

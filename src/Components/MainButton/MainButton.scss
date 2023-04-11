@@ -2,7 +2,7 @@
 
 .main-btn{
     height: 50px;
-    padding: 0 65px;
+    padding: 0 clamp(35px, 12vw, 65px);
     border: 1px solid $green1;
     border-radius: 50px;
     outline: none;
@@ -16,7 +16,7 @@
         height: 100%;
         @include flex-center;
         font-family: $font-family;
-        font-size: 20px;
+        font-size: clamp(12px, 2vw, 20px);
         position: relative;
         transition: transform .2s linear;
 

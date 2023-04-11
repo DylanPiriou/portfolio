@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="footer-wrapper">
           <span>{getCurrentYear()}/</span>
           <div className="footer-flex">
-            <p>portfolio.</p>
+            <small>portfolio.</small>
             <small>all rights reserved.</small>
           </div>
         </div>
