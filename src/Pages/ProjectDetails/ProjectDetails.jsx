@@ -4,7 +4,7 @@ import "./ProjectDetails.scss";
 import Data from "../../Data/data.json";
 import NotFound from "../NotFound/NotFound";
 import Navbar from '../../Components/Navbar/Navbar';
-import MainButton from '../../Components/MainButton/MainButton';
+import { TfiArrowTopRight } from "react-icons/tfi";
 
 export default function ProjectDetails() {
   // Récupère l'id du projet dans l'URL et vérifie qu'il existe dans le JSON
@@ -70,7 +70,13 @@ export default function ProjectDetails() {
                   return <li>{tag}</li>
                 })}
               </ul>
-              <MainButton dataBtn={dataBtn}/>
+              {/* <MainButton dataBtn={dataBtn}/> */}
+              <button>
+                <a href="#">
+                  <span>SEE ON GITHUB</span>
+                  <TfiArrowTopRight />
+                </a>
+              </button>
             </div>
 
           </div>

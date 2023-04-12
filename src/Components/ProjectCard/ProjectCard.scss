@@ -7,10 +7,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 40px 0 clamp(40px, 8vw, 80px);
+    padding-right: 40px;
     font-size: 62px;
     text-transform: uppercase;
-    color: $white;
+    color: $green;
     text-decoration: none;
     position: relative;
 
@@ -26,47 +26,47 @@
         }
     }
 
-    h3{
+    .project-card__wrapper{
         width: 100%;
-        font-size: clamp(32px, 6vw, 82px);
-        z-index: 1;
-        position: relative;
+        height: clamp(60px, 10vw, 100px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-        &::before{
-            content: "0"attr(data-id);
-            position: absolute;
-            left: -40px;
-            top: 10px;
-            font-size: clamp(16px, 3vw, 32px);
+        .project-id{
+            height: 100%;
+            width: auto;
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-end;
+            font-size: clamp(22px, 3vw, 32px);
             color: $green1;
+            font-weight: 400;
+        }
 
-            @media screen and (max-width: 860px) {
-                &{
-                    display: none;
-                }
+        h3{
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-size: clamp(32px, 6vw, 82px);
+            z-index: 1;
+            position: relative;
+    
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                background: linear-gradient(to left, $green1, transparent);
+                height: 50%;
+                z-index: -1;
+                transition: width .4s ease-in-out;
             }
         }
-
-        &::after{
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 0;
-            background: linear-gradient(to right, $green2, transparent);
-            height: 50%;
-            z-index: -1;
-            transition: width .4s ease-in-out;
-        }
-
-        img{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            right: 0;
-            width: clamp(25px, 6vw, 50px);
-        }
     }
+
 
     &:hover h3::after{
         width: 100%;
