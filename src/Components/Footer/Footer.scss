@@ -19,6 +19,7 @@ footer{
             display: flex;
             flex-direction: column;
             font-size: clamp(12px, 3vw, 16px);
+            font-family: $satoshi;
             font-weight: 200;
         }
     }

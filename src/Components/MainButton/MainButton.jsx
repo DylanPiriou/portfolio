@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 
 export default function MainButton({ dataBtn }) {
   return (
-    <NavLink to="/projects">
+    <NavLink to={dataBtn.destination}>
       <button className="main-btn">
         <span data-btn={dataBtn.data}>{dataBtn.data}</span>
       </button>

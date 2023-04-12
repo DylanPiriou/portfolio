@@ -4,7 +4,7 @@ import MainButton from "../../Components/MainButton/MainButton";
 
 export default function Form() {
     const dataBtn = {
-        data: "SEND"
+        data: "HERE WE GO !"
       }
 
     const [mail, setMail ] = useState("");

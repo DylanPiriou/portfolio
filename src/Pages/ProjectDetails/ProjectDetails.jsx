@@ -5,7 +5,6 @@ import Data from "../../Data/data.json";
 import NotFound from "../NotFound/NotFound";
 import Navbar from '../../Components/Navbar/Navbar';
 import MainButton from '../../Components/MainButton/MainButton';
-import AltButton from '../../Components/AltButton/AltButton';
 
 export default function ProjectDetails() {
   // Récupère l'id du projet dans l'URL et vérifie qu'il existe dans le JSON
@@ -33,8 +32,10 @@ export default function ProjectDetails() {
       return navigate(`/project/${nextId}`)
   }
 
+  // Paramètres pour le bouton
   const dataBtn = {
-    data: "DROP ME A LINE →"
+    data: "SAY HELLO →",
+    destination: "/contact"
   }
 
   return (

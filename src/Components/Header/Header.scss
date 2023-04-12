@@ -34,15 +34,17 @@ header{
             margin-bottom: 5vh;
             font-size: clamp(38px, 12vw, 100px);
             line-height: 80%;
-            font-weight: 500;
+            font-weight: 400;
             text-transform: uppercase;
-            overflow: hidden;
             color: $green;
-
+            transform-style: preserve-3d;
+            transform: translateZ(50px);
+            transition: all .2s linear;
             z-index: 1;
             
             .text-wrapper{
                 width: 100%;
+                transform: translateZ(-50px);
 
                 &:first-of-type{
                     text-align: left;
@@ -54,10 +56,11 @@ header{
 
                 .letter{
                     display: inline-block;
-                    transition: transform .1s linear;
+                    margin: -2px;
+                    transition: color .1s linear;
 
                     &:hover{
-                        transform: scale(1.05);
+                        color: $green1;
                     }
                 }
 
