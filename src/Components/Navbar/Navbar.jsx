@@ -1,43 +1,46 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import "./Navbar.scss";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { RxCross1 } from "react-icons/rx";
 
 export default function Navbar() {
-
+  // Logique pour récupérer le paramètre dans l'URL
   const location = useLocation();
   const param = location.pathname.split("/").pop();
 
   // Logique du burger menu
-  const burger = useRef();
-  const burgerIcon = useRef();
-  const closeIcon = useRef();
+  const [close, setClose] = useState(true);
   const nav = useRef();
 
   const handleBurger = () => {
-    burger.current.classList.toggle("active");
-    burgerIcon.current.classList.toggle("active")
-    closeIcon.current.classList.toggle("active");
+    setClose(!close);
     nav.current.classList.toggle("active");
   }
 
   return (
     <div className="navbar">
         <div className="navbar-flex">
-            <NavLink className="name" to="/">@dylanpiriou/<span className="param">{param}</span></NavLink>
+            <NavLink className="name" to="/">
+              <h1>dylanpiriou</h1>/<span className="param">{param}</span>
+            </NavLink>
             <nav ref={nav}>
-                <NavLink to="/about">
+                <NavLink to="/about" activeClassName="active">
                   <span data-link="ABOUT">ABOUT</span>
                 </NavLink>
-                <NavLink to="/projects">
+                <NavLink to="/projects" activeClassName="active">
                   <span data-link="WORK">WORK</span>
                 </NavLink>
-                <NavLink to="/contact">
+                <NavLink to="/contact" activeClassName="active">
                   <span data-link="CONTACT">CONTACT</span>
                 </NavLink>
             </nav>
-            <div className="burger-menu" ref={burger} onClick={() => handleBurger()}>
-              <img className="burger-icon" src="/burgermenu.svg" alt="" ref={burgerIcon} />
-              <img className="close-icon" src="/cross.svg" alt="" ref={closeIcon} />
+            <div className="burger-menu" onClick={() => handleBurger()}>
+              {close ? (
+                <RxHamburgerMenu className="burger-icon" />
+                ) : (
+                <RxCross1 className="close-icon" />
+              )}
             </div>
         </div>
     </div>

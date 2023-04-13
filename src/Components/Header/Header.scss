@@ -1,7 +1,7 @@
 @import "/src/settings.scss";
 
 header{
-    width: 100%;
+    width: 100vw;
     flex: 1;
     display: flex;
     justify-content: center;
@@ -26,7 +26,7 @@ header{
         align-items: center;
         justify-content: center;
 
-        h1{
+        h2{
             display: flex;
             flex-direction: column;
             align-items: center;

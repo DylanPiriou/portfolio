@@ -32,7 +32,7 @@ export default function Header() {
     <header ref={header}>
       <div className="title-container">
         <NavLink to="/contact">
-          <h1 ref={title}>
+          <h2 ref={title}>
             <span className="text-wrapper">
               {splitText[0].map(letter => {
                 return <span className="letter">{letter}</span>
@@ -47,11 +47,10 @@ export default function Header() {
                 return <span className="letter">{letter}</span>
               })}
             </span>
-          </h1>
+          </h2>
         </NavLink>
         <MainButton dataBtn={dataBtn}/>
       </div>
-        {/* <p className="intro">As a front-end web developer, I combine creativity and technical skill to design and develop visually stunning and highly functional web applications.</p> */}
     </header>
   )
 }

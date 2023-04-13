@@ -1,0 +1,40 @@
+[
+    {
+        "stack1": [
+            "HTML5",
+            "•",
+            "CSS3",
+            "•",
+            "SCSS",
+            "•",
+            "TAILWINDCSS",
+            "•"
+        ],
+        "stack2": [
+            "JAVASCRIPT",
+            "•",
+            "REACTJS",
+            "•",
+            "NEXTJS",
+            "•"
+        ],
+        "stack3": [
+            "NODEJS",
+            "•",
+            "EXPRESSJS",
+            "•",
+            "MONGODB",
+            "•"
+        ],
+        "stack4": [
+            "GIT",
+            "•",
+            "FIGMA",
+            "•",
+            "VSCODE",
+            "•",
+            "COFFEE",
+            "•"
+        ]
+    }
+]

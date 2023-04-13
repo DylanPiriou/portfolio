@@ -28,8 +28,14 @@
         justify-content: space-between;
 
         .name{
+            display: flex;
             text-decoration: none;
             color: $green;
+            
+            h1{
+                font-size: 16px;
+                font-weight: 300;
+            }
 
             .param{
                 color: $green1;
@@ -65,6 +71,10 @@
                 &:hover span{
                     transform: translateY(100%);
                 }
+            }
+
+            .active{
+                color: $green1;
             }
         }
 
@@ -104,7 +114,8 @@
                 flex-direction: column;
                 align-items: flex-start;
                 padding: 0 10vw;
-                background: #000;
+                background: $black;
+                z-index: 1;
 
                 &::before{
                     content: "";
@@ -121,13 +132,20 @@
                 }
             }
             .burger-menu{
-                display: block;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 25px;
+                aspect-ratio: 1;
+                font-size: 22px;
+                color: $green;
+                z-index: 999;
 
-                .burger-icon.active{
-                    display: none;
+                .burger-icon{
+                    display: block;
                 }
 
-                .close-icon.active{
+                .close-icon{
                     display: block;
                 }
             }
