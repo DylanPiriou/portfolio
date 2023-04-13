@@ -1,11 +1,22 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import "./About.scss";
 import Navbar from '../../Components/Navbar/Navbar';
 import Stack from '../../Components/Stack/Stack';
+import { gsap } from "gsap";
 
 export default function About() {
+  //  Animation à l'apparition de la page
+  const about = useRef();
+  useEffect(() => {
+    gsap.fromTo(about.current, {
+      opacity: 0
+    }, {
+      opacity: 1,
+      duration: 1
+    })
+  }, [])
   return (
-    <section className="about">
+    <section className="about" ref={about}>
       <Navbar/>
       <div className="about-container">
         <h3>Hello</h3>

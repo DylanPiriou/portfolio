@@ -1,20 +1,21 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import "./Projects.scss";
 import Navbar from '../../Components/Navbar/Navbar';
 import Data from "../../Data/data.json";
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
 import Filters from '../../Components/Filters/Filters';
+import { gsap } from "gsap";
 
 export default function Projects() {
-  const dataTitle = {
-    word1: "Selected",
-    word2: "works"
-  }
-
   // Fonction qui permet de stocker l'url de l'image survolée dans le state.
   const [imgUrl, setImgUrl] = useState("");
   const handleHover = (img) => {
     setImgUrl(img);
+  }
+
+  // URL de l'image = state
+  const imgStyle = {
+    backgroundImage: `url(${imgUrl})`
   }
 
   // Etat pour les filtres. "All" par défaut.
@@ -24,9 +25,20 @@ export default function Projects() {
   useEffect(() => {
     setImgUrl(Data[0].cover)
   }, [])
+
+  // Animation à l'apparition de la page
+  const projects = useRef();
+  useEffect(() => {
+    gsap.fromTo(projects.current, {
+      opacity: 0
+    }, {
+      opacity: 1,
+      duration: 1
+    })
+  }, [])
   
   return (
-    <section className="projects">
+    <section className="projects" ref={projects}>
         <div className="projects-grid">
           <Navbar/>
           <div className="top-container">
@@ -45,7 +57,7 @@ export default function Projects() {
               </div>
             </div>
             <div className="img-container">
-              <div className="img-box" style={{ backgroundImage: `url(${imgUrl})`}}></div>
+              <div className="img-box" style={imgStyle}></div>
             </div>
           </div>
 

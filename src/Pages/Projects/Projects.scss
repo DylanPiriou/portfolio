@@ -62,10 +62,6 @@
                     display: none;
                 }
 
-                // &::-webkit-scrollbar-thumb{
-                //     background: $green2;
-                // }
-
                 .titles-wrapper{
                     height: 100vh;
                     width: 100%;
@@ -94,7 +90,7 @@
                     height: 100%;
                     background-position: center;
                     background-size: cover;
-                    transition: all .5s ease;
+                    transition: background .5s ease;
                 }
 
                 @media screen and (max-width: 860px) {
