@@ -25,6 +25,13 @@ $grey: #bebebe;
     justify-content: center;
 }
 
+@mixin text{
+    font-family: $satoshi, sans-serif;
+    font-weight: 200;
+    line-height: 130%;
+    opacity: 0.8;
+}
+
 @mixin serif-font{
     font-family: $alt-ffamily;
     text-transform: lowercase;

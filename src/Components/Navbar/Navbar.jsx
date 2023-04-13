@@ -8,6 +8,7 @@ export default function Navbar() {
   // Logique pour récupérer le paramètre dans l'URL
   const location = useLocation();
   const param = location.pathname.split("/").pop();
+  const title = !param ? "hello" : param;
 
   // Logique du burger menu
   const [close, setClose] = useState(true);
@@ -22,7 +23,7 @@ export default function Navbar() {
     <div className="navbar">
         <div className="navbar-flex">
             <NavLink className="name" to="/">
-              <h1>dylanpiriou</h1>/<span className="param">{param}</span>
+              <h1>dylanpiriou</h1>/<span className="param">{title}</span>
             </NavLink>
             <nav ref={nav}>
                 <NavLink to="/about" activeClassName="active">
