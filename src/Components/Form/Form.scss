@@ -7,10 +7,9 @@ form{
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-evenly;
-    padding-right: 40px;
     
     h3{
-        font-size: 92px;
+        font-size: clamp(55px, 10vw, 120px);
         text-transform: uppercase;
         color: $green;
     }
@@ -53,15 +52,21 @@ form{
                 resize: none;
             }
 
-            i{
+            .icon {
                 height: 100%;
                 aspect-ratio: 1;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size: 14px;
                 color: $green;
             }
+        }
+    }
+
+    @media screen and (max-width: 650px) {
+        &{
+            width: 100%;
+            padding: 0 2vw;
         }
     }
 }

@@ -27,18 +27,19 @@ header {
         justify-content: center;
 
         h2 {
-            width: clamp(225px, 70vw, 710px);
+            width: clamp(225px, 71vw, 850px);
             // max-width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            gap: 5px;
             margin-bottom: 5vh;
             text-transform: uppercase;
             color: $green;
             transform-style: preserve-3d;
             transform: translateZ(50px);
-            // transition: all 0.2s linear;
+            transition: transform 0.2s linear;
             z-index: 1;
 
             .text-wrapper {
@@ -60,11 +61,11 @@ header {
                     text-align: end;
 
                     p {
-                        max-width: 70%;
+                        max-width: 90%;
                         font-family: $satoshi;
                         line-height: 140%;
                         text-transform: capitalize;
-                        font-size: clamp(10px, 1vw, 12px);
+                        font-size: clamp(12px, 1vw, 14px);
                         font-weight: 300;
                     }
 
@@ -75,7 +76,7 @@ header {
                         text-align: left;
                     }
 
-                    @media screen and (max-width: 718px) {
+                    @media screen and (max-width: 918px) {
                         & {
                             display: none;
                         }
@@ -83,7 +84,7 @@ header {
                 }
 
                 .letter {
-                    font-size: clamp(32px, 10vw, 100px);
+                    font-size: clamp(32px, 10vw, 120px);
                     line-height: 75%;
                     transition: color 0.1s linear;
 
@@ -92,7 +93,7 @@ header {
                     }
                 }
 
-                @media screen and (max-width: 718px) {
+                @media screen and (max-width: 918px) {
                     &:first-child {
                         justify-content: flex-start;
                     }

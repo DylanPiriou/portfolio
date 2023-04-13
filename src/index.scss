@@ -9,23 +9,6 @@
 html{
     scroll-behavior: smooth;
     position: relative;
-
-    // &::before{
-    //     content: "";
-    //     position: absolute;
-    //     top: 0;
-    //     left: 0;
-    //     width: 10px;
-    //     height: 100%;
-    //     background: $green1;
-    //     z-index: 1;
-    // }
-
-    @media (max-width: 1040px){
-        &::before{
-            display: none;
-        }
-    }
 }
 
 body{

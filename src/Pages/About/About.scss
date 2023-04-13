@@ -2,7 +2,7 @@
 
 .about{
     width: 100vw;
-    max-width: 1340px;
+    max-width: 1750px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -16,7 +16,8 @@
         .intro{
             width: 80%;
             font-family: $satoshi;
-            font-size: 22px;
+            font-size: 20px;
+            line-height: 140%;
             font-weight: 200;
             opacity: .8;
         }

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import "./Form.scss";
 import MainButton from "../../Components/MainButton/MainButton";
+import { AiOutlineUser } from "react-icons/ai";
+import { AiOutlineComment } from "react-icons/ai";
 
 export default function Form() {
     const dataBtn = {
@@ -27,7 +29,9 @@ export default function Form() {
         <div className="input-form">
             <label htmlFor="email">Your email</label>
             <div className="input-wrapper">
-                <i class="fa-solid fa-user"></i>
+                <div className="icon">
+                    <AiOutlineUser/>
+                </div>
                 <input
                 type="email"
                 name="email"
@@ -41,7 +45,9 @@ export default function Form() {
         <div className="input-form">
             <label htmlFor="message">Your message</label>
             <div className="input-wrapper">
-                <i class="fa-solid fa-envelope"></i>
+                <div className="icon">
+                    <AiOutlineComment/>
+                </div>
                 <textarea name="message"
                 id="message"
                 cols="30"

@@ -1,20 +1,24 @@
 import React from 'react';
 import "./Networks.scss";
+import { AiFillPhone } from "react-icons/ai"
+import { AiFillMail } from "react-icons/ai"
+import { AiFillLinkedin } from "react-icons/ai"
+import { AiFillGithub } from "react-icons/ai"
 
 export default function Networks() {
   return (
     <div className="networks">
         <a href="#">
-            <i class="fa-sharp fa-solid fa-phone"></i>
+            <AiFillPhone/>
         </a>
         <a href="#">
-            <i class="fa-solid fa-envelope"></i>
+            <AiFillMail/>
         </a>
         <a href="#">
-            <i class="fa-brands fa-linkedin-in"></i>
+            <AiFillLinkedin/>
         </a>
         <a href="#">
-            <i class="fa-brands fa-github"></i>
+            <AiFillGithub/>
         </a>
     </div>
   )
