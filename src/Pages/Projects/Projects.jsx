@@ -18,13 +18,25 @@ export default function Projects() {
     backgroundImage: `url(${imgUrl})`
   }
 
-  // Etat pour les filtres. "All" par défaut.
-  const [filter, setFilter] = useState("All");
-
   // Permet d'afficher l'image du premier projet lorsqu'on arrive sur la page.
   useEffect(() => {
     setImgUrl(Data[0].cover)
   }, [])
+
+  // Etat pour les filtres. "All" par défaut.
+  const [filter, setFilter] = useState("All");
+
+  // Etat pour la recherche
+  const [search, setSearch] = useState("");
+  const handleSearch = e => {
+    setSearch(e.target.value);
+  }
+  const filteredData = Data.filter(data => {
+    if(filter === "All" || filter === data.stack){
+        return data.tags.some(tag => tag.toLowerCase().includes(search.toLowerCase()));
+    }
+  })
+
 
   // Animation à l'apparition de la page
   const projects = useRef();
@@ -42,18 +54,18 @@ export default function Projects() {
         <div className="projects-grid">
           <Navbar/>
           <div className="top-container">
-            <h2>Selected Projects</h2>
-            <Filters filter={filter} setFilter={setFilter} />
+            <h2>Selected Projects</h2>       
+            <Filters filter={filter} setFilter={setFilter} search={search} handleSearch={handleSearch} />
           </div>
-
           <div className="projects-container">
             <div className="titles-container">
               <div className="titles-wrapper">
-                {Data && Data.map(data => {
-                  if(filter === "All" || filter === data.stack){
-                    return <ProjectCard key={data.id} data={data} handleHover={handleHover} />
-                  }
-                })}
+                {filteredData.length > 0 ? (
+                  filteredData.map(data => {
+                  return <ProjectCard key={data.id} data={data} handleHover={handleHover} />
+                })) : (
+                  <small>No data found. Search by tags.</small>
+                )}
               </div>
             </div>
             <div className="img-container">

@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import "./Filters.scss";
+import { AiOutlineSearch } from "react-icons/ai";
 
-export default function Filters({ filter, setFilter }) {
+export default function Filters({ filter, setFilter, search, handleSearch }) {
+  const [clicked, setClicked] = useState(false);
+                                                
   return (
     <ul className="filter-btns__wrapper">
         <div className="filter-btn" onClick={() => setFilter("All")}>
@@ -33,6 +36,16 @@ export default function Filters({ filter, setFilter }) {
             checked={filter === "Backend"}
             onChange={() => setFilter("Backend")}
             />
+        </div>
+        <div className="search-box" onClick={() => setClicked(true)}>
+          { clicked ? (
+            <div className="search-wrapper">
+              <div className="icon-box"><AiOutlineSearch/></div>
+              <input type="text" placeholder="Search by stack" value={search} onChange={handleSearch} /> 
+            </div>
+          ) : (
+            <AiOutlineSearch/>
+          )}
         </div>
     </ul>
   )

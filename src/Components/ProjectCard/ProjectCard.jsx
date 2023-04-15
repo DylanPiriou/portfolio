@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import "./ProjectCard.scss";
 import { NavLink } from 'react-router-dom';
 import { TfiArrowRight } from "react-icons/tfi"

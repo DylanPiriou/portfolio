@@ -3,20 +3,22 @@
 @import url('https://fonts.cdnfonts.com/css/gallient');
 @import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
 @import url('https://fonts.cdnfonts.com/css/satoshi');
+@import url('https://fonts.cdnfonts.com/css/ahganirya');
 
 $font-family: 'Cabinet Grotesk', sans-serif;
 $satoshi: "Satoshi", sans-serif;
 $montreal: "Montreal", serif;
 $alt-ffamily: 'Gallient', sans-serif;
+$serif: 'Ahganirya', sans-serif;
                                                                             
 // couleurs
 $white: #f8f8f8;
-$green: #f5ffe9;
+$grey: #bebebe;
 $black: #0e0e0e;
 $black1: #3a3a3a;
+$green: #f5ffe9;
 $green1: #ceff1d;
 $green2: #6E7263;
-$grey: #bebebe;
 
 //mixin
 @mixin flex-center{

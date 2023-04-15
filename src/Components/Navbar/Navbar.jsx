@@ -26,13 +26,13 @@ export default function Navbar() {
               <h1>dylanpiriou</h1>/<span className="param">{title}</span>
             </NavLink>
             <nav ref={nav}>
-                <NavLink to="/about" activeClassName="active">
+                <NavLink to="/about" activeclassname="active">
                   <span data-link="ABOUT">ABOUT</span>
                 </NavLink>
-                <NavLink to="/projects" activeClassName="active">
+                <NavLink to="/projects" activeclassname="active">
                   <span data-link="WORK">WORK</span>
                 </NavLink>
-                <NavLink to="/contact" activeClassName="active">
+                <NavLink to="/contact" activeclassname="active">
                   <span data-link="CONTACT">CONTACT</span>
                 </NavLink>
             </nav>
