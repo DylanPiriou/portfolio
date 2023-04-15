@@ -69,6 +69,7 @@ export default function Stack() {
           <RxPlus />
         </div>
       </NavLink>
+      <h3>STACK</h3>
     </div>
   );
 }

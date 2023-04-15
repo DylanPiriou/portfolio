@@ -1,30 +1,45 @@
-import React, { useEffect, useRef } from 'react';
+import React from "react";
 import "./About.scss";
-import Navbar from '../../Components/Navbar/Navbar';
-import Stack from '../../Components/Stack/Stack';
-import { gsap } from "gsap";
+import Navbar from "../../Components/Navbar/Navbar";
+import Stack from "../../Components/Stack/Stack";
 
 export default function About() {
-  //  Animation à l'apparition de la page
-  const about = useRef();
-  useEffect(() => {
-    gsap.fromTo(about.current, {
-      opacity: 0
-    }, {
-      opacity: 1,
-      duration: 1
-    })
-  }, [])
   return (
-    <section className="about" ref={about}>
-      <Navbar/>
+    <section className="about">
+      <Navbar />
       <div className="about-container">
-        <h3>Hello</h3>
-        <p className="intro">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias veniam ipsam, nobis quisquam obcaecati facere doloribus corrupti dignissimos ad, unde provident optio exercitationem et eius, minima culpa pariatur deserunt soluta repellendus dolorem eaque minus. Quam blanditiis quas consequatur porro iusto, tenetur dolorem exercitationem magni quasi, explicabo delectus perspiciatis quisquam. Debitis repellat, adipisci quidem sed, nostrum enim ut ullam tenetur necessitatibus aliquid voluptatibus illum eius! Ipsa et quis, nobis maxime consequuntur recusandae molestias dicta ad aperiam?</p>
-        <br />
-        <h3>Here are my tools</h3>
-        <Stack/>
+        <div className="intro-container">
+          <h3>Hello</h3>
+          <p className="intro">
+            I am a French Front-End web developer based in Nantes, France. Specializing
+            in building cool and strong applications with MERN stack.
+          </p>
+        </div>
+          <div className="text-wrapper">
+            <p className="text">
+              I'm a self-taught front-end web developer with 1 and a half years of
+              experience. I have a strong passion for the web and new
+              technologies, and I'm always eager to learn new things. In addition
+              to my self-study, I obtained a developer certification from
+              OpenClassrooms, which is the equivalent of a 2-year degree in web
+              application development. My main specialization is in the ReactJS
+              framework, and I have a good understanding of the MERN stack in
+              general.
+            </p>
+            <br />
+            <p className="text">
+              Aside from web development, I'm passionate about history, cinema,
+              and travel. I believe that learning about different cultures and
+              experiences can help me become a better developer, as it allows me
+              to see things from different perspectives. Overall, I'm a cool and
+              enthusiastic person who's always looking for new challenges and
+              opportunities to grow. If you're looking for a front-end web
+              developer who's passionate about their work and loves to learn, look
+              no further!
+            </p>
+          </div>
+          <Stack />
       </div>
     </section>
-  )
+  );
 }

@@ -75,7 +75,10 @@
                     align-items: flex-start;
                     justify-content: flex-start;
 
-                    p{
+                    small{
+                        width: 100%;
+                        text-align: center;
+                        padding: 10vh 0;
                         font-family: $satoshi;
                     }
                 }

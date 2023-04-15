@@ -4,7 +4,8 @@ ul{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    flex-wrap: wrap;
+    gap: 5px 20px;
 
     .filter-btn{
         display: flex;
@@ -48,6 +49,16 @@ ul{
                 caret-color: $green;
                 background: none;
             }
+
+            &:focus-within{
+                outline: 1px solid $green;
+            }
         }
+    }
+
+    .tooltip{
+        background: $black1;
+        color: $green;
+        font-size: 12px;
     }
 }

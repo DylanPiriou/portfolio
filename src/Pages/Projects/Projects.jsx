@@ -4,7 +4,6 @@ import Navbar from '../../Components/Navbar/Navbar';
 import Data from "../../Data/data.json";
 import ProjectCard from '../../Components/ProjectCard/ProjectCard';
 import Filters from '../../Components/Filters/Filters';
-import { gsap } from "gsap";
 
 export default function Projects() {
   // Fonction qui permet de stocker l'url de l'image survolée dans le state.
@@ -36,21 +35,9 @@ export default function Projects() {
         return data.tags.some(tag => tag.toLowerCase().includes(search.toLowerCase()));
     }
   })
-
-
-  // Animation à l'apparition de la page
-  const projects = useRef();
-  useEffect(() => {
-    gsap.fromTo(projects.current, {
-      opacity: 0
-    }, {
-      opacity: 1,
-      duration: 1
-    })
-  }, [])
   
   return (
-    <section className="projects" ref={projects}>
+    <section className="projects">
         <div className="projects-grid">
           <Navbar/>
           <div className="top-container">
@@ -64,7 +51,7 @@ export default function Projects() {
                   filteredData.map(data => {
                   return <ProjectCard key={data.id} data={data} handleHover={handleHover} />
                 })) : (
-                  <small>No data found. Search by tags.</small>
+                  <small>No projects. Please try with an other tag.</small>
                 )}
               </div>
             </div>
