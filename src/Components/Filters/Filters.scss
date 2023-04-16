@@ -12,16 +12,15 @@ ul{
         align-items: center;
         justify-content: center;
         gap: 5px;
-
+        
         input{
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            transition: all .1s ease;
-
+            
             &:checked{
-            border-radius: 50%;
-            border: 5px solid $green1;
+                border-radius: 50%;
+                border: 5px solid $green1;
             }
         }
     }
