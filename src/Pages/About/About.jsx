@@ -2,18 +2,17 @@ import React from "react";
 import "./About.scss";
 import Navbar from "../../Components/Navbar/Navbar";
 import Stack from "../../Components/Stack/Stack";
+import Networks from "../../Components/Networks/Networks";
 
 export default function About() {
   return (
     <section className="about">
       <Navbar />
       <div className="about-container">
-        <div className="intro-container">
-          <h3>Hello</h3>
-          <p className="intro">
-            I am a French Front-End web developer based in Nantes, France. Specializing
-            in building cool and strong applications with MERN stack.
-          </p>
+
+        <div className="top-container">
+          <h2>Some infos about me</h2>
+          <Networks/>
         </div>
           <div className="text-wrapper">
             <p className="text">

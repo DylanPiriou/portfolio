@@ -1,8 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Filters.scss";
 import { AiOutlineSearch } from "react-icons/ai";
-import { Tooltip } from "react-tooltip";
-import "react-tooltip/dist/react-tooltip.css";
 
 export default function Filters({ filter, setFilter, search, handleSearch }) {
   const [clicked, setClicked] = useState(false);
@@ -56,11 +54,6 @@ export default function Filters({ filter, setFilter, search, handleSearch }) {
           <AiOutlineSearch data-tooltip-id="my-tooltip-inline" data-tooltip-content="Search projects by stack" />
         )}
       </div>
-      <Tooltip
-        id="my-tooltip-inline"
-        place="bottom"
-        className="tooltip"
-      />
     </ul>
   );
 }

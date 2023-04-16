@@ -27,6 +27,8 @@ ul{
     }
 
     .search-box{
+        border: none;
+        outline: none;
         .search-wrapper{
             display: flex;
             align-items: center;
@@ -48,17 +50,13 @@ ul{
                 color: $green;
                 caret-color: $green;
                 background: none;
+                border: none;
+                outline: none;
             }
 
             &:focus-within{
                 outline: 1px solid $green;
             }
         }
-    }
-
-    .tooltip{
-        background: $black1;
-        color: $green;
-        font-size: 12px;
     }
 }
