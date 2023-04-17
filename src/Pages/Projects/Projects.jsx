@@ -42,7 +42,7 @@ export default function Projects() {
           <Navbar/>
           <div className="top-container">
             <h2>Selected Projects</h2>       
-            <Filters filter={filter} setFilter={setFilter} search={search} handleSearch={handleSearch} />
+            <Filters filter={filter} setFilter={setFilter} search={search} setSearch={setSearch} handleSearch={handleSearch} />
           </div>
           <div className="projects-container">
             <div className="titles-container">

@@ -1,9 +1,15 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Filters.scss";
 import { AiOutlineSearch } from "react-icons/ai";
+import { RxCross2 } from "react-icons/rx";
 
-export default function Filters({ filter, setFilter, search, handleSearch }) {
+export default function Filters({ filter, setFilter, search, setSearch, handleSearch }) {
+  // State pour l'apparition de l'input de recherche
   const [clicked, setClicked] = useState(false);
+  // Logique pour supprimer la recherche au clique de la croix
+  const handleDelete = () => {
+    setSearch("");
+  }
 
   return (
     <ul className="filter-btns__wrapper">
@@ -49,6 +55,14 @@ export default function Filters({ filter, setFilter, search, handleSearch }) {
               value={search}
               onChange={handleSearch}
             />
+            {search.length > 0 ? (
+            <div className="cross-box" onClick={() => handleDelete()}>
+              <RxCross2/>
+            </div>
+
+            ) : (
+              null
+            )}
           </div>
         ) : (
           <AiOutlineSearch data-tooltip-id="my-tooltip-inline" data-tooltip-content="Search projects by stack" />
