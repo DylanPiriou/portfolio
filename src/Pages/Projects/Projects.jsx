@@ -51,7 +51,7 @@ export default function Projects() {
                   filteredData.map(data => {
                   return <ProjectCard key={data.id} data={data} handleHover={handleHover} />
                 })) : (
-                  <small>No projects. Please try with an other tag.</small>
+                  <small>No projects found.</small>
                 )}
               </div>
             </div>

@@ -53,21 +53,38 @@
         }
 
         .text-wrapper{
-            flex: 1;
-            width: 100%;
             display: flex;
-            flex-direction: column;
             align-items: flex-start;
-            justify-content: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 5vw;
             padding: 5vh 0;
 
+            h3{
+                min-width: 30%;
+                font-weight: 500;
+                line-height: 150%;
+            }
+
             .text{
+                min-width: 60%;
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 1vh;
                 font-family: $satoshi;
-                width: 100%;
-                font-size: 18px;
-                line-height: 160%;
+                width: 60%;
+                font-size: clamp(14px, 2vw, 18px);
+                line-height: 180%;
                 font-weight: 200;
-                opacity: .8;
+                opacity: .9;
+
+                .colored{
+                    opacity: 1;
+                    font-weight: 600;
+                }
             }
         }
 

@@ -27,16 +27,17 @@ export default function Form() {
     <form>
         <h3>Drop me a line</h3>
         <div className="input-form">
-            <label htmlFor="email">Your email</label>
+            <label htmlFor="@">Your email</label>
             <div className="input-wrapper">
                 <div className="icon">
                     <AiOutlineUser/>
                 </div>
                 <input
-                type="email"
-                name="email"
-                id="mail"
+                type="@"
+                name="@"
+                id="@"
                 placeholder="johndoe@gmail.com"
+                required
                 value={mail}
                 onChange={(e) => handleMail(e)}
                 />

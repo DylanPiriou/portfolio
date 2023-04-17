@@ -9,14 +9,14 @@
     gap: 10px;
 
     a{
-        width: 30px;
+        width: clamp(25px, 6vw, 30px);
         aspect-ratio: 1;
         display: flex;
         align-items: center;
         justify-content: center;
         border: 1px solid $green1;
         border-radius: 50%;
-        font-size: 14px;
+        font-size: clamp(12px, 6vw, 14px);
         color: $green;
     }
 }
