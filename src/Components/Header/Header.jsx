@@ -36,8 +36,8 @@ export default function Header() {
       <div className="title-container">
         <h2 ref={title}>
           <span className="text-wrapper">
-            {splitText[0].map((letter) => {
-              return <span className="letter">{letter}</span>;
+            {splitText[0].map((letter, index) => {
+              return <span className="letter" key={index}><span id="first"><span>{letter}</span></span></span>;
             })}
             <div className="subtitle">
               <p>
@@ -48,20 +48,16 @@ export default function Header() {
             </div>
           </span>
           <span className="text-wrapper">
-            {splitText[1].map((letter) => {
-              return <span className="letter">{letter}</span>;
+            {splitText[1].map((letter, index) => {
+              return <span className="letter" key={index}><span id="second"><span>{letter}</span></span></span>;
             })}
           </span>
           <span className="text-wrapper">
             <div className="subtitle">
               <p>Welcome to my {getCurrentYear()} portfolio</p>
             </div>
-            {splitText[2].map((letter) => {
-              return (
-                <span className="letter" id="sub">
-                  {letter}
-                </span>
-              );
+            {splitText[2].map((letter, index) => {
+              return <span className="letter" key={index}><span id="third"><span>{letter}</span></span></span>
             })}
           </span>
         </h2>

@@ -13,6 +13,10 @@ ul{
         justify-content: center;
         gap: 5px;
         
+        label{
+            cursor: pointer;
+        }
+
         input{
             -webkit-appearance: none;
             -moz-appearance: none;
@@ -28,6 +32,8 @@ ul{
     .search-box{
         border: none;
         outline: none;
+        cursor: pointer;
+        
         .search-wrapper{
             display: flex;
             align-items: center;

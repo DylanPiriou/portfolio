@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import "./Form.scss";
 import MainButton from "../../Components/MainButton/MainButton";
 import { AiOutlineUser } from "react-icons/ai";
@@ -11,17 +11,13 @@ export default function Form() {
 
     const [mail, setMail ] = useState("");
     const [message, setMessage] = useState("");
+    const [valid, setValid] = useState(false);
 
-    const handleMail = (e) => {
-        e.preventDefault();
-        console.log(e.target.value);
-        setMail(e.target.value)
-    }
-    const handleMessage = (e) => {
-        e.preventDefault();
-        console.log(e.target.value);
-        setMessage(e.target.value);  
-    }
+    // Gestion du format de l'email à l'aide d'un regex
+    useEffect(() => {
+        const mailRegex = /^\S+@\S+\.\S+$/;
+        mailRegex.test(mail) ? console.log("ok") : console.log("no");
+    }, [mail])
 
   return (
     <form>
@@ -39,7 +35,7 @@ export default function Form() {
                 placeholder="johndoe@gmail.com"
                 required
                 value={mail}
-                onChange={(e) => handleMail(e)}
+                onChange={(e) => setMail(e.target.value)}
                 />
             </div>
         </div>
@@ -55,7 +51,7 @@ export default function Form() {
                 rows="1"
                 placeholder="Hello ! Would you join my team ? :)"
                 value={message}
-                onChange={(e) => handleMessage(e)}
+                onChange={(e) => setMessage(e.target.value)}
                 >
                 </textarea>
             </div>

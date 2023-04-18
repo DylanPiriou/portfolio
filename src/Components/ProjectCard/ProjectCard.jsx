@@ -8,8 +8,8 @@ export default function ProjectCard({ data, handleHover }) {
     <NavLink
         className="project-card"
         key={data.id}
-        to={`/project/${data.id}`} state={{ data }}
-        onMouseEnter={() => handleHover(data.cover)}
+        to={`/project/${data.id}`}
+        onMouseEnter={() => handleHover(data.cover, data.id)}
     >
       <div className="project-card__wrapper">
         <span className="project-id">0{data.id}</span>

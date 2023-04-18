@@ -86,8 +86,36 @@ header {
 
                 .letter {
                     font-size: clamp(32px, 10vw, 120px);
-                    line-height: 75%;
+                    line-height: 80%;
                     transition: color 1s linear;
+
+                    #second span{
+                        animation-delay: .2s;
+                    }
+
+                    #third span{
+                        animation-delay: .4s;
+                    }
+
+                    span {
+                        overflow: hidden;
+                        display: block;
+
+                        span {
+                            display: block;
+                            animation: spanFadeIn .8s forwards;
+                            transform: translateY(100%);
+
+                            @keyframes spanFadeIn {
+                                from{
+                                    transform: translateY(100%);
+                                }
+                                to{
+                                    transform: translateY(0);
+                                }
+                            }
+                        }
+                    }
 
                     &:hover {
                         color: $green1;
