@@ -110,26 +110,6 @@
                     }
                 }
 
-                button{
-                    display: none;
-                    align-items: center;
-                    justify-content: center;
-                    line-height: 0;
-                    position: absolute;
-                    border: none;
-                    outline: 1px solid $green1;
-                    width: 100px;
-                    height: 100px;
-                    border-radius: 50%;
-                    color: $green;
-                    background: rgba(0, 0, 0, 0.2);
-                    pointer-events: none;
-
-                    .arrow{
-                        font-size: 32px;
-                    }
-                }
-
                 &:hover button {
                     display: flex;
                 }

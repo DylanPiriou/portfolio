@@ -5,7 +5,7 @@ import Data from "../../Data/data.json";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import Filters from "../../Components/Filters/Filters";
 import { NavLink } from "react-router-dom";
-import { TfiArrowTopRight } from "react-icons/tfi";
+import Cursor from "../../Components/Cursor/Cursor";
 
 export default function Projects() {
   const [imgUrl, setImgUrl] = useState("");
@@ -50,21 +50,6 @@ export default function Projects() {
     }
   });
 
-  // Gestion des coordonnées du pointer personnalisé
-  const [pos, setPos] = useState({
-    x: 0,
-    y: 0,
-  });
-
-  useEffect(() => {
-    window.addEventListener("mousemove", (e) => {
-      setPos({
-        x: e.clientX - 50,
-        y: e.clientY - 50,
-      });
-    });
-  }, []);
-
   return (
     <section className="projects">
       <div className="projects-grid">
@@ -103,9 +88,7 @@ export default function Projects() {
               <div className="img-box" style={imgStyle}>
               </div>
             </NavLink>
-                <button style={{ left: pos.x, top: pos.y }}>
-                  <TfiArrowTopRight className="arrow"/>
-                </button>
+            <Cursor/>
           </div>
         </div>
       </div>
