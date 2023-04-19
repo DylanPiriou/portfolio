@@ -52,6 +52,8 @@ export default function Projects() {
 
   return (
     <section className="projects">
+      <div className="overlay-transition-1"></div>
+      <div className="overlay-transition-2"></div>
       <div className="projects-grid">
         <Navbar />
         <div className="top-container">

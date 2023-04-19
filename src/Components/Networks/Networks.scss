@@ -1,9 +1,7 @@
 @import "/src/settings.scss";
 
 .networks{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     place-content: end;
     flex-wrap: wrap;
     gap: 10px;
@@ -11,9 +9,7 @@
     a{
         width: clamp(25px, 6vw, 30px);
         aspect-ratio: 1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         border: 1px solid $green1;
         border-radius: 50%;
         font-size: clamp(12px, 6vw, 14px);

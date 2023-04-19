@@ -8,6 +8,15 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    position: relative;
+
+    .overlay-transition-1{
+        @include transition-1;
+    }
+
+    .overlay-transition-2{
+        @include transition-2;
+    }
  
 
     .top-container{
@@ -23,9 +32,7 @@
         }
 
         .networks-container{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-center;
             gap: 1vw;
     
             a{
@@ -38,9 +45,7 @@
     .form-container{
         width: 100%;
         height: 75vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         gap: 2vw;
         padding-right: 3vw;
         position: relative;
@@ -60,9 +65,7 @@
         .img-box{
             width: 50%;
             height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            @include flex-center;
             overflow: hidden;
 
             img{

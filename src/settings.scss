@@ -1,16 +1,10 @@
 // fonts
-@import url('https://fonts.cdnfonts.com/css/montreal');
-@import url('https://fonts.cdnfonts.com/css/gallient');
-@import url('https://fonts.cdnfonts.com/css/cabinet-grotesk');
-@import url('https://fonts.cdnfonts.com/css/satoshi');
-@import url('https://fonts.cdnfonts.com/css/ahganirya');
+@import url("https://fonts.cdnfonts.com/css/cabinet-grotesk");
+@import url("https://fonts.cdnfonts.com/css/satoshi");
 
-$font-family: 'Cabinet Grotesk', sans-serif;
+$font-family: "Cabinet Grotesk", sans-serif;
 $satoshi: "Satoshi", sans-serif;
-$montreal: "Montreal", serif;
-$alt-ffamily: 'Gallient', sans-serif;
-$serif: 'Ahganirya', sans-serif;
-                                                                            
+
 // couleurs
 $white: #f8f8f8;
 $grey: #bebebe;
@@ -18,28 +12,69 @@ $black: #0e0e0e;
 $black1: #3a3a3a;
 $green: #f5ffe9;
 $green1: #ceff1d;
-$green2: #6E7263;
+$green2: #6e7263;
 
-//mixin
-@mixin flex-center{
+// mixin
+@mixin flex-center {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-@mixin text{
+@mixin text {
     font-family: $satoshi, sans-serif;
     font-weight: 200;
     line-height: 130%;
     opacity: 0.8;
 }
 
-@mixin serif-font{
-    font-family: $alt-ffamily;
-    text-transform: lowercase;
-}
-
-@mixin colored-font{
+@mixin colored-font {
     color: $green1;
     font-weight: bold;
+}
+
+@mixin transition-1 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(0);
+    background: $black;
+    animation: slide1 0.6s ease forwards;
+    animation-delay: 0.1s;
+    z-index: 4;
+
+    @keyframes slide1 {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+}
+
+@mixin transition-2 {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transform: translateX(0);
+    background: $green2;
+    animation: slide2 .2s cubic-bezier(.77, .25, .35, 1.17) forwards;
+    animation-delay: .6s;
+    z-index: 3;
+
+    @keyframes slide2 {
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
 }

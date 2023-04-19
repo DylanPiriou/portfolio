@@ -6,7 +6,7 @@
     // flex: 1;
     @include flex-center;
     padding: 0 3vw;
-    z-index: 999;
+    z-index: 2;
     position: relative;
 
     &::after{
@@ -133,9 +133,7 @@
                 }
             }
             .burger-menu{
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                @include flex-center;
                 width: 25px;
                 aspect-ratio: 1;
                 font-size: 22px;

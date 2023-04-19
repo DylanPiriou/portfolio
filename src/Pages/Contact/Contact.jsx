@@ -7,6 +7,8 @@ import Networks from '../../Components/Networks/Networks';
 export default function Contact() {
   return (
     <section className="contact">
+      <div className="overlay-transition-1"></div>
+      <div className="overlay-transition-2"></div>
       <Navbar/>
       <div className="top-container">
         <h2>Keep in touch</h2>

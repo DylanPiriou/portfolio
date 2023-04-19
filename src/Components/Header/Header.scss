@@ -3,9 +3,7 @@
 header {
     width: 100vw;
     flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     position: relative;
 
     &::before {
@@ -21,18 +19,14 @@ header {
     .title-container {
         width: 100%;
         height: 100%;
-        display: flex;
+        @include flex-center;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
 
         h2 {
             width: clamp(225px, 71.5vw, 860px);
             // max-width: 100%;
-            display: flex;
+            @include flex-center;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
             gap: 5px;
             margin-bottom: 5vh;
             text-transform: uppercase;

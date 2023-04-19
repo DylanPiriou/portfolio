@@ -6,9 +6,7 @@ footer{
     @include flex-center;
 
     .footer-wrapper{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
 
         span{
             font-size: clamp(32px, 8vw, 52px);

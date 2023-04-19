@@ -8,6 +8,8 @@ import { getCurrentYear } from "../../utils/getCurrentYear.js";
 export default function About() {
   return (
     <section className="about">
+      <div className="overlay-transition-1"></div>
+      <div className="overlay-transition-2"></div>
       <Navbar />
       <div className="about-container">
         <div className="top-container">
