@@ -64,7 +64,7 @@ $green2: #6e7263;
     bottom: 0;
     transform: translateX(0);
     background: $green1;
-    animation: slide2 .2s cubic-bezier(.77, .25, .35, 1.17) forwards;
+    animation: slide2 .2s cubic-bezier(.77,.25,.39,.98) forwards;
     animation-delay: .6s;
     z-index: 3;
 

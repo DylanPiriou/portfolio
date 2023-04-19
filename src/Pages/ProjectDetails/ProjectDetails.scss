@@ -3,143 +3,236 @@
 .projectDetails{
     width: 100vw;
     max-width: 1750px;
-    height: 100vh;
+    // height: 100vh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 
-    .project-wrapper{
-        width: 100%;
-        height: 90%;
+    .overlay-transition-1{
+        @include transition-1;
+    }
+
+    .overlay-transition-2{
+        @include transition-2;
+    }
+
+    .project-container{
+        flex: 1;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
-        padding-right: 40px;
+        padding: 0 3vw;
 
-        .project-img{
-            width: 40%;
-            height: 100%;
+        .title-box{
+            width: 100%;
+            height: 40vh;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-end;
+            justify-content: flex-start;
             position: relative;
-    
-            img{
-                object-fit: cover;
+
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
                 width: 100%;
-                height: 100%;
+                height: 1px;
+                background: linear-gradient(to right, transparent, $black1, transparent);
+            }
+
+            .title{
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: space-between;
+
+                h2{
+                    font-size: 120px;
+                }
+
+                span{
+                    font-size: 32px;
+                    font-weight: 200;
+                    margin-bottom: 30px;
+                    color: $green1;
+                }
             }
         }
 
-        .project-data{
-            width: 60%;
-            height: 100%;
+        .img-box{
+            width: 100%;
+            height: 60vh;
+            padding: 5vh 0;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .stack-box{
+            width: 100%;
+            height: 60vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+            padding: 5vh 0;
+            gap: 3vw;
+            position: relative;
 
-            .project-title{
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
                 width: 100%;
-                height: 50%;
+                height: 1px;
+                background: linear-gradient(to right, transparent, $black1, transparent);
+            }
+
+            h3{
+                display: block;
+                font-size: 66px;
+            }
+
+            .stack{
                 display: flex;
                 align-items: center;
-                justify-content: space-between;
-                padding-left: 2vw;
-    
-                h2{
-                    font-size: 92px;
-                    text-transform: uppercase;
-                    color: $green;
-                }
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 3vw;
 
-                .arrow-flex{
-                    height: 100%;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 10px;
-
-                    .arrow-box{
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        width: 30px;
-                        border-radius: 50px;
-                        border: 1px solid $green1;
-
-                        img{
-                            width: 30px;
-                        }
-
-                        &:hover img{
-                            transform: scale(.95);
-                        }
-
-                    }
-
+                span{
+                    padding: 10px 15px;
+                    outline: 1px solid $black1;
+                    line-height: 1;
+                    border-radius: 50px;
+                    font-size: 36px;
                 }
             }
-    
-            .project-content{
+        }
+
+        .content-box{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            padding: 5vh 0;
+            position: relative;
+
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
                 width: 100%;
+                height: 1px;
+                background: linear-gradient(to right, transparent, $black1, transparent);
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background: linear-gradient(to right, transparent, $black1, transparent);
+            }
+
+
+            h3{
+                flex: 1;
+                height: 100%;
+                font-size: 66px;
+            }
+
+            .content{
+                width: 50%;
                 height: 100%;
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
                 align-items: flex-start;
-                justify-content: flex-start;
-                padding-left: 2vw;
 
-                h3{
-                    font-size: 26px;
-                    font-weight: 500;
-                    text-transform: capitalize;
-                    margin-bottom: 2vh;
-                }
-    
-                p{
-                    color: $green;
-                    opacity: 0.8;
-                    font-size: 14px;
-                    line-height: 140%;
-                    font-weight: 200;
-                    font-family: $satoshi;
-                }
-    
-                ul{
-                    width: 100%;
+                .text{
                     display: flex;
-                    align-items: center;
-                    justify-content: flex-start;
-                    margin: 5vh 0;
-    
-                    li{
-                        list-style-type: none;
-                        padding: 5px 20px;
-                        border-radius: 50px;
-                        border: 1px solid $white;
+                    flex-direction: column;
+                    
+                    p{
+                        font-family: $satoshi;
+                        font-size: 18px;
+                        line-height: 160%;
                     }
                 }
 
-                button{
-                    padding: 10px 20px;
-                    background: none;
-                    outline: none;
-                    border: 1px solid $green1;
-                    border-radius: 50px;
+                .btn-wrapper{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 3vw;
 
                     a{
-                        width: 100%;
-                        height: 100%;
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        gap: 20px;
-                        text-decoration: none;
                         color: $green;
                     }
                 }
             }
         }
 
+
+        .next-box{
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5vh 0;
+            margin-bottom: 5vh;
+            
+            .project{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all .3s ease;
+
+                h4{
+                    letter-spacing: 3px;
+                    font-weight: 200;
+                }
+
+                h3{
+                    font-size: 86px;
+                }
+
+                &:hover {
+                    background: $black1;
+                }
+
+                &:first-child{
+                    position: relative;
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                        width: 1px;
+                        height: 100%;
+                        background: linear-gradient(to top, transparent, $black1, transparent);
+                    }
+                }
+            }
+
+        }
     }
-}
+} 

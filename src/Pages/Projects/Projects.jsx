@@ -8,16 +8,18 @@ import { NavLink } from "react-router-dom";
 import Cursor from "../../Components/Cursor/Cursor";
 
 export default function Projects() {
+  // State pour l'URL de l'image
   const [imgUrl, setImgUrl] = useState("");
+  // State pour l'id du projet
   const [projectId, setProjectId] = useState();
 
-  // Fonction qui permet de stocker l'url et l'id de l'image survolée dans le state
+  // Fonction qui permet de stocker dans le state l'url de l'image et l'id du projet survolé
   const handleHover = (img, id) => {
     setImgUrl(img);
     setProjectId(id);
   };
 
-  // URL de l'image = state
+  // Objet de style. URL de l'image = state
   const imgStyle = {
     backgroundImage: `url(${imgUrl})`,
   };
@@ -26,17 +28,20 @@ export default function Projects() {
   const currentProject = Data.find((project) => project.id === projectId);
   const projectLink = currentProject ? `/project/${projectId}` : "#";
 
-  // Permet d'afficher l'image du premier projet lorsqu'on arrive sur la page.
+  // Permet d'afficher le premier projet lorsqu'on arrive sur la page
   useEffect(() => {
     setImgUrl(Data[0].cover);
     setProjectId(Data[0].id);
   }, []);
 
-  // Etat pour les filtres. "All" par défaut.
-  const [filter, setFilter] = useState("All");
+  // ----------- FILTER & SEARCH PART ------------ //
 
-  // Etat pour la recherche
+  // State pour les filtres. "All" par défaut.
+  const [filter, setFilter] = useState("All");
+  // State pour le système de recherche
   const [search, setSearch] = useState("");
+
+  // Fonction qui permet de stocker ce qu'on écrit  dans le state search
   const handleSearch = (e) => {
     setSearch(e.target.value);
   };
