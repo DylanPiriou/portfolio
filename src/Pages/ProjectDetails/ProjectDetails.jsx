@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import "./ProjectDetails.scss";
-import Data from "../../Data/data.json";
+import Data from "../../Data/projects.json";
 import NotFound from "../NotFound/NotFound";
 import Navbar from '../../Components/Navbar/Navbar';
 import { TfiArrowTopRight } from "react-icons/tfi";

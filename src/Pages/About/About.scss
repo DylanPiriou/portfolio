@@ -6,7 +6,6 @@
     height: 100%;
     @include flex-center;
     flex-direction: column;
-    position: relative;
 
     .overlay-transition-1{
         @include transition-1;

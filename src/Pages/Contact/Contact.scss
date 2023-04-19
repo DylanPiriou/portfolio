@@ -8,7 +8,6 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    position: relative;
 
     .overlay-transition-1{
         @include transition-1;

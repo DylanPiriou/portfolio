@@ -1,7 +1,7 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import "./Projects.scss";
 import Navbar from "../../Components/Navbar/Navbar";
-import Data from "../../Data/data.json";
+import Data from "../../Data/projects.json";
 import ProjectCard from "../../Components/ProjectCard/ProjectCard";
 import Filters from "../../Components/Filters/Filters";
 import { NavLink } from "react-router-dom";
@@ -84,13 +84,12 @@ export default function Projects() {
               )}
             </div>
           </div>
-          <div
-            className="img-container">
+          <div className="img-container">
+            <Cursor />
             <NavLink to={projectLink}>
               <div className="img-box" style={imgStyle}>
               </div>
             </NavLink>
-            <Cursor/>
           </div>
         </div>
       </div>

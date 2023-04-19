@@ -6,7 +6,6 @@
     height: 100vh;
     display: flex;
     flex-direction: column;
-    position: relative;
 
     .overlay-transition-1{
         @include transition-1;
@@ -112,7 +111,7 @@
                     }
                 }
 
-                &:hover button {
+                &:hover .cursor {
                     display: flex;
                 }
 
