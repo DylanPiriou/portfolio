@@ -62,12 +62,23 @@ header {
                     text-align: end;
 
                     p {
+                        opacity: 0;
                         max-width: 90%;
                         font-family: $satoshi;
                         line-height: 140%;
                         text-transform: capitalize;
                         font-size: clamp(12px, 1vw, 14px);
                         font-weight: 300;
+                        animation: opacity 3s forwards;
+
+                        @keyframes opacity {
+                            from{
+                                opacity: 0;
+                            }
+                            to{
+                                opacity: 1;
+                            }
+                        }
                     }
 
                     &:nth-child(1) {
@@ -90,7 +101,7 @@ header {
                     transition: color 1s linear;
 
                     #second span{
-                        animation-delay: .2s;
+                        animation-delay: .3s;
                     }
 
                     #third span{
@@ -104,6 +115,7 @@ header {
                         span {
                             display: block;
                             animation: spanFadeIn .8s forwards;
+                            animation-delay: .2s;
                             transform: translateY(100%);
 
                             @keyframes spanFadeIn {

@@ -22,7 +22,7 @@ body{
     font-family: $font-family;
     color: $green;
     background: $black;
-    overflow: hidden;
+    // overflow: hidden;
 
     @media (max-width: 1040px){
         &{

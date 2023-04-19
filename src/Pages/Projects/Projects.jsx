@@ -11,7 +11,7 @@ export default function Projects() {
   const [imgUrl, setImgUrl] = useState("");
   const [projectId, setProjectId] = useState();
 
-  // Fonction qui permet de stocker l'url et l'id de l'image survolée dans le state.
+  // Fonction qui permet de stocker l'url et l'id de l'image survolée dans le state
   const handleHover = (img, id) => {
     setImgUrl(img);
     setProjectId(id);
