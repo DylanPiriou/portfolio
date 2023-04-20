@@ -17,7 +17,14 @@ body{
     font-family: $font-family;
     color: $green;
     background: $black;
-    // overflow: hidden;
+    
+    &::-webkit-scrollbar{
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: $black1;
+    }
 
     @media (max-width: 1040px){
         &{

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./ProjectDetails.scss";
 import Data from "../../Data/projects.json";
@@ -6,6 +6,7 @@ import NotFound from "../NotFound/NotFound";
 import Navbar from "../../Components/Navbar/Navbar";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import MainButton from "../../Components/MainButton/MainButton";
+import Modal from "../../Components/Modal/Modal";
 
 export default function ProjectDetails() {
   // Récupère l'id du projet dans l'URL et vérifie qu'il existe dans le JSON
@@ -54,6 +55,14 @@ export default function ProjectDetails() {
     destination: "/contact"
   }
 
+  const [modal, setModal] = useState(false);
+  const [imgUrl, setImgUrl] = useState();
+
+  const handleClick = img => {
+    setImgUrl(img);
+    setModal(true);
+  }
+
   return (
     <>
       {project ? (
@@ -68,11 +77,11 @@ export default function ProjectDetails() {
                 <span>/{project.date}</span>
               </div>
             </div>
-            <div className="img-box">
+            {/* <div className="img-box">
               <img src={project.cover} alt="" />
-            </div>
+            </div> */}
             <div className="stack-box">
-              <h3>Built with</h3>
+              <h2>Built with</h2>
               <div className="stack">
                 {project.tags.map((tag) => {
                   return <span>{tag}</span>;
@@ -80,7 +89,7 @@ export default function ProjectDetails() {
               </div>
             </div>
             <div className="content-box">
-              <h3>About</h3>
+              <h2>About</h2>
               <div className="content">
                 <div className="text">
                   <p>{project.subtitle}</p>
@@ -93,18 +102,26 @@ export default function ProjectDetails() {
                 </div>
               </div>
             </div>
+            <div className="imgs-box">
+              <h2>Gallery</h2>
+              <div className="imgs-wrapper">
+                <img onClick={() => handleClick("/1.jpg")} src="/1.jpg" alt="" />
+                <img onClick={() => handleClick("/1.jpg")} src="/1.jpg" alt="" />
+              </div>
+            </div>
             <div className="next-box">
                 <div className="project" onClick={() => handlePrev()}>
-                  <h4>Previous project</h4>
-                  <h3>{prevProject.title}</h3>
+                  <h3>Previous project</h3>
+                  <h2>{prevProject.title}</h2>
                   
                 </div>
                 <div className="project" onClick={() => handleNext()}>
-                  <h4>Next project</h4>
-                  <h3>{nextProject.title}</h3>
+                  <h3>Next project</h3>
+                  <h2>{nextProject.title}</h2>
                 </div>
             </div>
           </div>
+          <Modal modal={modal} setModal={setModal} imgUrl={imgUrl}/>
         </section>
       ) : (
         <NotFound />
