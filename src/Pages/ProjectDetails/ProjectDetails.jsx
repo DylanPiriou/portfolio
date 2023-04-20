@@ -1,11 +1,9 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./ProjectDetails.scss";
 import Data from "../../Data/projects.json";
 import NotFound from "../NotFound/NotFound";
 import Navbar from "../../Components/Navbar/Navbar";
-import { TfiArrowTopRight } from "react-icons/tfi";
-import MainButton from "../../Components/MainButton/MainButton";
 import Modal from "../../Components/Modal/Modal";
 
 export default function ProjectDetails() {
@@ -46,7 +44,7 @@ export default function ProjectDetails() {
       window.scrollTo(0, 0);
     } else {
       navigate(`/project/${nextId}`);
-      window.scrollTo(0, 0);;
+      window.scrollTo(0, 0);
     }
   };
 
@@ -60,8 +58,19 @@ export default function ProjectDetails() {
 
   const handleClick = img => {
     setImgUrl(img);
-    setModal(true);
+    setModal(!modal);
   }
+
+  const img = useRef();
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      const scrollAmount = window.scrollY;
+      const newPosition = scrollAmount * .5;
+      if(img.current){
+        img.current.style.transform = `translateY(${newPosition}px)`;
+      }
+    })
+  }, [img])
 
   return (
     <>
@@ -71,57 +80,40 @@ export default function ProjectDetails() {
           <div className="overlay-transition-2"></div>
           <Navbar />
           <div className="project-container">
-            <div className="title-box">
-              <div className="title">
-                <h2>{project.title}</h2>
-                <span>/{project.date}</span>
-              </div>
+            <img src={project.cover} alt="" ref={img} />
+            <div className="title-wrapper">
+              <h2>{project.title}</h2>
+              <p>{project.subtitle}</p>
+              <span>— {project.date}</span>
             </div>
-            {/* <div className="img-box">
-              <img src={project.cover} alt="" />
-            </div> */}
-            <div className="stack-box">
-              <h2>Built with</h2>
-              <div className="stack">
-                {project.tags.map((tag) => {
-                  return <span>{tag}</span>;
-                })}
-              </div>
-            </div>
-            <div className="content-box">
-              <h2>About</h2>
+            <div className="content-wrapper">
               <div className="content">
-                <div className="text">
-                  <p>{project.subtitle}</p>
-                  <br />
-                  <p>{project.description}</p>
-                </div>
-                <div className="btn-wrapper">
-                  <MainButton dataBtn={dataBtn}/>
-                  <a href="#">See project on github</a>
+                <p>{project.description}</p>
+                <div className="stack-wrapper">
+                  {project.tags.map(tag => {
+                    return <span>{tag}</span>
+                  })}
                 </div>
               </div>
             </div>
-            <div className="imgs-box">
-              <h2>Gallery</h2>
-              <div className="imgs-wrapper">
-                <img onClick={() => handleClick("/1.jpg")} src="/1.jpg" alt="" />
-                <img onClick={() => handleClick("/1.jpg")} src="/1.jpg" alt="" />
-              </div>
+            <div className="img-wrapper">
+              <img src={project.cover} alt="" />
             </div>
-            <div className="next-box">
-                <div className="project" onClick={() => handlePrev()}>
-                  <h3>Previous project</h3>
-                  <h2>{prevProject.title}</h2>
-                  
-                </div>
-                <div className="project" onClick={() => handleNext()}>
-                  <h3>Next project</h3>
-                  <h2>{nextProject.title}</h2>
-                </div>
+            <div className="img-wrapper">
+              <img src={project.cover} alt="" />
+            </div>
+            <div className="prevnext-wrapper">
+              <div className="btn" data-img={prevProject.cover} onClick={() => handlePrev()}>
+                <span>Previous project</span>
+                {prevProject.title}
+              </div>
+              <div className="btn" data-img={nextProject.cover} onClick={() => handleNext()}>
+                <span>Next project</span>
+                {nextProject.title}
+              </div>
             </div>
           </div>
-          <Modal modal={modal} setModal={setModal} imgUrl={imgUrl}/>
+          {/* <Modal modal={modal} setModal={setModal} imgUrl={imgUrl}/> */}
         </section>
       ) : (
         <NotFound />

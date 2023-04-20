@@ -18,270 +18,127 @@
     }
 
     .project-container{
+        width: 100%;
         flex: 1;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        gap: 35vh;
         padding: 0 3vw;
 
-        .title-box{
-            width: 100%;
-            height: 40vh;
-            display: flex;
-            align-items: flex-end;
-            justify-content: flex-start;
-            position: relative;
-
-            &::after{
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                height: 1px;
-                background: linear-gradient(to right, transparent, $black1, transparent);
-            }
-
-            .title{
-                width: 100%;
-                display: flex;
-                align-items: flex-end;
-                justify-content: space-between;
-
-                h2{
-                    font-size: 120px;
-                    position: relative;
-
-                    &::before{
-                        content: "Project";
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        font-size: 16px;
-                        font-weight: 200;
-                    }
-                }
-
-                span{
-                    font-size: 22px;
-                    font-weight: 200;
-                    margin-bottom: 20px;
-                    color: $green1;
-                }
-            }
+        img{
+            position: absolute;
+            left: 30%;
+            top: 30%;
+            width: 750px;
+            height: 880px;
+            object-fit: cover;
+            z-index: -1;
         }
 
-        .img-box{
+        .title-wrapper{
             width: 100%;
             height: 60vh;
-            padding: 5vh 0;
-
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-
-        .stack-box{
-            width: 100%;
-            flex: 1;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 5vh 0;
-            gap: 3vw;
-            position: relative;
-
-            &::before{
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 1px;
-                background: linear-gradient(to right, transparent, $black1, transparent);
-            }
+            align-items: flex-start;
+            justify-content: flex-end;
 
             h2{
-                font-weight: 200;
+                @include title;
+                font-size: clamp(50px, 15vw, 180px);
             }
 
-            .stack{
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                flex-wrap: wrap;
-                gap: 3vw;
-
-                span{
-                    padding: 10px 15px;
-                    outline: 1px solid $black1;
-                    line-height: 1;
-                    border-radius: 50px;
-                    font-size: 22px;
-                }
+            p, span{
+                font-size: 38px;
+                font-weight: 200;
             }
         }
 
-        .content-box{
+        .content-wrapper{
             width: 100%;
-            height: 50vh;
+            height: 80vh;
             display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            padding: 5vh 0;
-            position: relative;
-
-            &::before{
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 1px;
-                background: linear-gradient(to right, transparent, $black1, transparent);
-            }
-
-            &::after{
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                height: 1px;
-                background: linear-gradient(to right, transparent, $black1, transparent);
-            }
-
-
-            h2{
-                flex: 1;
-                font-weight: 200;
-            }
+            align-items: center;
+            justify-content: flex-end;
 
             .content{
-                width: 50%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-between;
                 align-items: flex-start;
+                justify-content: center;
+                gap: 2vh;
 
-                .text{
-                    display: flex;
-                    flex-direction: column;
-                    
-                    p{
-                        font-family: $satoshi;
-                        font-size: 18px;
-                        line-height: 180%;
-                    }
+                p{
+                    max-width: 660px;
+                    @include text;
                 }
-
-                .btn-wrapper{
+    
+                .stack-wrapper{
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    gap: 3vw;
-
-                    a{
-                        color: $green;
+                    flex-wrap: wrap;
+                    place-content: flex-start;
+                    gap: 2vw;
+    
+                    span{
+                        background: $black;
+                        padding: 10px 15px;
+                        border-radius: 50px;
+                        outline: 1px solid $grey;
                     }
                 }
             }
-        }
 
-        .imgs-box{
+        }
+        
+        .img-wrapper{
+            background: red;
             width: 100%;
+            height: 100vh;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 8vh;
-            padding: 5vh 0;
             position: relative;
 
-            &::after{
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    width: 100%;
-                    height: 1px;
-                    background: linear-gradient(to right, transparent, $black1, transparent);
-    
-            }
-
-            h2{
-                font-weight: 200;
-            }
-
-            .imgs-wrapper{
+            img{
+                position: absolute;
+                left: 0;
+                top: 0;
                 width: 100%;
                 height: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                gap: 3vw;
-
-                img{
-                    flex: 1;
-                    height: 350px;
-                    object-fit: cover;
-                }
+                z-index: 1;
             }
+
         }
 
-        .next-box{
+        .prevnext-wrapper{
             width: 100%;
-            // height: 60vh;
-            flex: 1;
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 5vh 0;
-            margin-bottom: 5vh;
-            
-            .project{
-                width: 100%;
-                height: 100%;
+            gap: 1vw;
+            margin-bottom: 15vh;
+
+            .btn{
+                width: 50%;
+                height: 10vh;
+                border: none;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                outline: 1px solid $green;
                 cursor: pointer;
-                
-                h3{
-                    font-size: 16px;
+
+                span{
                     letter-spacing: 3px;
                     font-weight: 200;
                 }
-                
-                h2{
-                    transition: color .3s ease;
-                }
-
-                &:hover h2{
-                    color: $green1;
-                }
-
-                &:first-child{
-                    position: relative;
-
-                    &::after{
-                        content: "";
-                        position: absolute;
-                        right: 0;
-                        bottom: 0;
-                        width: 1px;
-                        height: 100%;
-                        background: linear-gradient(to top, transparent, $black1, transparent);
-                    }
-                }
             }
-
+            
         }
     }
 } 

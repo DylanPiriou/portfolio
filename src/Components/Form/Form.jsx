@@ -21,7 +21,7 @@ export default function Form() {
 
   return (
     <form>
-        <h3>Drop me a line</h3>
+        <h3>or... Drop me a line</h3>
         <div className="input-form">
             <label htmlFor="@">Your email</label>
             <div className="input-wrapper">
