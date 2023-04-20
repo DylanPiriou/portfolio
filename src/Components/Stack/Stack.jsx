@@ -12,26 +12,11 @@ export default function Stack() {
           <div className="technos-box">
             <div className="txt-box">
               <div className="txt-wrapper">
-                {Data[0].stack1.map((item) => {
-                  return <p>{item}</p>;
+                {Data[0].stack1.map((item, index) => {
+                  return <p key={`stack1-${index}`}>{item}</p>;
                 })}
-                {Data[0].stack1.map((item) => {
-                  return <p>{item}</p>;
-                })}
-              </div>
-            </div>
-          </div>
-          <RxPlus />
-        </div>
-        <div className="stack">
-          <div className="technos-box">
-          <div className="txt-box">
-              <div className="txt-wrapper">
-                {Data[0].stack2.map((item) => {
-                  return <p>{item}</p>;
-                })}
-                {Data[0].stack2.map((item) => {
-                  return <p>{item}</p>;
+                {Data[0].stack1.map((item, index) => {
+                  return <p key={`stack1b-${index}`}>{item}</p>;
                 })}
               </div>
             </div>
@@ -42,11 +27,11 @@ export default function Stack() {
           <div className="technos-box">
           <div className="txt-box">
               <div className="txt-wrapper">
-                {Data[0].stack3.map((item) => {
-                  return <p>{item}</p>;
+                {Data[0].stack2.map((item, index) => {
+                  return <p key={`stack2-${index}`}>{item}</p>;
                 })}
-                {Data[0].stack3.map((item) => {
-                  return <p>{item}</p>;
+                {Data[0].stack2.map((item, index) => {
+                  return <p key={`stack2b-${index}`}>{item}</p>;
                 })}
               </div>
             </div>
@@ -57,11 +42,26 @@ export default function Stack() {
           <div className="technos-box">
           <div className="txt-box">
               <div className="txt-wrapper">
-                {Data[0].stack4.map((item) => {
-                  return <p>{item}</p>;
+                {Data[0].stack3.map((item, index) => {
+                  return <p key={`stack3-${index}`}>{item}</p>;
                 })}
-                {Data[0].stack4.map((item) => {
-                  return <p>{item}</p>;
+                {Data[0].stack3.map((item, index) => {
+                  return <p key={`stack3b-${index}`}>{item}</p>;
+                })}
+              </div>
+            </div>
+          </div>
+          <RxPlus />
+        </div>
+        <div className="stack">
+          <div className="technos-box">
+          <div className="txt-box">
+              <div className="txt-wrapper">
+                {Data[0].stack4.map((item, index) => {
+                  return <p key={`stack4-${index}`}>{item}</p>;
+                })}
+                {Data[0].stack4.map((item, index) => {
+                  return <p key={`stack4b-${index}`}>{item}</p>;
                 })}
               </div>
             </div>

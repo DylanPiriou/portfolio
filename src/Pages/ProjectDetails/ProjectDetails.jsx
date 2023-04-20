@@ -4,7 +4,10 @@ import "./ProjectDetails.scss";
 import Data from "../../Data/projects.json";
 import NotFound from "../NotFound/NotFound";
 import Navbar from "../../Components/Navbar/Navbar";
-import Modal from "../../Components/Modal/Modal";
+import MainButton from "../../Components/MainButton/MainButton";
+import { TfiArrowTopRight } from "react-icons/tfi";
+
+
 
 export default function ProjectDetails() {
   // Récupère l'id du projet dans l'URL et vérifie qu'il existe dans le JSON
@@ -72,6 +75,17 @@ export default function ProjectDetails() {
     })
   }, [img])
 
+  // const links = useRef();
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     const scrollAmount = window.scrollY;
+  //     const newPosition = scrollAmount * .2;
+  //     if(links.current){
+  //       links.current.style.transform = `translateY(${newPosition}px)`;
+  //     }
+  //   })
+  // }, [links])
+
   return (
     <>
       {project ? (
@@ -90,8 +104,8 @@ export default function ProjectDetails() {
               <div className="content">
                 <p>{project.description}</p>
                 <div className="stack-wrapper">
-                  {project.tags.map(tag => {
-                    return <span>{tag}</span>
+                  {project.tags.map((tag, index) => {
+                    return <span key={index}>{tag}</span>
                   })}
                 </div>
               </div>
@@ -101,6 +115,13 @@ export default function ProjectDetails() {
             </div>
             <div className="img-wrapper">
               <img src={project.cover} alt="" />
+            </div>
+            <div className="links-wrapper">
+              <h2>Want more juicy details on this project?</h2>
+              <div className="links">
+                <MainButton dataBtn={dataBtn}/>
+                <a href="#" className="github">Look on GitHub<TfiArrowTopRight/></a>
+              </div>
             </div>
             <div className="prevnext-wrapper">
               <div className="btn" data-img={prevProject.cover} onClick={() => handlePrev()}>
@@ -116,7 +137,7 @@ export default function ProjectDetails() {
           {/* <Modal modal={modal} setModal={setModal} imgUrl={imgUrl}/> */}
         </section>
       ) : (
-        <NotFound />
+        <NotFound/>
       )}
     </>
   );

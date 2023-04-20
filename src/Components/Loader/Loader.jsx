@@ -3,6 +3,6 @@ import "./Loader.scss";
 
 export default function Loader() {
   return (
-    <h2 class="loader">Hello</h2>
+    <h2 className="loader">Hello</h2>
   )
 }

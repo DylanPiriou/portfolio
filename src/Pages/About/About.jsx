@@ -17,23 +17,21 @@ export default function About() {
           <Networks />
         </div>
         <div className="text-wrapper">
-          {Data.map((data) => {
+          {Data.map((data, index) => {
             return (
-              <h3>
+              <>
+              <h3 key={`title-${index}`}>
                 <span>{data.titlePart1}</span>
                 <br />
                 <span>{data.titlePart2}</span>
                 <br />
                 <span>{data.titlePart3}</span>
               </h3>
-            );
-          })}
-          {Data.map((data) => {
-            return (
-              <p className="text">
-                <span>{data.text1}</span>
-                <span>{data.text2}</span>
+              <p className="text" key={`text-${index}`}>
+              <span>{data.text1}</span>
+              <span>{data.text2}</span>
               </p>
+              </>
             );
           })}
         </div>
