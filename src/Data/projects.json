@@ -1,9 +1,9 @@
 [
     {
         "id": 1,
-        "title": "MovieHub",
+        "title": "NewFlix",
         "subtitle": "Cinema application like Netflix.",
-        "cover": "/1.jpg",
+        "cover": "/newflix_main.svg",
         "tags": [
             "HTML5",
             "CSS3",
@@ -20,7 +20,7 @@
         "id": 2,
         "title": "Bluel",
         "subtitle": "Dynamic web page for a Photographer.",
-        "cover": "/2.jpg",
+        "cover": "/bluel_main.svg",
         "tags": [
             "HTML5",
             "CSS3",
@@ -36,7 +36,7 @@
         "id": 3,
         "title": "Grimoire",
         "subtitle": "Backend of a book review website.",
-        "cover": "/1.jpg",
+        "cover": "/grimoire_main.svg",
         "tags": [
             "NodeJS",
             "Express",
@@ -52,7 +52,7 @@
         "id": 4,
         "title": "Carducci",
         "subtitle": "Debug and optimize a photographer's website.",
-        "cover": "/2.jpg",
+        "cover": "/carducci_main.svg",
         "tags": [
             "HTML5",
             "CSS3",
@@ -67,7 +67,7 @@
         "id": 5,
         "title": "Kasa",
         "subtitle": "Real estate rental web application.",
-        "cover": "/1.jpg",
+        "cover": "/kasa_main.svg",
         "tags": [
             "HTML5",
             "CSS3",

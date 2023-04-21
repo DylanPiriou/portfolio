@@ -85,7 +85,9 @@ export default function ProjectDetails() {
           <div key={`overlay2-${id}`} className="overlay-transition-2"></div>
           <Navbar />
           <div className="project-container">
-            <img src={project.cover} alt="" ref={img} />
+            <div className="img-box">
+              <img src={project.cover} alt="" className="mainImg" ref={img} />
+            </div>
             <div className="title-wrapper">
               <h2 key={`title-${id}`}><span>{project.title}</span></h2>
               <p key={`subtitle-${id}`}>{project.subtitle}</p>

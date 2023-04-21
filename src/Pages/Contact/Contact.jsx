@@ -26,12 +26,11 @@ export default function Contact() {
             <span><span>something ?</span></span>
           </h2>
           <a href="#">pirioudylan@gmail.com</a>
-          <p>Feel free to contact me to discuss your next project, or simply have a chat. Let's work together to create something amazing!</p>
+          <div className="text-wrapper">
+            <p>Feel free to contact me to discuss your next project, or simply have a chat. Let's work together to create something amazing!</p>
+          </div>
         </div>
         <div className="form-wrapper">
-          {/* <div className="img-box">
-            <img src="/phone.jpg" alt="" />
-          </div> */}
           <Form/>
         </div>
       </div>
