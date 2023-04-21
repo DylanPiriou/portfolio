@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef} from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import "./ProjectDetails.scss";
 import Data from "../../Data/projects.json";
@@ -6,6 +6,7 @@ import NotFound from "../NotFound/NotFound";
 import Navbar from "../../Components/Navbar/Navbar";
 import MainButton from "../../Components/MainButton/MainButton";
 import { TfiArrowTopRight } from "react-icons/tfi";
+import Cursor from "../../Components/Cursor/Cursor";
 
 
 
@@ -56,13 +57,13 @@ export default function ProjectDetails() {
     destination: "/contact"
   }
 
-  const [modal, setModal] = useState(false);
-  const [imgUrl, setImgUrl] = useState();
+  // const [modal, setModal] = useState(false);
+  // const [imgUrl, setImgUrl] = useState();
 
-  const handleClick = img => {
-    setImgUrl(img);
-    setModal(!modal);
-  }
+  // const handleClick = img => {
+  //   setImgUrl(img);
+  //   setModal(!modal);
+  // }
 
   const img = useRef();
   useEffect(() => {
@@ -75,23 +76,12 @@ export default function ProjectDetails() {
     })
   }, [img])
 
-  // const links = useRef();
-  // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     const scrollAmount = window.scrollY;
-  //     const newPosition = scrollAmount * .2;
-  //     if(links.current){
-  //       links.current.style.transform = `translateY(${newPosition}px)`;
-  //     }
-  //   })
-  // }, [links])
-
   return (
     <>
       {project ? (
         <section className="projectDetails">
-          <div className="overlay-transition-1"></div>
-          <div className="overlay-transition-2"></div>
+          <div key={`a-${id}`} className="overlay-transition-1"></div>
+          <div key={`b-${id}`} className="overlay-transition-2"></div>
           <Navbar />
           <div className="project-container">
             <img src={project.cover} alt="" ref={img} />
@@ -127,14 +117,16 @@ export default function ProjectDetails() {
               <div className="btn" data-img={prevProject.cover} onClick={() => handlePrev()}>
                 <span>Previous project</span>
                 {prevProject.title}
+                <Cursor left="left" />
               </div>
+              <div className="line"></div>
               <div className="btn" data-img={nextProject.cover} onClick={() => handleNext()}>
                 <span>Next project</span>
                 {nextProject.title}
+                <Cursor right="right" />
               </div>
             </div>
           </div>
-          {/* <Modal modal={modal} setModal={setModal} imgUrl={imgUrl}/> */}
         </section>
       ) : (
         <NotFound/>

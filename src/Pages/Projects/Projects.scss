@@ -45,7 +45,6 @@
             width: 100%;
             @include flex-center;
             padding-left: 3vw;
-            // position: relative;
 
             &::before{
                 content: "";
@@ -91,6 +90,9 @@
                         width: 100%;
                     }
                 }
+                &:hover .cursor {
+                    display: flex;
+                }
             }
 
             .img-container{
@@ -111,9 +113,6 @@
                     }
                 }
 
-                &:hover .cursor {
-                    display: flex;
-                }
 
                 @media screen and (max-width: 860px) {
                     &{

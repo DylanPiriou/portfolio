@@ -12,30 +12,32 @@ export default function About() {
       <div className="overlay-transition-2"></div>
       <Navbar />
       <div className="about-container">
-        <div className="top-container">
-          <h2>Some infos about me</h2>
-          <Networks />
-        </div>
+
+        <header className="top-container">
+          <div className="title-wrapper">
+            <h2>
+              <span>I'm Dylan, a</span>
+              <br />
+              <span>web developer</span>
+              <br />
+              <span>based in France</span>
+            </h2>
+            <Networks />
+          </div>
+        </header>
+
         <div className="text-wrapper">
           {Data.map((data, index) => {
             return (
-              <>
-              <h3 key={`title-${index}`}>
-                <span>{data.titlePart1}</span>
-                <br />
-                <span>{data.titlePart2}</span>
-                <br />
-                <span>{data.titlePart3}</span>
-              </h3>
               <p className="text" key={`text-${index}`}>
               <span>{data.text1}</span>
+              <br />
               <span>{data.text2}</span>
               </p>
-              </>
             );
           })}
         </div>
-        <Stack />
+        <Stack/>
       </div>
     </section>
   );

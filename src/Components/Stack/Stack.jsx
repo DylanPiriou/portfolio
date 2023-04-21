@@ -3,6 +3,7 @@ import "./Stack.scss";
 import Data from "../../Data/stack.json";
 import { RxPlus } from "react-icons/rx";
 import { NavLink } from "react-router-dom";
+import Cursor from "../../Components/Cursor/Cursor";
 
 export default function Stack() {
   return (
@@ -69,7 +70,7 @@ export default function Stack() {
           <RxPlus />
         </div>
       </NavLink>
-      <h3>STACK</h3>
+      <Cursor/>
     </div>
   );
 }

@@ -1,9 +1,11 @@
 // fonts
 @import url("https://fonts.cdnfonts.com/css/cabinet-grotesk");
 @import url("https://fonts.cdnfonts.com/css/satoshi");
+@import url('https://fonts.cdnfonts.com/css/safira-march-personal-use');
 
 $font-family: "Cabinet Grotesk", sans-serif;
 $satoshi: "Satoshi", sans-serif;
+$serif: 'Safira March Personal Use', sans-serif;
 
 // couleurs
 $white: #f8f8f8;
@@ -42,7 +44,7 @@ $green2: #6e7263;
     transform: translateX(0);
     background: $black;
     animation: slide1 0.6s ease forwards;
-    animation-delay: 0.1s;
+    animation-delay: -0.1s;
     z-index: 4;
 
     @keyframes slide1 {
@@ -65,7 +67,7 @@ $green2: #6e7263;
     transform: translateX(0);
     background: $green1;
     animation: slide2 .2s cubic-bezier(.77,.25,.39,.98) forwards;
-    animation-delay: .6s;
+    animation-delay: .4s;
     z-index: 3;
 
     @keyframes slide2 {
@@ -88,5 +90,13 @@ $green2: #6e7263;
 @mixin text {
     font-family: $satoshi;
     line-height: 180%;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+@mixin altText {
+    font-family: $satoshi;
+    line-height: 180%;
+    font-size: clamp(14px, 4vw, 16px);
     opacity: 0.9;
 }

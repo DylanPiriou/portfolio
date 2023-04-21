@@ -7,9 +7,8 @@
     align-items: center;
     justify-content: flex-end;
     font-family: $satoshi;
-    margin-bottom: 5vh;
+    margin-bottom: 15vh;
     overflow: hidden;
-    position: relative;
 
     .stack-flex {
         width: 100%;
@@ -100,13 +99,7 @@
         }
     }
 
-    h3{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 25vw;
-        opacity: .03;
-        z-index: -1;
+    &:hover .cursor{
+        display: flex;
     }
 }

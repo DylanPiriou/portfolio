@@ -1,6 +1,6 @@
 @import "/src/settings.scss";
 
-.projectDetails{
+.projectDetails {
     width: 100vw;
     max-width: 1750px;
     // height: 100vh;
@@ -9,15 +9,15 @@
     justify-content: center;
     flex-direction: column;
 
-    .overlay-transition-1{
+    .overlay-transition-1 {
         @include transition-1;
     }
 
-    .overlay-transition-2{
+    .overlay-transition-2 {
         @include transition-2;
     }
 
-    .project-container{
+    .project-container {
         width: 100%;
         flex: 1;
         display: flex;
@@ -27,9 +27,9 @@
         gap: 35vh;
         padding: 0 3vw;
 
-        img{
+        img {
             position: absolute;
-            left: 30%;
+            left: 50%;
             top: 30%;
             width: 750px;
             height: 880px;
@@ -37,7 +37,7 @@
             z-index: -1;
         }
 
-        .title-wrapper{
+        .title-wrapper {
             width: 100%;
             height: 60vh;
             display: flex;
@@ -45,45 +45,46 @@
             align-items: flex-start;
             justify-content: flex-end;
 
-            h2{
+            h2 {
                 @include title;
                 font-size: clamp(50px, 15vw, 180px);
             }
 
-            p, span{
+            p,
+            span {
                 font-size: 38px;
                 font-weight: 200;
             }
         }
 
-        .content-wrapper{
+        .content-wrapper {
             width: 100%;
             height: 80vh;
             display: flex;
             align-items: center;
-            justify-content: flex-end;
+            justify-content: flex-start;
 
-            .content{
+            .content {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
                 justify-content: center;
-                gap: 2vh;
+                gap: 5vh;
 
-                p{
+                p {
                     max-width: 660px;
                     @include text;
                 }
-    
-                .stack-wrapper{
+
+                .stack-wrapper {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     flex-wrap: wrap;
                     place-content: flex-start;
                     gap: 2vw;
-    
-                    span{
+
+                    span {
                         background: $black;
                         padding: 10px 15px;
                         border-radius: 50px;
@@ -91,11 +92,9 @@
                     }
                 }
             }
-
         }
-        
-        .img-wrapper{
-            background: red;
+
+        .img-wrapper {
             width: 100%;
             height: 100vh;
             display: flex;
@@ -103,7 +102,7 @@
             justify-content: center;
             position: relative;
 
-            img{
+            img {
                 position: absolute;
                 left: 0;
                 top: 0;
@@ -111,10 +110,9 @@
                 height: 100%;
                 z-index: 1;
             }
-
         }
 
-        .links-wrapper{
+        .links-wrapper {
             width: 100%;
             display: flex;
             flex-direction: column;
@@ -122,18 +120,18 @@
             justify-content: center;
             gap: 5vh;
 
-            h2{
+            h2 {
                 @include title;
                 font-size: 60px;
             }
 
-            .links{
+            .links {
                 display: flex;
                 align-items: center;
                 justify-content: center;
                 gap: 3vw;
 
-                .github{
+                .github {
                     color: $green;
                     text-decoration: none;
                     display: flex;
@@ -142,7 +140,7 @@
                     gap: 5px;
                     position: relative;
 
-                    &::after{
+                    &::after {
                         content: "";
                         position: absolute;
                         right: 0;
@@ -150,65 +148,72 @@
                         width: 100%;
                         height: 1px;
                         background: $green;
-                        transition: all .2s linear;
+                        transition: all 0.2s linear;
                     }
 
-                    &:hover::after{
+                    &:hover::after {
                         width: 0;
                     }
                 }
             }
         }
 
-        .prevnext-wrapper{
+        .prevnext-wrapper {
             width: 100%;
             height: 15vh;
             display: flex;
             align-items: center;
             justify-content: center;
             margin-bottom: 15vh;
-            position: relative;
 
-            &::after{
-                content: "";
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 1px;
-                background: linear-gradient(to left, transparent, $black1, transparent);
-            }
-
-            .btn{
+            .btn {
                 width: 50%;
-                height: 10vh;
+                height: 15vh;
                 border: none;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                gap: 1vh;
                 cursor: pointer;
+                border-top: 1px solid transparent;
+                border-image: linear-gradient(to right, transparent, $black1, transparent);
+                border-image-slice: 1;
+                transition: all .2s ease;
 
-                &:first-child{
-                    position: relative;
-
-                    &::after{
-                        content: "";
-                        position: absolute;
-                        top: 0;
-                        right: 0;
-                        width: 1px;
-                        height: 100%;
-                        background: linear-gradient(to bottom, transparent, $black1, transparent);
-                    }
-                }
-
-                span{
+                span {
                     letter-spacing: 3px;
                     font-weight: 200;
+                    transition: letter-spacing .2s ease;
+                }
+
+                &:hover::before {
+                    background: linear-gradient(to right,
+                            transparent,
+                            $grey,
+                            transparent);
+                }
+
+                &:hover {
+                    border-top: 1px solid transparent;
+                    border-image: linear-gradient(to right, transparent, $grey, transparent);
+                    border-image-slice: 1;
+                }
+
+                &:hover span{
+                    letter-spacing: 4px;
+                }
+
+                &:hover .cursor {
+                    display: flex;
                 }
             }
-            
+
+            .line {
+                width: 1px;
+                height: 100%;
+                background-image: linear-gradient(to bottom, transparent, $black1, transparent);
+            }
         }
     }
-} 
+}

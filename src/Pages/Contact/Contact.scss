@@ -44,7 +44,7 @@
                 text-decoration: none;
                 font-size: 32px;
                 width: fit-content;
-                padding: 10px 15px;
+                padding: 10px 40px;
                 border-radius: 50px;
                 outline: 1px solid $grey;
             }
@@ -55,7 +55,7 @@
                 bottom: 0;
                 text-align: right;
                 max-width: 350px;
-                @include text;
+                @include altText;
             }
         }
 

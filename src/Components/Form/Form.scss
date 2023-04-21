@@ -44,11 +44,11 @@ form{
                 
                 
             }
+
             &:is(:focus-within){
                 outline: 1px solid $green;
             }
             
-
             textarea{
                 resize: none;
             }

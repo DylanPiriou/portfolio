@@ -87,10 +87,10 @@ export default function Projects() {
               ) : (
                 <small>No projects found.</small>
               )}
+            <Cursor />
             </div>
           </div>
           <div className="img-container">
-            <Cursor />
             <NavLink to={projectLink}>
               <div className="img-box" style={imgStyle}>
               </div>
