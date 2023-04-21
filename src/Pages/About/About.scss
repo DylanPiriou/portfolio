@@ -53,7 +53,18 @@
 
                 h2{
                     @include title;
-                    margin: -2vh 0;
+                    margin-bottom: -2vh;
+    
+                    span{
+                        display: inline-block;
+                        margin-bottom: -25px;
+                        overflow: hidden;
+                        span{
+                            transform: translateY(100%);
+                            @include titleAnim;
+                        }
+    
+                    }
                 }
             }
         }

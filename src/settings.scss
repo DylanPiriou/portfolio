@@ -23,16 +23,26 @@ $green2: #6e7263;
     justify-content: center;
 }
 
-@mixin text {
-    font-family: $satoshi, sans-serif;
-    font-weight: 200;
-    line-height: 130%;
-    opacity: 0.8;
+@mixin title {
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 100%;
 }
 
-@mixin colored-font {
-    color: $green1;
-    font-weight: bold;
+@mixin text {
+    font-family: $satoshi;
+    font-weight: 200;
+    line-height: 180%;
+    font-size: 20px;
+    opacity: 0.9;
+}
+
+@mixin altText {
+    font-family: $satoshi;
+    font-weight: 200;
+    line-height: 180%;
+    font-size: clamp(14px, 4vw, 16px);
+    opacity: 0.9;
 }
 
 @mixin transition-1 {
@@ -81,22 +91,28 @@ $green2: #6e7263;
     }
 }
 
-@mixin title {
-    font-size: 120px;
-    font-weight: 400;
-    line-height: 100%;
+@mixin titleAnim {
+    animation: slideTop .8s ease forwards;
+    animation-delay: .5s;
+    @keyframes slideTop {
+        from{
+            transform: translateY(100%);
+        }
+        to{
+            transform: translateY(0);
+        }
+    }
 }
 
-@mixin text {
-    font-family: $satoshi;
-    line-height: 180%;
-    font-size: 20px;
-    opacity: 0.9;
-}
-
-@mixin altText {
-    font-family: $satoshi;
-    line-height: 180%;
-    font-size: clamp(14px, 4vw, 16px);
-    opacity: 0.9;
+@mixin subAnim {
+    animation: opacityEffect .8s ease forwards;
+    animation-delay: .7s;
+    @keyframes opacityEffect {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
+    }
 }

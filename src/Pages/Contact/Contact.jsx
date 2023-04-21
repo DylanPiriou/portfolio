@@ -19,11 +19,11 @@ export default function Contact() {
       <div className="content-container">
         <div className="content-wrapper">
           <h2>
-            <span>Wanna</span>
+            <span><span>Wanna</span></span>
             <br />
-            <span>be starting</span>
+            <span><span>be starting</span></span>
             <br />
-            <span>something ?</span>
+            <span><span>something ?</span></span>
           </h2>
           <a href="#">pirioudylan@gmail.com</a>
           <p>Feel free to contact me to discuss your next project, or simply have a chat. Let's work together to create something amazing!</p>

@@ -37,6 +37,17 @@
 
             h2{
                 @include title;
+
+                span{
+                    display: inline-block;
+                    margin-bottom: -25px;
+                    overflow: hidden;
+                    span{
+                        transform: translateY(100%);
+                        @include titleAnim;
+                    }
+
+                }
             }
 
             a{

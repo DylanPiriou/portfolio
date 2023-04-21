@@ -72,31 +72,29 @@
                 }
             }
 
+            .networks-wrapper{
+                display: none;
+            }
+
             .active{
                 color: $green1;
             }
-        }
 
-        
+        }
         .burger-menu{
             display: none;
+            position: fixed;
+            right: 3vw;
+            top: 3.5vh;
             width: 30px;
             aspect-ratio: 1;
-            position: relative;
-            
-            img{
-                width: 100%;
-                height: 100%;
-            }
-
-            .burger-icon{
-                display: flex;
-            }
 
             .close-icon{
                 display: none;
             }
         }
+
+        
 
         @media (max-width: 1040px){
             nav{
@@ -130,6 +128,7 @@
                 a{
                     font-size: 52px;
                 }
+
             }
             .burger-menu{
                 @include flex-center;

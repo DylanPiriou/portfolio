@@ -53,17 +53,7 @@
                     transform: translateY(100%);
                     @include title;
                     font-size: clamp(50px, 15vw, 180px);
-                    animation: slideTop .8s ease forwards;
-                    animation-delay: .5s;
-
-                    @keyframes slideTop {
-                        from{
-                            transform: translateY(100%);
-                        }
-                        to{
-                            transform: translateY(0);
-                        }
-                    }
+                    @include titleAnim;
                 }
             }
 
@@ -72,17 +62,7 @@
                 font-size: 38px;
                 font-weight: 200;
                 opacity: 0;
-                animation: opacityEffect .8s ease forwards;
-                animation-delay: .7s;
-
-                @keyframes opacityEffect {
-                    from{
-                        opacity: 0;
-                    }
-                    to{
-                        opacity: 1;
-                    }
-                }
+                @include subAnim;
             }
         }
 
@@ -167,13 +147,14 @@
                     align-items: center;
                     justify-content: center;
                     gap: 5px;
+                    padding: 10px 0;
                     position: relative;
 
                     &::after {
                         content: "";
                         position: absolute;
                         right: 0;
-                        bottom: -5px;
+                        bottom: 5px;
                         width: 100%;
                         height: 1px;
                         background: $green;

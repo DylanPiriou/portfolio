@@ -16,11 +16,11 @@ export default function About() {
         <header className="top-container">
           <div className="title-wrapper">
             <h2>
-              <span>I'm Dylan, a</span>
+              <span><span>I'm Dylan, a</span></span>
               <br />
-              <span>web developer</span>
+              <span><span>web developer</span></span>
               <br />
-              <span>based in France</span>
+              <span><span>based in France</span></span>
             </h2>
             <Networks />
           </div>
