@@ -61,7 +61,7 @@ export default function Projects() {
       <div className="overlay-transition-2"></div>
       <div className="projects-grid">
         <Navbar />
-        <div className="top-container">
+        <header className="top-container">
           <h2>Selected Projects</h2>
           <Filters
             filter={filter}
@@ -70,7 +70,7 @@ export default function Projects() {
             setSearch={setSearch}
             handleSearch={handleSearch}
           />
-        </div>
+        </header>
         <div className="projects-container">
           <div className="titles-container">
             <div className="titles-wrapper">
@@ -87,7 +87,6 @@ export default function Projects() {
               ) : (
                 <small>No projects found.</small>
               )}
-            <Cursor />
             </div>
           </div>
           <div className="img-container">
@@ -96,6 +95,7 @@ export default function Projects() {
               </div>
             </NavLink>
           </div>
+          <Cursor />
         </div>
       </div>
     </section>

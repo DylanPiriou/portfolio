@@ -21,7 +21,6 @@
 
     .navbar-flex{
         width: 100%;
-        // max-width: 1140px;
         height: 100%;
         display: flex;
         align-items: center;
@@ -44,11 +43,11 @@
 
         nav{
             @include flex-center;
-            gap: 30px;
+            gap: 3vw;
             
             a{
                 text-decoration: none;
-                font-size: 14px;
+                font-size: 16px;
                 color: $green;
                 overflow: hidden;
 

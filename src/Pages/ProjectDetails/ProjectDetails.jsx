@@ -7,6 +7,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import MainButton from "../../Components/MainButton/MainButton";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import Cursor from "../../Components/Cursor/Cursor";
+import ScrollTop from "../../Components/ScrollTop/ScrollTop";
 
 
 
@@ -80,15 +81,15 @@ export default function ProjectDetails() {
     <>
       {project ? (
         <section className="projectDetails">
-          <div key={`a-${id}`} className="overlay-transition-1"></div>
-          <div key={`b-${id}`} className="overlay-transition-2"></div>
+          <div key={`overlay1-${id}`} className="overlay-transition-1"></div>
+          <div key={`overlay2-${id}`} className="overlay-transition-2"></div>
           <Navbar />
           <div className="project-container">
             <img src={project.cover} alt="" ref={img} />
             <div className="title-wrapper">
-              <h2>{project.title}</h2>
-              <p>{project.subtitle}</p>
-              <span>— {project.date}</span>
+              <h2 key={`title-${id}`}><span>{project.title}</span></h2>
+              <p key={`subtitle-${id}`}>{project.subtitle}</p>
+              <p key={`date-${id}`}>— {project.date}</p>
             </div>
             <div className="content-wrapper">
               <div className="content">
@@ -127,6 +128,7 @@ export default function ProjectDetails() {
               </div>
             </div>
           </div>
+          <ScrollTop/>
         </section>
       ) : (
         <NotFound/>

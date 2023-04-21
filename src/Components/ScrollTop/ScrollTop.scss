@@ -1,0 +1,22 @@
+@import "/src/settings.scss";
+
+.scrollTop{
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 35px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    border: none;
+    outline: 1px solid $black1;
+    background: transparent;
+    cursor: pointer;
+
+    .arrow{
+        color: $green;
+        font-size: 20px;
+    }
+}
