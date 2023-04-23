@@ -13,7 +13,7 @@ export default function About() {
       <Navbar />
       <div className="about-container">
 
-        <header className="top-container">
+        <div className="top-container">
           <div className="title-wrapper">
             <h2>
               <span><span>I'm Dylan, a</span></span>
@@ -22,11 +22,11 @@ export default function About() {
               <br />
               <span><span>based in France</span></span>
             </h2>
-            <Networks />
           </div>
-        </header>
+        </div>
 
         <div className="text-wrapper">
+            <Networks />
           {Data.map((data, index) => {
             return (
               <p className="text" key={`text-${index}`}>

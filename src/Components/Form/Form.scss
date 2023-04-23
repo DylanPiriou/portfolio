@@ -1,20 +1,14 @@
 @import "/src/settings.scss";
 
 form{
-    width: 100%;
+    width: 40%;
     height: 100%;
-    min-height: 65vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
-    padding: 0 3vw;
-    
-    h3{
-        font-size: clamp(32px, 6vw, 52px);
-        font-weight: 400;
-        color: $green;
-    }
+    justify-content: center;
+    gap: 6vh;
+    // padding: 0 3vw;
 
     .input-form{
         width: 100%;
@@ -22,14 +16,54 @@ form{
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
-        gap: 2vh;
-
+        gap: 1vh;
+        
+        
         .input-wrapper{
             width: 100%;
-            height: 5vh;
-            @include flex-center;
-            background: $black;
+            height: 3vh;
             position: relative;
+
+            label{
+                position: absolute;
+                left: 1vw;
+                bottom: 4vh;
+                font-family: $satoshi;
+                font-size: 20px;
+                transform: translateY(2vh);
+                cursor: text;
+                transition: transform .2s ease;
+            }
+
+            .up{
+                transform: translateY(0);
+            }
+
+            .down{
+                transform: translateY(2vh);
+            }
+
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background: $black1;
+            }
+
+            &::after{
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 0;
+                height: 1px;
+                background: $green;
+                transition: width .3s ease;
+            }
+
 
             input,
             textarea{
@@ -37,27 +71,23 @@ form{
                 border: none;
                 outline: none;
                 background: none;
+                padding-left: 1vw;
                 color: $green;
+                font-weight: 200;
                 font-family: $satoshi;
-                caret-color: $green;
-                transition: all .3s ease;
-                
-                
             }
 
-            &:is(:focus-within){
-                outline: 1px solid $green;
+            &:is(:focus-within) label{
+                transform: translateY(0);
             }
+
+            &:is(:focus-within)::after{
+                width: 100%;
+            }
+
             
             textarea{
                 resize: none;
-            }
-
-            .icon {
-                height: 100%;
-                aspect-ratio: 1;
-                @include flex-center;
-                color: $green;
             }
         }
     }

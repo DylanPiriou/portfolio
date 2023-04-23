@@ -61,7 +61,7 @@ export default function Projects() {
       <div className="overlay-transition-2"></div>
       <div className="projects-grid">
         <Navbar />
-        <header className="top-container">
+        <div className="top-container">
           <h2>Selected Projects</h2>
           <Filters
             filter={filter}
@@ -70,7 +70,7 @@ export default function Projects() {
             setSearch={setSearch}
             handleSearch={handleSearch}
           />
-        </header>
+        </div>
         <div className="projects-container">
           <div className="titles-container">
             <div className="titles-wrapper">

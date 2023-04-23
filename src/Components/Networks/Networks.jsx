@@ -1,25 +1,22 @@
 import React from 'react';
 import "./Networks.scss";
-import { AiFillPhone } from "react-icons/ai"
-import { AiFillMail } from "react-icons/ai"
-import { AiFillLinkedin } from "react-icons/ai"
-import { AiFillGithub } from "react-icons/ai"
+import { TfiArrowTopRight } from "react-icons/tfi";
 
 export default function Networks() {
-  return (
-    <div className="networks">
-        <a href="#">
-            <AiFillPhone/>
-        </a>
-        <a href="#">
-            <AiFillMail/>
-        </a>
-        <a href="#">
-            <AiFillLinkedin/>
-        </a>
-        <a href="#">
-            <AiFillGithub/>
-        </a>
-    </div>
-  )
+    return (
+        <div className="networks">
+            <a href="">
+                <TfiArrowTopRight className="arrow" />
+                <span>MAIL</span>
+            </a>
+            <a href="">
+                <TfiArrowTopRight className="arrow" />
+                <span>GITHUB</span>
+            </a>
+            <a href="">
+                <TfiArrowTopRight className="arrow" />
+                <span>LINKEDIN</span>
+            </a>
+        </div>
+    )
 }

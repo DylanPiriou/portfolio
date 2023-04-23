@@ -4,17 +4,6 @@ header {
     width: 100vw;
     flex: 1;
     @include flex-center;
-    position: relative;
-
-    &::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 1px;
-        background: linear-gradient(to right, transparent, $black1, transparent);
-    }
 
     .title-container {
         width: 100%;
@@ -23,8 +12,7 @@ header {
         flex-direction: column;
 
         h2 {
-            width: clamp(225px, 71.5vw, 860px);
-            // max-width: 100%;
+            width: min-content;
             @include flex-center;
             flex-direction: column;
             gap: 5px;
@@ -35,6 +23,10 @@ header {
             transform: translateZ(50px);
             transition: transform 0.2s linear;
             z-index: 1;
+
+            &:hover .cursor{
+                display: flex;
+            }
 
             .text-wrapper {
                 display: flex;
@@ -78,7 +70,6 @@ header {
                     &:nth-child(1) {
                         align-items: flex-end;
                         justify-content: flex-start;
-                        margin-bottom: 1vh;
                         text-align: left;
                     }
 

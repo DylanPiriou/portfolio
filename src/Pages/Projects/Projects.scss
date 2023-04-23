@@ -29,6 +29,7 @@
             justify-content: space-between;
             flex-wrap: wrap;
             padding: 0 3vw;
+            border-bottom: 1px solid $black1;
 
             h2{
                 font-weight: 200;
@@ -45,7 +46,7 @@
             height: 75vh;
             width: 100%;
             @include flex-center;
-            padding-left: 3vw;
+            // padding-left: 3vw;
 
             &::before{
                 content: "";

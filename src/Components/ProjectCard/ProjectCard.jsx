@@ -13,9 +13,9 @@ export default function ProjectCard({ data, handleHover }) {
     >
       <div className="project-card__wrapper">
         <span className="project-id"><span>0{data.id}</span></span>
-        <h3 data-id={data.id}>
+        <h3>
             {data.title}
-            <TfiArrowRight />
+            <TfiArrowRight className="arrow"/>
         </h3>
       </div>
     </NavLink>

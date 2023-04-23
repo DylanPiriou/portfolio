@@ -2,10 +2,12 @@
 @import url("https://fonts.cdnfonts.com/css/cabinet-grotesk");
 @import url("https://fonts.cdnfonts.com/css/satoshi");
 @import url('https://fonts.cdnfonts.com/css/safira-march-personal-use');
+@import url('https://fonts.cdnfonts.com/css/neue-power');
 
-$font-family: "Cabinet Grotesk", sans-serif;
+$font-family: "Neue Power", sans-serif;
 $satoshi: "Satoshi", sans-serif;
 $serif: 'Safira March Personal Use', sans-serif;
+$heming: "unnamedlight";
 
 // couleurs
 $white: #f8f8f8;
@@ -27,16 +29,6 @@ $green2: #6e7263;
     font-size: clamp(40px, 10vw, 120px);
     font-weight: 400;
     line-height: 100%;
-    @media (max-width: 1250px) {
-        &{
-            line-height: 120%;
-        }
-    }
-    @media (max-width: 950px) {
-        &{
-            line-height: 140%;
-        }
-    }
 }
 
 @mixin text {

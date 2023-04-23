@@ -4,13 +4,14 @@ footer{
     width: 100%;
     height: 20%;
     @include flex-center;
+    border-top: 1px solid $black1;
 
     .footer-wrapper{
         @include flex-center;
 
         span{
             font-size: clamp(32px, 8vw, 52px);
-            font-weight: 400;
+            // font-weight: 400;
         }
 
         .footer-flex{
@@ -18,7 +19,7 @@ footer{
             flex-direction: column;
             font-size: clamp(12px, 3vw, 16px);
             font-family: $satoshi;
-            font-weight: 200;
+            // font-weight: 200;
         }
     }
 }

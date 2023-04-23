@@ -7,6 +7,7 @@ ul{
 
     .filter-btn{
         @include flex-center;
+        line-height: 0;
         gap: 5px;
         
         label{
@@ -20,7 +21,7 @@ ul{
             
             &:checked{
                 border-radius: 50%;
-                border: 5px solid $green1;
+                border: 4px solid $green1;
             }
         }
     }
