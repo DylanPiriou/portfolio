@@ -1,7 +1,7 @@
 @import "/src/settings.scss";
 
 .project-card{
-    min-height: 25vh;
+    min-height: 15vw;
     flex: 1;
     width: 100%;
     display: flex;
@@ -63,10 +63,15 @@
             width: 100%;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: flex-end;
             @include title;
-            font-size: clamp(42px, 6vw, 120px);
+            font-size: clamp(42px, 10vw, 120px);
             position: relative;
+
+            .title{
+                transition: transform .2s ease;
+                transition-delay: .2s;
+            }
 
             &::after{
                 content: "";
@@ -80,19 +85,29 @@
                 transition: width .4s ease-in-out;
             }
 
-            .arrow{
-                font-size: 22px;
-                transition: opacity .2s ease;
+            .arrow-box{
+                width: 50px;
+                height: 30px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                outline: 1px solid $green1;
+                border-radius: 50px;
+                display: none;
+
+                .arrow{
+                    font-size: 22px;
+                    transition: opacity .2s ease;
+                }
             }
         }
     }
 
+    &:hover .title{
+        transform: translateX(-3vw);
+    }
 
     &:hover h3::after{
         width: 100%;
-    }
-
-    &:hover .arrow{
-        opacity: 0;
     }
 }

@@ -3,8 +3,9 @@ import "./Cursor.scss";
 import { TfiArrowLeft } from "react-icons/tfi";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import { TfiArrowRight } from "react-icons/tfi";
+import { GiBread } from "react-icons/gi"
 
-export default function Cursor({ left, right }) {
+export default function Cursor({ left, right, text }) {
   // Gestion des coordonnées du pointer personnalisé
   const [pos, setPos] = useState({
     x: 0,
@@ -22,9 +23,10 @@ export default function Cursor({ left, right }) {
 
   return (
     <button className="cursor" style={{ left: pos.x, top: pos.y }}>
-      {left ? <TfiArrowLeft className="arrow" /> : 
-      right ? <TfiArrowRight className="arrow" /> : 
-      <TfiArrowTopRight className="arrow" />}
+      {left ? <TfiArrowLeft className="icon" /> : 
+      right ? <TfiArrowRight className="icon" /> : 
+      text ? <GiBread className="icon"/> :
+      <TfiArrowTopRight className="icon" />}
     </button>
   );
 }

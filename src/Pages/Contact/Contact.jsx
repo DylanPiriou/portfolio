@@ -5,22 +5,12 @@ import Form from '../../Components/Form/Form';
 import Networks from '../../Components/Networks/Networks';
 
 export default function Contact() {
-  const dataBtn = {
-    data: "pirioudylan@gmail.com"
-  }
   return (
     <section className="contact">
       <div className="overlay-transition-1"></div>
       <div className="overlay-transition-2"></div>
       <Navbar/>
-      {/* <div className="top-container">
-        <h2>Keep in touch</h2>
-        <div className="networks-container">
-          <Networks/>
-        </div>
-      </div> */}
       <div className="content-container">
-        <div className="content-wrapper">
           <div className="top-wrapper">
             <h1>
               <span><span>Wanna</span></span>
@@ -38,7 +28,6 @@ export default function Contact() {
               </div>
 
           </div>
-        </div>
 
       </div>
     </section>
