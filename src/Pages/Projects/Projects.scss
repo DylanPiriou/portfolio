@@ -22,8 +22,9 @@
         flex-direction: column;
     
         .top-container{
-            flex: 1;
             width: 100%;
+            min-height: 15vh;
+            flex: 1;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -43,8 +44,8 @@
         }
 
         .projects-container{
-            height: 75vh;
             width: 100%;
+            max-height: 70vh;
             @include flex-center;
             // padding-left: 3vw;
 
@@ -122,6 +123,12 @@
 
             &:hover .cursor {
                 display: flex;
+
+                @media screen and (max-width: 860px) {
+                    &{
+                        display: none;
+                    }
+                }
             }
         }
     }
