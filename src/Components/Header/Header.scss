@@ -21,12 +21,9 @@ header {
             color: $green;
             transform-style: preserve-3d;
             transform: translateZ(50px);
+            cursor: url("/hand.webp"), auto;
             transition: transform 0.2s linear;
             z-index: 1;
-
-            &:hover .cursor{
-                display: flex;
-            }
 
             .text-wrapper {
                 display: flex;
@@ -50,11 +47,8 @@ header {
                     p {
                         opacity: 0;
                         max-width: 90%;
-                        font-family: $satoshi;
-                        line-height: 140%;
                         text-transform: capitalize;
-                        font-size: clamp(12px, 1vw, 14px);
-                        font-weight: 300;
+                        @include altText;
                         animation: opacity 3s forwards;
 
                         @keyframes opacity {

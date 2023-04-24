@@ -12,13 +12,12 @@ export default function ProjectCard({ data, handleHover }) {
         onMouseEnter={() => handleHover(data.cover, data.id)}
     >
       <div className="project-card__wrapper">
-        <span className="project-id"><span>0{data.id}</span></span>
-        <h3>
+        <span className="project-id">
+          <span>0{data.id}</span>
+        </span>
+        <h2>
             <span className="title">{data.title}</span>
-            <div className="arrow-box">
-              <TfiArrowRight className="arrow"/>
-            </div>
-        </h3>
+        </h2>
       </div>
     </NavLink>
   )

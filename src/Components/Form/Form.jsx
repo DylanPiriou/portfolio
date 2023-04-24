@@ -23,13 +23,13 @@ export default function Form() {
     <form>
       <div className="input-form">
         <div className="input-wrapper">
-          <label htmlFor="@" className={inputValue ? "up" : "down"}>
+          <label htmlFor="email" className={inputValue ? "up" : "down"}>
             Your email address
           </label>
           <input
-            type="@"
-            name="@"
-            id="@"
+            type="email"
+            name="email"
+            id="email"
             required
             onChange={(e) => handleChangeInput(e)}
           />
@@ -43,7 +43,6 @@ export default function Form() {
           <textarea
             name="message"
             id="message"
-            cols="30"
             rows="1"
             required
             onChange={(e) => handleChangeTxtArea(e)}

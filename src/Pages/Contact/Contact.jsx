@@ -12,13 +12,13 @@ export default function Contact() {
       <Navbar/>
       <div className="content-container">
           <div className="top-wrapper">
-            <h1>
+            <h2>
               <span><span>Wanna</span></span>
               <br />
               <span><span>be starting</span></span>
               <br />
               <span><span>something ?</span></span>
-            </h1>
+            </h2>
             <Form/>
           </div>
           <div className="bottom-wrapper">

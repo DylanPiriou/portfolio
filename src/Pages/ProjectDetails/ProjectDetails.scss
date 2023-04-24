@@ -102,6 +102,12 @@
                         padding: 10px 15px;
                         border-radius: 50px;
                         outline: 1px solid $grey;
+                        cursor: default;
+                        transition: outline .2s ease;
+
+                        &:hover{
+                            outline: 1px solid $green1;
+                        }
                     }
                 }
             }
@@ -135,8 +141,8 @@
             gap: 5vh;
 
             h2 {
-                @include title;
-                font-size: 60px;
+                @include altTitle;
+                text-align: center;
             }
 
             .links {
@@ -153,6 +159,8 @@
                     justify-content: center;
                     gap: 5px;
                     padding: 10px 0;
+                    font-size: clamp(12px, 2vw, 16px);
+                    text-transform: uppercase;
                     position: relative;
 
                     &::after {
@@ -170,66 +178,6 @@
                         width: 0;
                     }
                 }
-            }
-        }
-
-        .prevnext-wrapper {
-            width: 100%;
-            height: 15vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 15vh;
-
-            .btn {
-                width: 50%;
-                height: 30vh;
-                border: none;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 1vh;
-                font-size: 38px;
-                cursor: pointer;
-                border-top: 1px solid transparent;
-                border-image: linear-gradient(to right, transparent, $black1, transparent);
-                border-image-slice: 1;
-                transition: all .2s ease;
-
-                span {
-                    letter-spacing: 3px;
-                    font-weight: 200;
-                    font-size: 16px;
-                    transition: letter-spacing .2s ease;
-                }
-
-                &:hover::before {
-                    background: linear-gradient(to right,
-                            transparent,
-                            $grey,
-                            transparent);
-                }
-
-                &:hover {
-                    border-top: 1px solid transparent;
-                    border-image: linear-gradient(to right, transparent, $grey, transparent);
-                    border-image-slice: 1;
-                }
-
-                &:hover span{
-                    letter-spacing: 4px;
-                }
-
-                &:hover .cursor {
-                    display: flex;
-                }
-            }
-
-            .line {
-                width: 1px;
-                height: 100%;
-                background-image: linear-gradient(to bottom, transparent, $black1, transparent);
             }
         }
     }

@@ -34,9 +34,8 @@
             justify-content: space-between;
             gap: 10vh 5vw;
 
-            h1 {
+            h2 {
                 @include title;
-                min-width: 60%;
 
                 span {
                     display: inline-block;

@@ -36,15 +36,17 @@
 
         .project-id{
             height: 100%;
-            width: auto;
             display: flex;
             align-items: flex-start;
-            justify-content: flex-end;
-            font-size: clamp(14px, 3vw, 22px);
+            justify-content: flex-start;
+            font-size: clamp(12px, 2vw, 22px);
             color: $green1;
             font-weight: 200;
 
             span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
                 position: relative;
     
                 &::after{
@@ -59,18 +61,17 @@
             }
         }
 
-        h3{
+        h2{
             width: 100%;
             display: flex;
             align-items: center;
             justify-content: flex-end;
             @include title;
-            font-size: clamp(42px, 10vw, 120px);
             position: relative;
 
             .title{
                 transition: transform .2s ease;
-                transition-delay: .2s;
+                transition-delay: .1s;
             }
 
             &::after{
@@ -82,23 +83,7 @@
                 background: linear-gradient(to left, $green1, transparent);
                 height: 50%;
                 z-index: -1;
-                transition: width .4s ease-in-out;
-            }
-
-            .arrow-box{
-                width: 50px;
-                height: 30px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                outline: 1px solid $green1;
-                border-radius: 50px;
-                display: none;
-
-                .arrow{
-                    font-size: 22px;
-                    transition: opacity .2s ease;
-                }
+                transition: width .2s ease-in-out;
             }
         }
     }
@@ -107,7 +92,7 @@
         transform: translateX(-3vw);
     }
 
-    &:hover h3::after{
+    &:hover h2::after{
         width: 100%;
     }
 }

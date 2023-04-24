@@ -17,6 +17,7 @@ body{
     font-family: $font-family;
     color: $green;
     background: $black;
+    cursor: default;
     
     &::-webkit-scrollbar{
         width: 10px;

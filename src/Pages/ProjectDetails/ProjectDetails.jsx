@@ -6,8 +6,8 @@ import NotFound from "../NotFound/NotFound";
 import Navbar from "../../Components/Navbar/Navbar";
 import MainButton from "../../Components/MainButton/MainButton";
 import { TfiArrowTopRight } from "react-icons/tfi";
-import Cursor from "../../Components/Cursor/Cursor";
 import ScrollTop from "../../Components/ScrollTop/ScrollTop";
+import PrevNext from "../../Components/PrevNext/PrevNext";
 
 
 
@@ -42,7 +42,6 @@ export default function ProjectDetails() {
       window.scrollTo(0, 0);
     }
   };
-
   const handleNext = () => {
     if (nextId > Data.length) {
       navigate("/project/1");
@@ -53,19 +52,13 @@ export default function ProjectDetails() {
     }
   };
 
+  // Données pour le bouton
   const dataBtn = {
     data: "LET'S TALK",
     destination: "/contact"
   }
 
-  // const [modal, setModal] = useState(false);
-  // const [imgUrl, setImgUrl] = useState();
-
-  // const handleClick = img => {
-  //   setImgUrl(img);
-  //   setModal(!modal);
-  // }
-
+  // Modification de la vitesse du scroll pour img
   const img = useRef();
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -110,25 +103,13 @@ export default function ProjectDetails() {
               <img src={project.cover} alt="" />
             </div>
             <div className="links-wrapper">
-              <h2>Want more juicy details on this project?</h2>
+              <h2>Want more juicy details about this project?</h2>
               <div className="links">
                 <MainButton dataBtn={dataBtn}/>
                 <a href="#" className="github">Look on GitHub<TfiArrowTopRight/></a>
               </div>
             </div>
-            <div className="prevnext-wrapper">
-              <div className="btn" data-img={prevProject.cover} onClick={() => handlePrev()}>
-                <span>Previous project</span>
-                {prevProject.title}
-                <Cursor left="left" />
-              </div>
-              <div className="line"></div>
-              <div className="btn" data-img={nextProject.cover} onClick={() => handleNext()}>
-                <span>Next project</span>
-                {nextProject.title}
-                <Cursor right="right" />
-              </div>
-            </div>
+            <PrevNext prevProject={prevProject} nextProject={nextProject} handlePrev={() => handlePrev()} handleNext={() => handleNext()}/>
           </div>
           <ScrollTop/>
         </section>
