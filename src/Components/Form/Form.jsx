@@ -1,8 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Form.scss";
 import MainButton from "../../Components/MainButton/MainButton";
-import { AiOutlineUser } from "react-icons/ai";
-import { AiOutlineComment } from "react-icons/ai";
+import emailjs from '@emailjs/browser';
 
 export default function Form() {
   const dataBtn = {
@@ -28,7 +27,7 @@ export default function Form() {
           </label>
           <input
             type="email"
-            name="email"
+            name="user_email"
             id="email"
             required
             onChange={(e) => handleChangeInput(e)}

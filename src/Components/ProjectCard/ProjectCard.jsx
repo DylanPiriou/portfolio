@@ -3,7 +3,6 @@ import { NavLink } from 'react-router-dom';
 import { TfiArrowRight } from "react-icons/tfi"
 
 export default function ProjectCard({ data, handleHover }) {
-
   return (
     <NavLink
         className="project-card"

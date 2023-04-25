@@ -38,9 +38,9 @@ export default function Navbar() {
         </nav>
           <div className="burger-menu" onClick={() => handleBurger()}>
             {close ? (
-              <RxHamburgerMenu className="burger-icon" />
+              <div className="open-icon">OPEN</div>
             ) : (
-              <RxCross1 className="close-icon" />
+              <div className="close-icon">CLOSE</div>
             )}
           </div>
       </div>

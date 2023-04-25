@@ -9,8 +9,6 @@ import { TfiArrowTopRight } from "react-icons/tfi";
 import ScrollTop from "../../Components/ScrollTop/ScrollTop";
 import PrevNext from "../../Components/PrevNext/PrevNext";
 
-
-
 export default function ProjectDetails() {
   // Récupère l'id du projet dans l'URL et vérifie qu'il existe dans le JSON
   const { id } = useParams();
@@ -63,7 +61,7 @@ export default function ProjectDetails() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const scrollAmount = window.scrollY;
-      const newPosition = scrollAmount * .5;
+      const newPosition = scrollAmount * .6;
       if(img.current){
         img.current.style.transform = `translateY(${newPosition}px)`;
       }
@@ -97,19 +95,21 @@ export default function ProjectDetails() {
               </div>
             </div>
             <div className="img-wrapper">
-              <img src={project.cover} alt="" />
+              <img src="/1.jpg" alt="" />
             </div>
             <div className="img-wrapper">
               <img src={project.cover} alt="" />
             </div>
-            <div className="links-wrapper">
-              <h2>Want more juicy details about this project?</h2>
-              <div className="links">
-                <MainButton dataBtn={dataBtn}/>
-                <a href="#" className="github">Look on GitHub<TfiArrowTopRight/></a>
+            <div className="bottom-container">
+              <div className="links-wrapper">
+                <h2>Want more juicy details about this project?</h2>
+                <div className="links">
+                  <MainButton dataBtn={dataBtn}/>
+                  <a href="#" className="github">Look on GitHub<TfiArrowTopRight/></a>
+                </div>
               </div>
+              <PrevNext prevProject={prevProject} nextProject={nextProject} handlePrev={() => handlePrev()} handleNext={() => handleNext()}/>
             </div>
-            <PrevNext prevProject={prevProject} nextProject={nextProject} handlePrev={() => handlePrev()} handleNext={() => handleNext()}/>
           </div>
           <ScrollTop/>
         </section>

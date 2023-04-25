@@ -10,20 +10,7 @@
     font-size: 62px;
     color: $green;
     text-decoration: none;
-    position: relative;
     border-bottom: 1px solid $black1;
-
-    &:not(:first-of-type){
-        &::before{
-            content: "";
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 1px;
-            background: linear-gradient(to right, transparent, $black1, transparent)
-        }
-    }
 
     .project-card__wrapper{
         width: 100%;
@@ -39,7 +26,7 @@
             display: flex;
             align-items: flex-start;
             justify-content: flex-start;
-            font-size: clamp(12px, 2vw, 22px);
+            font-size: clamp(12px, 2vw, 16px);
             color: $green1;
             font-weight: 200;
 
@@ -67,6 +54,7 @@
             align-items: center;
             justify-content: flex-end;
             @include title;
+            font-size: clamp(50px, 10vw, 180px);
             position: relative;
 
             .title{

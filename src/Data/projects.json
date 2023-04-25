@@ -3,7 +3,7 @@
         "id": 1,
         "title": "NewFlix",
         "subtitle": "Cinema application like Netflix.",
-        "cover": "/newflix_main.svg",
+        "cover": "/5.png",
         "tags": [
             "HTML5",
             "CSS3",
@@ -13,14 +13,14 @@
         ],
         "stack": "Frontend",
         "date": "2022",
-        "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
+        "description": "NewFlix is a web application developed with the ReactJS framework that allows you to discover a wide selection of movies categorized by genre. This platform is connected to the TMdb API, which guarantees you a constantly updated database. Thanks to its advanced search system, you can quickly find the movies you want to watch. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens."
 
     },
     {
         "id": 2,
         "title": "Bluel",
         "subtitle": "Dynamic web page for a Photographer.",
-        "cover": "/bluel_main.svg",
+        "cover": "/2.png",
         "tags": [
             "HTML5",
             "CSS3",
@@ -30,14 +30,14 @@
         ],
         "stack": "Frontend",
         "date": "2023",
-        "description": "The project aimed to create a portfolio for an interior architect and make it dynamic by using vanilla JavaScript. The portfolio was connected to a REST API, which allowed access to real-time data. To ensure security, it was possible to log in securely using a JWT. The portfolio was also interactive, with the ability to add or delete works using a modal. This feature was only available to logged-in users to preserve site security. In summary, the project involved creating an online portfolio for an interior architect while integrating dynamic and interactive features. Using JavaScript and a REST API, the site was user-friendly and provided an enjoyable user experience."
+        "description": "This project is an online portfolio for an interior architect, using vanilla JavaScript to make it dynamic and interactive. The portfolio is linked to a REST API, enabling real-time data access, and includes a secure login using a JWT to ensure security. Logged-in users can add or delete works using a modal, while non-logged-in users can only view the portfolio. Overall, the project is designed to be user-friendly and provide an enjoyable user experience."
 
     },
     {
         "id": 3,
         "title": "Grimoire",
         "subtitle": "Backend of a book review website.",
-        "cover": "/grimoire_main.svg",
+        "cover": "/3.png",
         "tags": [
             "NodeJS",
             "Express",
@@ -47,13 +47,13 @@
         ],
         "stack": "Backend",
         "date": "2023",
-        "description": "The project involved creating the backend of a website called Mon Vieux-Grimoire which allowed users to rate books among themselves. The backend was developed using Node.js and Express.js to create a REST API, which enabled users to perform CRUD operations on books.To ensure the security of the site, users were able to create an account and securely log in using JWT (JSON Web Token) and Helmet. Finally, to store the site's data, a NoSQL MongoDB database was used with the Mongoose framework. In summary, the project aimed to create a secure REST API for users to interact with the MongoDB database, allowing them to perform CRUD operations on books."
+        "description": "The project involves creating a secure backend for a website called Mon Vieux-Grimoire (developed in ReactJS), which allows users to add, delete & rate books. The backend was developed using Node.js and Express.js to create a REST API that enables users to perform CRUD operations on books. Users can also create a secure account and log in using JWT (JSON Web Token) and Helmet. To store the site's data, a NoSQL MongoDB database was used with the Mongoose framework. The overall goal of the project was to create a user-friendly and secure way for users to interact with the MongoDB database and perform CRUD operations on books."
     },
     {
         "id": 4,
         "title": "Carducci",
         "subtitle": "Debug and optimize a photographer's website.",
-        "cover": "/carducci_main.svg",
+        "cover": "/4.png",
         "tags": [
             "HTML5",
             "CSS3",
@@ -64,14 +64,13 @@
         ],
         "stack": "Frontend",
         "date": "2023",
-        "description": "The project involved optimizing Nina Carducci's website by globally optimizing the site, both in terms of performance and SEO. This optimization included implementing local SEO using Schema.org, adding metadata for social media, making accessibility-related modifications to the site, and producing an optimization report that presented all actions taken and their impact. The global optimization of the site involved improving performance in terms of page loading speed and user experience. With regards to SEO, the local SEO strategy based on Schema.org was implemented to optimize Nina Carducci's visibility on local search results. The addition of metadata for social media facilitated content sharing on these platforms, which improved audience reach and engagement. Accessibility-related modifications ensured that the site was accessible to all users, including those with disabilities or physical limitations. This may have included adding tags and attributes for screen readers, improving text readability, and implementing simplified navigation options. Finally, an optimization report was produced to present all actions taken and their impact. This report allowed Nina Carducci to monitor and evaluate the improvements made to the website."
-
+        "description": "The project focuses on optimizing Nina Carducci's website to improve its performance and SEO. Local SEO using Schema.org was implemented, metadata was added for social media, two bugs in JQuery code were fixed, and accessibility-related modifications were made to the site. These actions improved the website's visibility on search results, audience reach and engagement, and accessibility for all users. An optimization report was also produced to evaluate the impact of the actions taken."
     },
     {
         "id": 5,
         "title": "Kasa",
         "subtitle": "Real estate rental web application.",
-        "cover": "/kasa_main.svg",
+        "cover": "/1.png",
         "tags": [
             "HTML5",
             "CSS3",
@@ -80,22 +79,6 @@
         ],
         "stack": "Frontend",
         "date": "2023",
-        "description": "The project involved creating the interface for Kasa, a website for peer-to-peer apartment rentals. To accomplish this, we chose to use the ReactJS JavaScript library to build a responsive and dynamic website. We also utilized reusable components to simplify the development and maintenance of the site. Kasa's interface was equipped with the React Router library, which made it easy to manage navigation between the various pages of the site. To store the information required for the proper functioning of the interface, we used JSON files. These files contained data related to the apartments offered for rent, as well as all the necessary information for booking, such as prices and availability. Thanks to the use of ReactJS, we were able to create a fast, smooth, and user-friendly interface for visitors to the site. The site's structure was designed to provide a pleasant and intuitive user experience, with search and filtering features to help users find an apartment based on their criteria. In summary, our project resulted in the creation of a functional, fast, user-friendly, and ergonomic website for Kasa, which allows users to easily find apartments for rent from peer-to-peer rental listings."
-
-    },
-    {
-        "id": 6,
-        "title": "Project 6",
-        "subtitle": "Illa si quantum natura quae potest quale tempus quodam sensus.",
-        "cover": "/2.jpg",
-        "tags": [
-            "HTML5",
-            "CSS3",
-            "JavaScript",
-            "ReactJS"
-        ],
-        "stack": "Backend",
-        "date": "2023",
-        "description": "In et scholis acciverat iam Gentilibus audiens et se ad esse mandabat illi tumultuosum conpererat palatinis adiumenta otium esse adiumenta militare Caesarem properare Constantius blande Scutariis cum communi fere iussit esse largitionum tumultuosum Italiam scholis eius Caesarem et conpererat tumultuosum quem Thalassio odisse acciverat Gallum Italiam audiens palatinis audiens Gentilibus."
+        "description": "The project involved developing the interface for Kasa, a peer-to-peer apartment rental website. ReactJS library was used to create a responsive and dynamic website with reusable components to simplify development and maintenance. The interface includes React Router for easy navigation and JSON files to store apartment rental information and booking details. The use of ReactJS has resulted in a fast, smooth, and user-friendly interface for a pleasant and intuitive user experience. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens."
     }
 ]

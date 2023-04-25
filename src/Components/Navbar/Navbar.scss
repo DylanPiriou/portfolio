@@ -86,11 +86,14 @@
             display: none;
             position: fixed;
             right: 3vw;
-            top: 3.5vh;
-            width: 30px;
-            aspect-ratio: 1;
+            padding: 1px 10px;
+            border-radius: 25px;
+            color: $green;
+            outline: 1px solid $green1;
+            font-size: 16px;
+            z-index: 999;
 
-            .close-icon{
+            .open-icon{
                 display: none;
             }
         }
@@ -99,10 +102,6 @@
 
         @media (max-width: 1040px){
             nav{
-                display: none;
-                transition: none;
-            }
-            nav.active{
                 position: fixed;
                 left: 0;
                 top: 0;
@@ -111,36 +110,29 @@
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
-                padding: 0 10vw;
+                gap: 5vw;
                 background: $black;
+                transform: translateX(100%);
                 z-index: 1;
-                transition: transform .3s linear;
-
-                &::before{
-                    content: "";
-                    position: absolute;
-                    left: 0;
-                    top: 0;
-                    width: 5px;
-                    height: 100%;
-                    background: $green1;
-                }
+                transition: transform .3s ease;
 
                 a{
+                    width: 100%;
                     font-size: 42px;
-                    font-weight: 200
+                    font-weight: 200;
+                    padding-left: 10vw;
+                    border-bottom: 1px solid $black1;
                 }
-
             }
+
+            nav.active{
+                transform: translateX(0);
+            }
+
             .burger-menu{
                 @include flex-center;
-                width: 25px;
-                aspect-ratio: 1;
-                font-size: 22px;
-                color: $green;
-                z-index: 999;
 
-                .burger-icon{
+                .open-icon{
                     display: block;
                 }
 
