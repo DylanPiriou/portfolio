@@ -24,7 +24,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 35vw;
+        gap: 10vw;
         padding: 0 3vw;
 
         .img-box{
@@ -50,7 +50,8 @@
 
         .title-wrapper {
             width: 100%;
-            height: 60vh;
+            height: 40vw;
+            max-height: 80vh;
             display: flex;
             flex-direction: column;
             align-items: flex-start;
@@ -79,7 +80,6 @@
 
         .content-wrapper {
             width: 100%;
-            height: 80vh;
             display: flex;
             align-items: center;
             justify-content: flex-start;
@@ -109,6 +109,7 @@
                         padding: 10px 15px;
                         border-radius: 50px;
                         outline: 1px solid $grey;
+                        font-size: clamp(14px, 2vw, 20px);
                         cursor: default;
                         transition: outline .2s ease;
 
@@ -142,13 +143,13 @@
 
         .bottom-container{
             width: 100%;
-            height: 100vh;
+            height: 100vw;
+            max-height: 80vh;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
             background: $black;
-            z-index: 1;
 
             .links-wrapper {
                 flex: 1;

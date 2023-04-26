@@ -61,7 +61,7 @@ export default function ProjectDetails() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const scrollAmount = window.scrollY;
-      const newPosition = scrollAmount * .6;
+      const newPosition = scrollAmount * .3;
       if(img.current){
         img.current.style.transform = `translateY(${newPosition}px)`;
       }
@@ -93,12 +93,6 @@ export default function ProjectDetails() {
                   })}
                 </div>
               </div>
-            </div>
-            <div className="img-wrapper">
-              <img src="/1.jpg" alt="" />
-            </div>
-            <div className="img-wrapper">
-              <img src={project.cover} alt="" />
             </div>
             <div className="bottom-container">
               <div className="links-wrapper">

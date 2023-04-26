@@ -73,12 +73,27 @@
         "cover": "/1.png",
         "tags": [
             "HTML5",
-            "CSS3",
+            "SCSS",
             "JavaScript",
             "ReactJS"
         ],
         "stack": "Frontend",
         "date": "2023",
         "description": "The project involved developing the interface for Kasa, a peer-to-peer apartment rental website. ReactJS library was used to create a responsive and dynamic website with reusable components to simplify development and maintenance. The interface includes React Router for easy navigation and JSON files to store apartment rental information and booking details. The use of ReactJS has resulted in a fast, smooth, and user-friendly interface for a pleasant and intuitive user experience. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens."
+    },
+    {
+        "id": 6,
+        "title": "Portfolio",
+        "subtitle": "Personal frent-end web portfolio.",
+        "cover": "/6.png",
+        "tags": [
+            "HTML5",
+            "SCSS",
+            "JavaScript",
+            "ReactJS"
+        ],
+        "stack": "Frontend",
+        "date": "2023",
+        "description": "This project consists in developing my personal portfolio as a web developer. The purpose of this site is to present my work, my skills, and allow visitors to contact me. This project has been developed with the ReactJS framework (using vitejs) and the SCSS pre-processor for the styling. Special care was given to the user experience with smooth and fluid animations."
     }
 ]
