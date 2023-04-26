@@ -1,7 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Form.scss";
 import MainButton from "../../Components/MainButton/MainButton";
-import emailjs from '@emailjs/browser';
 
 export default function Form() {
   const dataBtn = {
