@@ -13,7 +13,8 @@
         ],
         "stack": "Frontend",
         "date": "2022",
-        "description": "NewFlix is a web application developed with the ReactJS framework that allows you to discover a wide selection of movies categorized by genre. This platform is connected to the TMdb API, which guarantees you a constantly updated database. Thanks to its advanced search system, you can quickly find the movies you want to watch. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens."
+        "description": "NewFlix is a web application developed with the ReactJS framework that allows you to discover a wide selection of movies categorized by genre. This platform is connected to the TMdb API, which guarantees you a constantly updated database. Thanks to its advanced search system, you can quickly find the movies you want to watch. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens.",
+        "link": "https://github.com/DylanPiriou/MovieHub"
 
     },
     {
@@ -30,7 +31,8 @@
         ],
         "stack": "Frontend",
         "date": "2023",
-        "description": "This project is an online portfolio for an interior architect, using vanilla JavaScript to make it dynamic and interactive. The portfolio is linked to a REST API, enabling real-time data access, and includes a secure login using a JWT to ensure security. Logged-in users can add or delete works using a modal, while non-logged-in users can only view the portfolio. Overall, the project is designed to be user-friendly and provide an enjoyable user experience."
+        "description": "This project is an online portfolio for an interior architect, using vanilla JavaScript to make it dynamic and interactive. The portfolio is linked to a REST API, enabling real-time data access, and includes a secure login using a JWT to ensure security. Logged-in users can add or delete works using a modal, while non-logged-in users can only view the portfolio. Overall, the project is designed to be user-friendly and provide an enjoyable user experience.",
+        "link": "https://github.com/DylanPiriou/Site-Bluel"
 
     },
     {
@@ -47,7 +49,8 @@
         ],
         "stack": "Backend",
         "date": "2023",
-        "description": "The project involves creating a secure backend for a website called Mon Vieux-Grimoire (developed in ReactJS), which allows users to add, delete & rate books. The backend was developed using Node.js and Express.js to create a REST API that enables users to perform CRUD operations on books. Users can also create a secure account and log in using JWT (JSON Web Token) and Helmet. To store the site's data, a NoSQL MongoDB database was used with the Mongoose framework. The overall goal of the project was to create a user-friendly and secure way for users to interact with the MongoDB database and perform CRUD operations on books."
+        "description": "The project involves creating a secure backend for a website called Mon Vieux-Grimoire (developed in ReactJS), which allows users to add, delete & rate books. The backend was developed using Node.js and Express.js to create a REST API that enables users to perform CRUD operations on books. Users can also create a secure account and log in using JWT (JSON Web Token) and Helmet. To store the site's data, a NoSQL MongoDB database was used with the Mongoose framework. The overall goal of the project was to create a user-friendly and secure way for users to interact with the MongoDB database and perform CRUD operations on books.",
+        "link": "https://github.com/DylanPiriou/Mon-Vieux-Grimoire"
     },
     {
         "id": 4,
@@ -64,7 +67,8 @@
         ],
         "stack": "Frontend",
         "date": "2023",
-        "description": "The project focuses on optimizing Nina Carducci's website to improve its performance and SEO. Local SEO using Schema.org was implemented, metadata was added for social media, two bugs in JQuery code were fixed, and accessibility-related modifications were made to the site. These actions improved the website's visibility on search results, audience reach and engagement, and accessibility for all users. An optimization report was also produced to evaluate the impact of the actions taken."
+        "description": "The project focuses on optimizing Nina Carducci's website to improve its performance and SEO. Local SEO using Schema.org was implemented, metadata was added for social media, two bugs in JQuery code were fixed, and accessibility-related modifications were made to the site. These actions improved the website's visibility on search results, audience reach and engagement, and accessibility for all users. An optimization report was also produced to evaluate the impact of the actions taken.",
+        "link": "https://github.com/DylanPiriou/nina-carducci"
     },
     {
         "id": 5,
@@ -79,7 +83,8 @@
         ],
         "stack": "Frontend",
         "date": "2023",
-        "description": "The project involved developing the interface for Kasa, a peer-to-peer apartment rental website. ReactJS library was used to create a responsive and dynamic website with reusable components to simplify development and maintenance. The interface includes React Router for easy navigation and JSON files to store apartment rental information and booking details. The use of ReactJS has resulted in a fast, smooth, and user-friendly interface for a pleasant and intuitive user experience. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens."
+        "description": "The project involved developing the interface for Kasa, a peer-to-peer apartment rental website. ReactJS library was used to create a responsive and dynamic website with reusable components to simplify development and maintenance. The interface includes React Router for easy navigation and JSON files to store apartment rental information and booking details. The use of ReactJS has resulted in a fast, smooth, and user-friendly interface for a pleasant and intuitive user experience. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens.",
+        "link": "https://github.com/DylanPiriou/Kasa-App"
     },
     {
         "id": 6,
@@ -94,6 +99,7 @@
         ],
         "stack": "Frontend",
         "date": "2023",
-        "description": "This project consists in developing my personal portfolio as a web developer. The purpose of this site is to present my work, my skills, and allow visitors to contact me. This project has been developed with the ReactJS framework (using vitejs) and the SCSS pre-processor for the styling. Special care was given to the user experience with smooth and fluid animations."
+        "description": "This project consists in developing my personal portfolio as a web developer. The purpose of this site is to present my work, my skills, and allow visitors to contact me. This project has been developed with the ReactJS framework (using vitejs) and the SCSS pre-processor for the styling. Special care was given to the user experience with smooth and fluid animations.",
+        "link": "https://github.com/DylanPiriou/portfolio"
     }
 ]

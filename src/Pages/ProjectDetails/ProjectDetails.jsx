@@ -16,8 +16,8 @@ export default function ProjectDetails() {
 
   // Navigation entre les projets
   const navigate = useNavigate();
-  const prevId = parseInt(id, 10) - 1;
-  const nextId = parseInt(id, 10) + 1;
+  const prevId = +id - 1;
+  const nextId = +id + 1;
 
   // Gestion des projets suivants et précédents
   const prevProject =
@@ -99,7 +99,7 @@ export default function ProjectDetails() {
                 <h2>Want more juicy details about this project?</h2>
                 <div className="links">
                   <MainButton dataBtn={dataBtn}/>
-                  <a href="#" className="github">Look on GitHub<TfiArrowTopRight/></a>
+                  <a href={project.link} target="_blank" className="github">Look on GitHub<TfiArrowTopRight/></a>
                 </div>
               </div>
               <PrevNext prevProject={prevProject} nextProject={nextProject} handlePrev={() => handlePrev()} handleNext={() => handleNext()}/>

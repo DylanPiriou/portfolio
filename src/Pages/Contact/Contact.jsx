@@ -15,7 +15,7 @@ export default function Contact() {
             <h2>
               <span><span>Wanna</span></span>
               <br />
-              <span><span>— starting</span></span>
+              <span><span>— start</span></span>
               <br />
               <span><span>something ?</span></span>
             </h2>
