@@ -1,23 +1,16 @@
 @import "/src/settings.scss";
 
 .navbar{
+    position: fixed;
+    top: 0;
     width: 100%;
+    max-width: 1750px;
     height: 10vh;
-    // flex: 1;
     @include flex-center;
     padding: 0 3vw;
+    background: $black;
+    border-bottom: 1px solid $black1;
     z-index: 2;
-    position: relative;
-
-    &::after{
-        content: "";
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 100%;
-        height: 1px;
-        background: $black1;
-    }
 
     .navbar-flex{
         width: 100%;
@@ -30,15 +23,19 @@
             display: flex;
             text-decoration: none;
             color: $green;
+            font-size: 18px;
             letter-spacing: 1px;
+            font-size: 300;
             
             h1{
-                font-size: 16px;
-                font-weight: 400;
+                font-size: 18px;
+                font-weight: 300;
             }
 
             .param{
+                font-size: 18px;
                 color: $green1;
+                font-weight: 300
             }
         }
 
