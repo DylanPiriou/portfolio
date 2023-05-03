@@ -11,25 +11,31 @@ export default function Form() {
   //   Gestion de la logique d'affichage du formulaire
   const [inputValue, setInputValue] = useState("");
   const [txtAreaValue, setTxtAreaValue] = useState("");
-  const handleChangeInput = (e) => {
-    setInputValue(e.target.value);
-  };
-  const handleChangeTxtArea = (e) => {
-    setTxtAreaValue(e.target.value);
-  };
 
   const form = useRef();
   const message = useRef();
   const handleEmail = (e) => {
     e.preventDefault();
 
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if(!emailRegex.test(inputValue)) {
+      message.current.textContent = "Please enter a valid email address.";
+      message.current.style.color = "red";
+      setTimeout(() => {
+        message.current.textContent = "";
+      }, 2000);
+      return;
+    }
+
     emailjs.sendForm("service_sr7v9re", "template_7j9d53n", form.current, "2YQteyuQrxdcU3Uz3")
-      .then((result) => {
-        console.log(result)
+      .then(() => {
           message.current.textContent = "Mail sent successfully !";
+          message.current.style.color = "#ceff1d";
           setTimeout(() => {
             message.current.textContent = "";
           }, 2000);
+          setInputValue("");
+          setTxtAreaValue("");
       }, (error) => {
           console.log(error.text);
       });
@@ -37,7 +43,6 @@ export default function Form() {
 
   return (
     <form ref={form} onSubmit={(e) => handleEmail(e)}>
-      <div className="input-form">
         <div className="input-wrapper">
           <label htmlFor="email" className={inputValue ? "up" : "down"}>
             Your email address
@@ -49,11 +54,9 @@ export default function Form() {
             value={inputValue}
             required
             autoComplete="off"
-            onChange={(e) => handleChangeInput(e)}
+            onChange={e => setInputValue(e.target.value)}
           />
         </div>
-      </div>
-      <div className="input-form">
         <div className="input-wrapper">
           <label htmlFor="message" className={txtAreaValue ? "up" : "down"}>
             Your message
@@ -64,13 +67,11 @@ export default function Form() {
             rows="1"
             value={txtAreaValue}
             required
-            onChange={(e) => handleChangeTxtArea(e)}
+            onChange={e => setTxtAreaValue(e.target.value)}
           ></textarea>
         </div>
+        <input type="submit"/>
         <span className="message" ref={message}></span>
-      </div>
-      <input type="submit"/>
-      {/* <MainButton dataBtn={dataBtn} /> */}
     </form>
   );
 }
