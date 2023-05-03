@@ -7,6 +7,7 @@
     @include flex-center;
     flex-direction: column;
     opacity: 0;
+    padding-top: 5vh;
     animation: opacityEffect 1s forwards;
 
     @keyframes opacityEffect {
