@@ -10,7 +10,7 @@ export default function PrevNext({ prevProject, nextProject, handlePrev, handleN
                 data-img={prevProject.cover}
                 onClick={handlePrev}
             >
-                <span>Previous project</span>
+                <span tabIndex="0">Previous project</span>
                 {prevProject.title}
                 <Cursor left="left" />
             </div>
@@ -20,7 +20,7 @@ export default function PrevNext({ prevProject, nextProject, handlePrev, handleN
                 data-img={nextProject.cover}
                 onClick={handleNext}
             >
-                <span>Next project</span>
+                <span tabIndex="0">Next project</span>
                 {nextProject.title}
                 <Cursor right="right" />
             </div>

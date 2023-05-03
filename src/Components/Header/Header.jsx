@@ -34,7 +34,7 @@ export default function Header() {
   return (
     <header ref={header}>
       <div className="title-container">
-        <h2 ref={title}>
+        <h2 tabIndex="0" ref={title}>
           <span className="text-wrapper">
             {splitText[0].map((letter, index) => {
               return <span className="letter" key={index}><span id="first"><span>{letter}</span></span></span>;

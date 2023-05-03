@@ -8,6 +8,7 @@ import MainButton from "../../Components/MainButton/MainButton";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import ScrollTop from "../../Components/ScrollTop/ScrollTop";
 import PrevNext from "../../Components/PrevNext/PrevNext";
+import Technos from "../../Components/Technos/Technos";
 
 export default function ProjectDetails() {
   // Récupère l'id du projet dans l'URL et vérifie qu'il existe dans le JSON
@@ -80,23 +81,23 @@ export default function ProjectDetails() {
               <img src={project.cover} alt="" className="mainImg" ref={img} />
             </div>
             <div className="title-wrapper">
-              <h2 key={`title-${id}`}><span>{project.title}</span></h2>
-              <p key={`subtitle-${id}`}>{project.subtitle}</p>
-              <p key={`date-${id}`}>— {project.date}</p>
+              <h2 tabIndex="0" key={`title-${id}`}><span>{project.title}</span></h2>
+              <p tabIndex="0" key={`subtitle-${id}`}>{project.subtitle}</p>
+              <p tabIndex="0" key={`date-${id}`}>— {project.date}</p>
             </div>
             <div className="content-wrapper">
               <div className="content">
-                <p>{project.description}</p>
+                <p tabIndex="0">{project.description}</p>
                 <div className="stack-wrapper">
                   {project.tags.map((tag, index) => {
-                    return <span key={index}>{tag}</span>
+                    return <Technos key={index} tag={tag} />
                   })}
                 </div>
               </div>
             </div>
             <div className="bottom-container">
               <div className="links-wrapper">
-                <h2>Want more juicy details about this project?</h2>
+                <h2 tabIndex="0">Want more juicy details about this project?</h2>
                 <div className="links">
                   <MainButton dataBtn={dataBtn}/>
                   <a href={project.link} target="_blank" className="github">Look on GitHub<TfiArrowTopRight/></a>

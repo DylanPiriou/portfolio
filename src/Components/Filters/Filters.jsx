@@ -14,7 +14,7 @@ export default function Filters({ filter, setFilter, search, setSearch, handleSe
   return (
     <ul className="filter-btns__wrapper">
       <div className="filter-btn" onClick={() => setFilter("All")}>
-        <label htmlFor="All">All</label>
+        <label htmlFor="All" tabIndex="0">All</label>
         <input
           type="radio"
           name="All"
@@ -24,7 +24,7 @@ export default function Filters({ filter, setFilter, search, setSearch, handleSe
         />
       </div>
       <div className="filter-btn" onClick={() => setFilter("Frontend")}>
-        <label htmlFor="Frontend">Frontend</label>
+        <label htmlFor="Frontend" tabIndex="0">Frontend</label>
         <input
           type="radio"
           name="Frontend"
@@ -34,7 +34,7 @@ export default function Filters({ filter, setFilter, search, setSearch, handleSe
         />
       </div>
       <div className="filter-btn" onClick={() => setFilter("Backend")}>
-        <label htmlFor="Backend">Backend</label>
+        <label htmlFor="Backend" tabIndex="0">Backend</label>
         <input
           type="radio"
           name="Backend"
@@ -46,12 +46,12 @@ export default function Filters({ filter, setFilter, search, setSearch, handleSe
       <div className="search-box" onClick={() => setClicked(true)}>
         {clicked ? (
           <div className="search-wrapper">
-            <div className="icon-box">
+            <div className="icon-box" tabIndex="0">
               <AiOutlineSearch />
             </div>
             <input
               type="text"
-              placeholder="Search by stack"
+              placeholder="Search by tool"
               value={search}
               onChange={handleSearch}
             />

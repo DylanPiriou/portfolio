@@ -12,7 +12,7 @@ export default function Contact() {
       <Navbar/>
       <div className="content-container">
           <div className="top-wrapper">
-            <h2>
+            <h2 tabIndex="0">
               <span><span>Wanna</span></span>
               <br />
               <span><span>— start</span></span>
@@ -24,7 +24,7 @@ export default function Contact() {
           <div className="bottom-wrapper">
             <Networks/>
               <div className="text-wrapper">
-                <p>Feel free to contact me to discuss your next project, or simply have a chat. Let's work together to create something amazing!</p>
+                <p tabIndex="0">Feel free to contact me to discuss your next project, or simply have a chat. Let's work together to create something amazing!</p>
               </div>
 
           </div>

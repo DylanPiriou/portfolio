@@ -26,14 +26,14 @@ export default function About() {
 
         <div className="top-container">
           <div className="title-wrapper" ref={title}>
-            <h2>
+            <h2 tabIndex="0">
               <span><span>I'm Dylan,</span></span>
               <br />
               <span><span>— web developer</span></span>
               <br />
               <span><span>based in France</span></span>
             </h2>
-            <span className="subtitle">/w 1+ year of experience</span>
+            <span className="subtitle" tabIndex="0">/w 1+ year of experience</span>
           </div>
         </div>
 
@@ -42,9 +42,9 @@ export default function About() {
           {Data.map((data, index) => {
             return (
               <p className="text" key={`text-${index}`}>
-              <span>{data.text1}</span>
+              <span tabIndex="0">{data.text1}</span>
               <br />
-              <span>{data.text2}</span>
+              <span tabIndex="0">{data.text2}</span>
               </p>
             );
           })}

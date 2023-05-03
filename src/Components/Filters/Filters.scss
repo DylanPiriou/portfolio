@@ -1,6 +1,6 @@
 @import "/src/settings.scss";
 
-ul{
+.filter-btns__wrapper{
     @include flex-center;
     flex-wrap: wrap;
     gap: 20px;
@@ -32,6 +32,7 @@ ul{
         cursor: pointer;
         
         .search-wrapper{
+            width: 100%;
             @include flex-center;
             height: 3vh;
             background: rgb(8, 8, 8);

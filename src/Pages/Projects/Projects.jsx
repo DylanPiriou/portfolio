@@ -62,7 +62,7 @@ export default function Projects() {
       <div className="projects-grid">
         <Navbar />
         <div className="top-container">
-          <h2>Selected Projects</h2>
+          <h2 tabIndex="0">Selected Projects</h2>
           <Filters
             filter={filter}
             setFilter={setFilter}
