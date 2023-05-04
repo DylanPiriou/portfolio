@@ -9,6 +9,7 @@ import { TfiArrowTopRight } from "react-icons/tfi";
 import ScrollTop from "../../Components/ScrollTop/ScrollTop";
 import PrevNext from "../../Components/PrevNext/PrevNext";
 import Technos from "../../Components/Technos/Technos";
+import Slider from "../../Components/Slider/Slider";
 
 export default function ProjectDetails() {
   // Récupère l'id du projet dans l'URL et vérifie qu'il existe dans le JSON
@@ -77,9 +78,10 @@ export default function ProjectDetails() {
           <div key={`overlay2-${id}`} className="overlay-transition-2"></div>
           <Navbar />
           <div className="project-container">
-            <div className="img-box">
+            {/* <div className="img-box">
               <img src={project.cover} alt="" className="mainImg" ref={img} />
-            </div>
+            </div> */}
+            <Slider project={project} />
             <div className="title-wrapper">
               <h2 tabIndex="0" key={`title-${id}`}><span>{project.title}</span></h2>
               <p tabIndex="0" key={`subtitle-${id}`}>{project.subtitle}</p>

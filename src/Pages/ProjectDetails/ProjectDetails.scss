@@ -28,26 +28,26 @@
         gap: 10vw;
         padding: 0 3vw;
 
-        .img-box{
-            position: absolute;
-            left: 50%;
-            top: 20%;
-            width: 750px;
-            height: 880px;
-            background: $black;
+        // .img-box{
+        //     position: absolute;
+        //     left: 50%;
+        //     top: 20%;
+        //     width: 750px;
+        //     height: 880px;
+        //     background: $black;
 
-            .mainImg {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
+        //     .mainImg {
+        //         width: 100%;
+        //         height: 100%;
+        //         object-fit: cover;
+        //     }
 
-            @media (max-width: 1550px){
-                &{
-                    display: none;
-                }
-            }
-        }
+        //     @media (max-width: 1550px){
+        //         &{
+        //             display: none;
+        //         }
+        //     }
+        // }
 
         .title-wrapper {
             width: 100%;

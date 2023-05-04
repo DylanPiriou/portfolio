@@ -18,6 +18,7 @@ body{
     color: $green;
     background: $black;
     cursor: default;
+    user-select: none;
     
     &::-webkit-scrollbar{
         width: 10px;
