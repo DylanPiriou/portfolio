@@ -23,7 +23,7 @@ export default function ScrollTop() {
   return (
     <>
       {visible && (
-        <button className="scrollTop" onClick={() => handleClick()}>
+        <button className="scrollTop" tabIndex="0" onClick={() => handleClick()}>
           <TfiArrowUp className="arrow" />
         </button>
       )}

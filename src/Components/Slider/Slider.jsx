@@ -37,14 +37,14 @@ export default function Slider({ project }) {
   }
 
   return (
-    <div className="slider" ref={slider}>
+    <div className="slider" ref={slider} tabIndex="0">
         <div className="slider-container" style={{ transform: `translateX(${position}px)` }} >
           {project.slider.map((img, index) => {
             return <img key={`img-${index}`} src={img} className="img-slider" alt="" />
           })}
         </div>
-        <span className="btn" id="prev" onClick={() => handlePrev()}><RxChevronLeft /></span>
-        <span className="btn" id="next" onClick={() => handleNext()}><RxChevronRight /></span>
+        <span className="btn" id="prev" tabIndex="0" onClick={() => handlePrev()}><RxChevronLeft /></span>
+        <span className="btn" id="next" tabIndex="0" onClick={() => handleNext()}><RxChevronRight /></span>
     </div>
   )
 }
