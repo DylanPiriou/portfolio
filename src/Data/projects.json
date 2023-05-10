@@ -1,157 +1,131 @@
 [
-    {
-        "id": 1,
-        "title": "Newflix",
-        "subtitle": "Cinema application like Netflix.",
-        "cover": "/projects/Newflix/newflix.png",
-        "slider": [
-            "/projects/Newflix/newflix1.png",
-            "/projects/Newflix/newflix2.png",
-            "/projects/Newflix/newflix3.png",
-            "/projects/Newflix/newflix4.png"
-        ],
-        "tags": [
-            "HTML5",
-            "SCSS",
-            "JavaScript",
-            "ReactJS",
-            "API"
-        ],
-        "stack": "Frontend",
-        "date": "2022",
-        "description": "NewFlix is a web application developed with the ReactJS framework that allows you to discover a wide selection of movies categorized by genre. This platform is connected to the TMdb API and YouTube API, which guarantees you a constantly updated database. Thanks to its advanced search system, you can quickly find trailer's movies you want to watch. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens.",
-        "link": "https://github.com/DylanPiriou/Newflix"
-
-    },
-    {
-        "id": 2,
-        "title": "Bluel",
-        "subtitle": "Dynamic web page for a Photographer.",
-        "cover": "/projects/Bluel/bluel.png",
-        "tags": [
-            "HTML5",
-            "CSS3",
-            "JavaScript",
-            "API",
-            "JWT"
-        ],
-        "slider": [
-            
-        ],
-        "stack": "Frontend",
-        "date": "2023",
-        "description": "This project is an online portfolio for an interior architect, using vanilla JavaScript to make it dynamic and interactive. The portfolio is linked to a REST API, enabling real-time data access, and includes a secure login using a JWT to ensure security. Logged-in users can add or delete works using a modal, while non-logged-in users can only view the portfolio. Overall, the project is designed to be user-friendly and provide an enjoyable user experience.",
-        "link": "https://github.com/DylanPiriou/Site-Bluel"
-
-    },
-    {
-        "id": 3,
-        "title": "Grimoire",
-        "subtitle": "Backend of a book review website.",
-        "cover": "/projects/Grimoire/grimoire.png",
-        "slider": [
-            
-        ],
-        "tags": [
-            "NodeJS",
-            "Express",
-            "MongoDB",
-            "Helmet",
-            "ReactJS"
-        ],
-        "stack": "Backend",
-        "date": "2023",
-        "description": "The project involves creating a secure backend for a website called Mon Vieux-Grimoire (developed in ReactJS), which allows users to add, delete & rate books. The backend was developed using Node.js and Express.js to create a REST API that enables users to perform CRUD operations on books. Users can also create a secure account and log in using JWT (JSON Web Token) and Helmet. To store the site's data, a NoSQL MongoDB database was used with the Mongoose framework. The overall goal of the project was to create a user-friendly and secure way for users to interact with the MongoDB database and perform CRUD operations on books.",
-        "link": "https://github.com/DylanPiriou/Mon-Vieux-Grimoire"
-    },
-    {
-        "id": 4,
-        "title": "Carducci",
-        "subtitle": "Debug and optimize a photographer's website.",
-        "cover": "/projects/Carducci/carducci.png",
-        "slider": [
-            
-        ],
-        "tags": [
-            "HTML5",
-            "CSS3",
-            "JavaScript",
-            "JQuery",
-            "SEO",
-            "Lighthouse"
-        ],
-        "stack": "Frontend",
-        "date": "2023",
-        "description": "The project focuses on optimizing Nina Carducci's website to improve its performance and SEO. Local SEO using Schema.org was implemented, metadata was added for social media, two bugs in JQuery code were fixed, and accessibility-related modifications were made to the site. These actions improved the website's visibility on search results, audience reach and engagement, and accessibility for all users. An optimization report was also produced to evaluate the impact of the actions taken.",
-        "link": "https://github.com/DylanPiriou/nina-carducci"
-    },
-    {
-        "id": 5,
-        "title": "Kasa",
-        "subtitle": "Real estate rental web application.",
-        "cover": "/projects/Kasa/kasa.png",
-        "slider": [
-            "/projects/Kasa/kasa1.png",
-            "/projects/Kasa/kasa2.png",
-            "/projects/Kasa/kasa3.png"
-        ],
-        "tags": [
-            "HTML5",
-            "SCSS",
-            "JavaScript",
-            "ReactJS"
-        ],
-        "stack": "Frontend",
-        "date": "2023",
-        "description": "The project involved developing the interface for Kasa, a peer-to-peer apartment rental website. ReactJS library was used to create a responsive and dynamic website with reusable components to simplify development and maintenance. The interface includes React Router for easy navigation and JSON files to store apartment rental information and booking details. The use of ReactJS has resulted in a fast, smooth, and user-friendly interface for a pleasant and intuitive user experience. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens.",
-        "link": "https://github.com/DylanPiriou/Kasa-App"
-    },
-    {
-        "id": 6,
-        "title": "CollabText",
-        "subtitle": "Collaborative web application inspired by Google Doc.",
-        "cover": "/projects/Newflix/newflix.png",
-        "slider": [
-            "/projects/1.png",
-            "/projects/2.jpg",
-            "/projects/3.jpg",
-            "/projects/4.jpg"
-        ],
-        "tags": [
-            "HTML5",
-            "SCSS",
-            "JavaScript",
-            "ReactJS",
-            "Quill",
-            "Socket.io",
-            "Mongoose",
-            "MongoDB"
-        ],
-        "stack": "Backend",
-        "date": "2023",
-        "description": "The project is a collaborative web application inspired by Google Docs that allows users to edit documents and communicate in real-time. The application was developed using ReactJS (with ViteJS) and SCSS for styling. Quill was chosen as text editor, a rich text tool that allows for simple and intuitive text formatting. I also integrated Socket.IO for real-time communication between users, offering a collaborative real-time experience. Finally, for data management, i chose MongoDB, a NoSQL database that offers high flexibility for managing documents.",
-        "link": "https://github.com/DylanPiriou/CollabText"
-    },
-    {
-        "id": 7,
-        "title": "Portfolio",
-        "subtitle": "Personal frent-end web portfolio.",
-        "cover": "/projects/Portfolio/portfolio.png",
-        "slider": [
-            "/projects/1.png",
-            "/projects/2.jpg",
-            "/projects/3.jpg",
-            "/projects/4.jpg"
-        ],
-        "tags": [
-            "HTML5",
-            "SCSS",
-            "JavaScript",
-            "ReactJS"
-        ],
-        "stack": "Frontend",
-        "date": "2023",
-        "description": "This project consists in developing my personal portfolio as a web developer. The purpose of this site is to present my work, my skills, and allow visitors to contact me. This project has been developed with the ReactJS framework (using vitejs) and the SCSS pre-processor for the styling. Special care was given to the user experience with smooth and fluid animations.",
-        "link": "https://github.com/DylanPiriou/portfolio"
-    }
+  {
+    "id": 1,
+    "title": "Newflix",
+    "subtitle": "Cinema application like Netflix.",
+    "cover": "/src/assets/Newflix/newflix.png",
+    "slider": [
+      "/src/assets/Newflix/newflix1.png",
+      "/src/assets/Newflix/newflix2.png",
+      "/src/assets/Newflix/newflix3.png",
+      "/src/assets/Newflix/newflix4.png"
+    ],
+    "tags": ["HTML5", "SCSS", "JavaScript", "ReactJS", "API"],
+    "stack": "Frontend",
+    "date": "2022",
+    "description": "NewFlix is a web application developed with the ReactJS framework that allows you to discover a wide selection of movies categorized by genre. This platform is connected to the TMdb API and YouTube API, which guarantees you a constantly updated database. Thanks to its advanced search system, you can quickly find trailer's movies you want to watch. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens.",
+    "link": "https://github.com/DylanPiriou/Newflix"
+  },
+  {
+    "id": 2,
+    "title": "Bluel",
+    "subtitle": "Dynamic web page for a Photographer.",
+    "cover": "/src/assets/Bluel/bluel.png",
+    "tags": ["HTML5", "CSS3", "JavaScript", "API", "JWT"],
+    "slider": [
+      "/src/assets/Bluel/bluel1.png",
+      "/src/assets/Bluel/bluel2.png",
+      "/src/assets/Bluel/bluel3.png",
+      "/src/assets/Bluel/bluel4.png",
+      "/src/assets/Bluel/bluel5.png"
+    ],
+    "stack": "Frontend",
+    "date": "2023",
+    "description": "This project is an online portfolio for an interior architect, using vanilla JavaScript to make it dynamic and interactive. The portfolio is linked to a REST API, enabling real-time data access, and includes a secure login using a JWT to ensure security. Logged-in users can add or delete works using a modal, while non-logged-in users can only view the portfolio. Overall, the project is designed to be user-friendly and provide an enjoyable user experience.",
+    "link": "https://github.com/DylanPiriou/Site-Bluel"
+  },
+  {
+    "id": 3,
+    "title": "Grimoire",
+    "subtitle": "Backend of a book review website.",
+    "cover": "/src/assets/Grimoire/grimoire.png",
+    "slider": [
+      "/src/assets/Grimoire/grimoire1.png",
+      "/src/assets/Grimoire/grimoire2.png",
+      "/src/assets/Grimoire/grimoire3.png",
+      "/src/assets/Grimoire/grimoire4.png",
+      "/src/assets/Grimoire/grimoire5.png",
+      "/src/assets/Grimoire/grimoire6.png"
+    ],
+    "tags": ["NodeJS", "Express", "MongoDB", "Helmet", "ReactJS"],
+    "stack": "Backend",
+    "date": "2023",
+    "description": "The project involves creating a secure backend for a website called Mon Vieux-Grimoire (developed in ReactJS), which allows users to add, delete & rate books. The backend was developed using Node.js and Express.js to create a REST API that enables users to perform CRUD operations on books. Users can also create a secure account and log in using JWT (JSON Web Token) and Helmet. To store the site's data, a NoSQL MongoDB database was used with the Mongoose framework. The overall goal of the project was to create a user-friendly and secure way for users to interact with the MongoDB database and perform CRUD operations on books.",
+    "link": "https://github.com/DylanPiriou/Mon-Vieux-Grimoire"
+  },
+  {
+    "id": 4,
+    "title": "Carducci",
+    "subtitle": "Debug and optimize a photographer's website.",
+    "cover": "/src/assets/Carducci/carducci.png",
+    "slider": [
+      "/src/assets/Carducci/carducci1.png",
+      "/src/assets/Carducci/carducci2.png",
+      "/src/assets/Carducci/carducci3.png",
+      "/src/assets/Carducci/carducci4.png"
+    ],
+    "tags": ["HTML5", "CSS3", "JavaScript", "JQuery", "SEO", "Lighthouse"],
+    "stack": "Frontend",
+    "date": "2023",
+    "description": "The project focuses on optimizing Nina Carducci's website to improve its performance and SEO. Local SEO using Schema.org was implemented, metadata was added for social media, two bugs in JQuery code were fixed, and accessibility-related modifications were made to the site. These actions improved the website's visibility on search results, audience reach and engagement, and accessibility for all users. An optimization report was also produced to evaluate the impact of the actions taken.",
+    "link": "https://github.com/DylanPiriou/nina-carducci"
+  },
+  {
+    "id": 5,
+    "title": "Kasa",
+    "subtitle": "Real estate rental web application.",
+    "cover": "/src/assets/Kasa/kasa.png",
+    "slider": [
+      "/src/assets/Kasa/kasa1.png",
+      "/src/assets/Kasa/kasa2.png",
+      "/src/assets/Kasa/kasa3.png"
+    ],
+    "tags": ["HTML5", "SCSS", "JavaScript", "ReactJS"],
+    "stack": "Frontend",
+    "date": "2023",
+    "description": "The project involved developing the interface for Kasa, a peer-to-peer apartment rental website. ReactJS library was used to create a responsive and dynamic website with reusable components to simplify development and maintenance. The interface includes React Router for easy navigation and JSON files to store apartment rental information and booking details. The use of ReactJS has resulted in a fast, smooth, and user-friendly interface for a pleasant and intuitive user experience. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens.",
+    "link": "https://github.com/DylanPiriou/Kasa-App"
+  },
+  {
+    "id": 6,
+    "title": "CollabText",
+    "subtitle": "Collaborative web application inspired by Google Doc.",
+    "cover": "/src/assets/Newflix/newflix.png",
+    "slider": [
+      "/src/assets/CollabText/collabtext1.png",
+      "/src/assets/CollabText/collabtext2.png",
+      "/src/assets/CollabText/collabtext3.png"
+    ],
+    "tags": [
+      "HTML5",
+      "SCSS",
+      "JavaScript",
+      "ReactJS",
+      "Quill",
+      "Socket.io",
+      "Mongoose",
+      "MongoDB"
+    ],
+    "stack": "Backend",
+    "date": "2023",
+    "description": "The project is a collaborative web application inspired by Google Docs that allows users to edit documents and communicate in real-time. The application was developed using ReactJS (with ViteJS) and SCSS for styling. Quill was chosen as text editor, a rich text tool that allows for simple and intuitive text formatting. I also integrated Socket.IO for real-time communication between users, offering a collaborative real-time experience. Finally, for data management, i chose MongoDB, a NoSQL database that offers high flexibility for managing documents.",
+    "link": "https://github.com/DylanPiriou/CollabText"
+  },
+  {
+    "id": 7,
+    "title": "Portfolio",
+    "subtitle": "Personal frent-end web portfolio.",
+    "cover": "/src/assets/Portfolio/portfolio.png",
+    "slider": [
+      "/src/assets/1.png",
+      "/src/assets/2.jpg",
+      "/src/assets/3.jpg",
+      "/src/assets/4.jpg"
+    ],
+    "tags": ["HTML5", "SCSS", "JavaScript", "ReactJS"],
+    "stack": "Frontend",
+    "date": "2023",
+    "description": "This project consists in developing my personal portfolio as a web developer. The purpose of this site is to present my work, my skills, and allow visitors to contact me. This project has been developed with the ReactJS framework (using vitejs) and the SCSS pre-processor for the styling. Special care was given to the user experience with smooth and fluid animations.",
+    "link": "https://github.com/DylanPiriou/portfolio"
+  }
 ]
