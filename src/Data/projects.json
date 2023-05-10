@@ -90,7 +90,7 @@
     "id": 6,
     "title": "CollabText",
     "subtitle": "Collaborative web application inspired by Google Doc.",
-    "cover": "/src/assets/Newflix/newflix.png",
+    "cover": "/src/assets/CollabText/collabtext.png",
     "slider": [
       "/src/assets/CollabText/collabtext1.png",
       "/src/assets/CollabText/collabtext2.png",
