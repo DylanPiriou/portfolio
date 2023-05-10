@@ -3,12 +3,12 @@
     "id": 1,
     "title": "Newflix",
     "subtitle": "Cinema application like Netflix.",
-    "cover": "/src/assets/Newflix/newflix.png",
+    "cover": "/assets/Newflix/newflix.png",
     "slider": [
-      "/src/assets/Newflix/newflix1.png",
-      "/src/assets/Newflix/newflix2.png",
-      "/src/assets/Newflix/newflix3.png",
-      "/src/assets/Newflix/newflix4.png"
+      "/assets/Newflix/newflix1.png",
+      "/assets/Newflix/newflix2.png",
+      "/assets/Newflix/newflix3.png",
+      "/assets/Newflix/newflix4.png"
     ],
     "tags": ["HTML5", "SCSS", "JavaScript", "ReactJS", "API"],
     "stack": "Frontend",
@@ -20,14 +20,14 @@
     "id": 2,
     "title": "Bluel",
     "subtitle": "Dynamic web page for a Photographer.",
-    "cover": "/src/assets/Bluel/bluel.png",
+    "cover": "/assets/Bluel/bluel.png",
     "tags": ["HTML5", "CSS3", "JavaScript", "API", "JWT"],
     "slider": [
-      "/src/assets/Bluel/bluel1.png",
-      "/src/assets/Bluel/bluel2.png",
-      "/src/assets/Bluel/bluel3.png",
-      "/src/assets/Bluel/bluel4.png",
-      "/src/assets/Bluel/bluel5.png"
+      "/assets/Bluel/bluel1.png",
+      "/assets/Bluel/bluel2.png",
+      "/assets/Bluel/bluel3.png",
+      "/assets/Bluel/bluel4.png",
+      "/assets/Bluel/bluel5.png"
     ],
     "stack": "Frontend",
     "date": "2023",
@@ -38,14 +38,14 @@
     "id": 3,
     "title": "Grimoire",
     "subtitle": "Backend of a book review website.",
-    "cover": "/src/assets/Grimoire/grimoire.png",
+    "cover": "/assets/Grimoire/grimoire.png",
     "slider": [
-      "/src/assets/Grimoire/grimoire1.png",
-      "/src/assets/Grimoire/grimoire2.png",
-      "/src/assets/Grimoire/grimoire3.png",
-      "/src/assets/Grimoire/grimoire4.png",
-      "/src/assets/Grimoire/grimoire5.png",
-      "/src/assets/Grimoire/grimoire6.png"
+      "/assets/Grimoire/grimoire1.png",
+      "/assets/Grimoire/grimoire2.png",
+      "/assets/Grimoire/grimoire3.png",
+      "/assets/Grimoire/grimoire4.png",
+      "/assets/Grimoire/grimoire5.png",
+      "/assets/Grimoire/grimoire6.png"
     ],
     "tags": ["NodeJS", "Express", "MongoDB", "Helmet", "ReactJS"],
     "stack": "Backend",
@@ -57,12 +57,12 @@
     "id": 4,
     "title": "Carducci",
     "subtitle": "Debug and optimize a photographer's website.",
-    "cover": "/src/assets/Carducci/carducci.png",
+    "cover": "/assets/Carducci/carducci.png",
     "slider": [
-      "/src/assets/Carducci/carducci1.png",
-      "/src/assets/Carducci/carducci2.png",
-      "/src/assets/Carducci/carducci3.png",
-      "/src/assets/Carducci/carducci4.png"
+      "/assets/Carducci/carducci1.png",
+      "/assets/Carducci/carducci2.png",
+      "/assets/Carducci/carducci3.png",
+      "/assets/Carducci/carducci4.png"
     ],
     "tags": ["HTML5", "CSS3", "JavaScript", "JQuery", "SEO", "Lighthouse"],
     "stack": "Frontend",
@@ -74,11 +74,11 @@
     "id": 5,
     "title": "Kasa",
     "subtitle": "Real estate rental web application.",
-    "cover": "/src/assets/Kasa/kasa.png",
+    "cover": "/assets/Kasa/kasa.png",
     "slider": [
-      "/src/assets/Kasa/kasa1.png",
-      "/src/assets/Kasa/kasa2.png",
-      "/src/assets/Kasa/kasa3.png"
+      "/assets/Kasa/kasa1.png",
+      "/assets/Kasa/kasa2.png",
+      "/assets/Kasa/kasa3.png"
     ],
     "tags": ["HTML5", "SCSS", "JavaScript", "ReactJS"],
     "stack": "Frontend",
@@ -90,11 +90,11 @@
     "id": 6,
     "title": "CollabText",
     "subtitle": "Collaborative web application inspired by Google Doc.",
-    "cover": "/src/assets/CollabText/collabtext.png",
+    "cover": "/assets/CollabText/collabtext.png",
     "slider": [
-      "/src/assets/CollabText/collabtext1.png",
-      "/src/assets/CollabText/collabtext2.png",
-      "/src/assets/CollabText/collabtext3.png"
+      "/assets/CollabText/collabtext1.png",
+      "/assets/CollabText/collabtext2.png",
+      "/assets/CollabText/collabtext3.png"
     ],
     "tags": [
       "HTML5",
@@ -115,12 +115,12 @@
     "id": 7,
     "title": "Portfolio",
     "subtitle": "Personal frent-end web portfolio.",
-    "cover": "/src/assets/Portfolio/portfolio.png",
+    "cover": "/assets/Portfolio/portfolio.png",
     "slider": [
-      "/src/assets/1.png",
-      "/src/assets/2.jpg",
-      "/src/assets/3.jpg",
-      "/src/assets/4.jpg"
+      "/assets/1.png",
+      "/assets/2.jpg",
+      "/assets/3.jpg",
+      "/assets/4.jpg"
     ],
     "tags": ["HTML5", "SCSS", "JavaScript", "ReactJS"],
     "stack": "Frontend",
