@@ -4,14 +4,21 @@ import MainButton from "../../Components/MainButton/MainButton";
 import emailjs from "@emailjs/browser";
 
 export default function Form() {
-
-
   // Gestion de la logique d'affichage du formulaire
   const [inputValue, setInputValue] = useState("");
   const [txtAreaValue, setTxtAreaValue] = useState("");
 
   const form = useRef();
   const message = useRef();
+  
+  // Gestion du message envoyé
+  const handleMessage = (txt, color) => {
+    message.current.textContent = txt;
+    message.current.style.color = color;
+    setTimeout(() => {
+      message.current.textContent = "";
+    }, 2000);
+  };
 
   // Fonction qui g-=ère l'envoie de l'email
   const handleEmail = (e) => {
@@ -20,11 +27,7 @@ export default function Form() {
     // Test le format de l'email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(inputValue)) {
-      message.current.textContent = "Please enter a valid email address.";
-      message.current.style.color = "red";
-      setTimeout(() => {
-        message.current.textContent = "";
-      }, 2000);
+      handleMessage("Please enter a valid email address.", "red");
       return;
     }
 
@@ -38,11 +41,7 @@ export default function Form() {
       )
       .then(
         () => {
-          message.current.textContent = "Mail sent successfully !";
-          message.current.style.color = "#ceff1d";
-          setTimeout(() => {
-            message.current.textContent = "";
-          }, 2000);
+          handleMessage("Mail sent successfully !", "#ceff1d");
           setInputValue("");
           setTxtAreaValue("");
         },

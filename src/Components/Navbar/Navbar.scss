@@ -86,7 +86,6 @@
             padding: 1px 10px;
             border-radius: 25px;
             color: $green;
-            outline: 1px solid $green1;
             font-size: 16px;
             z-index: 999;
 
@@ -110,21 +109,28 @@
                 gap: 5vw;
                 background: $black;
                 transform: translateX(100%);
-                opacity: 0;
                 z-index: 1;
-                transition: transform .3s ease, opacity .3s ease;
+                transition: transform .3s ease;
 
                 a{
                     width: 100%;
                     font-size: 42px;
                     font-weight: 200;
                     padding-left: 10vw;
+                    opacity: 0;
+                    transition: opacity .3s ease;
+                    transition-delay: .05s;
                 }
             }
 
             nav.active{
                 transform: translateX(0);
-                opacity: 1
+                transition: transform .3s ease;
+
+                a{
+                    opacity: 1;
+                    transition: opacity .3s ease;
+                }
             }
 
             .burger-menu{

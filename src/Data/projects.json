@@ -1,33 +1,33 @@
 [
     {
         "id": 1,
-        "title": "NewFlix",
+        "title": "Newflix",
         "subtitle": "Cinema application like Netflix.",
-        "cover": "/5.png",
+        "cover": "/projects/Newflix/newflix.png",
         "slider": [
-            "/1.png",
-            "/2.png",
-            "/3.png",
-            "/4.png"
+            "/projects/Newflix/newflix1.png",
+            "/projects/Newflix/newflix2.png",
+            "/projects/Newflix/newflix3.png",
+            "/projects/Newflix/newflix4.png"
         ],
         "tags": [
             "HTML5",
-            "CSS3",
+            "SCSS",
             "JavaScript",
             "ReactJS",
             "API"
         ],
         "stack": "Frontend",
         "date": "2022",
-        "description": "NewFlix is a web application developed with the ReactJS framework that allows you to discover a wide selection of movies categorized by genre. This platform is connected to the TMdb API, which guarantees you a constantly updated database. Thanks to its advanced search system, you can quickly find the movies you want to watch. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens.",
-        "link": "https://github.com/DylanPiriou/MovieHub"
+        "description": "NewFlix is a web application developed with the ReactJS framework that allows you to discover a wide selection of movies categorized by genre. This platform is connected to the TMdb API and YouTube API, which guarantees you a constantly updated database. Thanks to its advanced search system, you can quickly find trailer's movies you want to watch. Additionally, the application is designed to be responsive, meaning that it is accessible from any device and perfectly adapts to all screens.",
+        "link": "https://github.com/DylanPiriou/Newflix"
 
     },
     {
         "id": 2,
         "title": "Bluel",
         "subtitle": "Dynamic web page for a Photographer.",
-        "cover": "/2.png",
+        "cover": "/projects/Bluel/bluel.png",
         "tags": [
             "HTML5",
             "CSS3",
@@ -36,10 +36,7 @@
             "JWT"
         ],
         "slider": [
-            "/1.png",
-            "/2.png",
-            "/3.png",
-            "/4.png"
+            
         ],
         "stack": "Frontend",
         "date": "2023",
@@ -51,12 +48,9 @@
         "id": 3,
         "title": "Grimoire",
         "subtitle": "Backend of a book review website.",
-        "cover": "/3.png",
+        "cover": "/projects/Grimoire/grimoire.png",
         "slider": [
-            "/1.png",
-            "/2.png",
-            "/3.png",
-            "/4.png"
+            
         ],
         "tags": [
             "NodeJS",
@@ -74,12 +68,9 @@
         "id": 4,
         "title": "Carducci",
         "subtitle": "Debug and optimize a photographer's website.",
-        "cover": "/4.png",
+        "cover": "/projects/Carducci/carducci.png",
         "slider": [
-            "/1.png",
-            "/2.png",
-            "/3.png",
-            "/4.png"
+            
         ],
         "tags": [
             "HTML5",
@@ -98,12 +89,11 @@
         "id": 5,
         "title": "Kasa",
         "subtitle": "Real estate rental web application.",
-        "cover": "/1.png",
+        "cover": "/projects/Kasa/kasa.png",
         "slider": [
-            "/1.png",
-            "/2.png",
-            "/3.png",
-            "/4.png"
+            "/projects/Kasa/kasa1.png",
+            "/projects/Kasa/kasa2.png",
+            "/projects/Kasa/kasa3.png"
         ],
         "tags": [
             "HTML5",
@@ -118,14 +108,40 @@
     },
     {
         "id": 6,
+        "title": "CollabText",
+        "subtitle": "Collaborative web application inspired by Google Doc.",
+        "cover": "/projects/Newflix/newflix.png",
+        "slider": [
+            "/projects/1.png",
+            "/projects/2.jpg",
+            "/projects/3.jpg",
+            "/projects/4.jpg"
+        ],
+        "tags": [
+            "HTML5",
+            "SCSS",
+            "JavaScript",
+            "ReactJS",
+            "Quill",
+            "Socket.io",
+            "Mongoose",
+            "MongoDB"
+        ],
+        "stack": "Backend",
+        "date": "2023",
+        "description": "The project is a collaborative web application inspired by Google Docs that allows users to edit documents and communicate in real-time. The application was developed using ReactJS (with ViteJS) and SCSS for styling. Quill was chosen as text editor, a rich text tool that allows for simple and intuitive text formatting. I also integrated Socket.IO for real-time communication between users, offering a collaborative real-time experience. Finally, for data management, i chose MongoDB, a NoSQL database that offers high flexibility for managing documents.",
+        "link": "https://github.com/DylanPiriou/CollabText"
+    },
+    {
+        "id": 7,
         "title": "Portfolio",
         "subtitle": "Personal frent-end web portfolio.",
-        "cover": "/6.png",
+        "cover": "/projects/Portfolio/portfolio.png",
         "slider": [
-            "/1.png",
-            "/2.png",
-            "/3.png",
-            "/4.png"
+            "/projects/1.png",
+            "/projects/2.jpg",
+            "/projects/3.jpg",
+            "/projects/4.jpg"
         ],
         "tags": [
             "HTML5",

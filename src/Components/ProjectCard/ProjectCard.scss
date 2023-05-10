@@ -55,7 +55,7 @@
             align-items: center;
             justify-content: flex-end;
             @include title;
-            font-size: clamp(50px, 10vw, 180px);
+            // font-size: clamp(50px, 10vw, 180px);
             position: relative;
 
             .title{

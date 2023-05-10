@@ -78,15 +78,19 @@ export default function ProjectDetails() {
           <div key={`overlay2-${id}`} className="overlay-transition-2"></div>
           <Navbar />
           <div className="project-container">
-            {/* <div className="img-box">
-              <img src={project.cover} alt="" className="mainImg" ref={img} />
-            </div> */}
-            <Slider project={project} />
+
+            {/* <Slider project={project} /> */}
+
             <div className="title-wrapper">
               <h2 tabIndex="0" key={`title-${id}`}><span>{project.title}</span></h2>
               <p tabIndex="0" key={`subtitle-${id}`}>{project.subtitle}</p>
               <p tabIndex="0" key={`date-${id}`}>— {project.date}</p>
             </div>
+
+            <div className="cover-container">
+              <img src={project.cover} alt={project.title} className="project-cover"/>
+            </div>
+
             <div className="content-wrapper">
               <div className="content">
                 <p tabIndex="0">{project.description}</p>
@@ -97,7 +101,18 @@ export default function ProjectDetails() {
                 </div>
               </div>
             </div>
-            <div className="bottom-container">
+
+            <div className="img-project-container">
+              {project.slider.map((img, index) => {
+                return (
+                  <div className="img-project-wrapper" key={index}>
+                    <img src={img} alt=""/>
+                  </div>
+                )
+              })}
+            </div>
+
+            <div className="calltoaction-container">
               <div className="links-wrapper">
                 <h2 tabIndex="0">Want more juicy details about this project?</h2>
                 <div className="links">
@@ -107,6 +122,7 @@ export default function ProjectDetails() {
               </div>
               <PrevNext prevProject={prevProject} nextProject={nextProject} handlePrev={() => handlePrev()} handleNext={() => handleNext()}/>
             </div>
+
           </div>
           <ScrollTop/>
         </section>
