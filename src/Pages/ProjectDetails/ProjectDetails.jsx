@@ -1,4 +1,4 @@
-import React, { useEffect, useRef} from "react";
+import React from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import "./ProjectDetails.scss";
 import Data from "../../Data/projects.json";
@@ -9,7 +9,6 @@ import { TfiArrowTopRight } from "react-icons/tfi";
 import ScrollTop from "../../Components/ScrollTop/ScrollTop";
 import PrevNext from "../../Components/PrevNext/PrevNext";
 import Technos from "../../Components/Technos/Technos";
-import Slider from "../../Components/Slider/Slider";
 
 export default function ProjectDetails() {
 
@@ -36,22 +35,24 @@ export default function ProjectDetails() {
   // Gestion des évènements pour rediriger vers les projets suviants ou précédents
   const handlePrev = () => {
     if (prevId === 0) {
-      navigate(`/project/${Data.length}`);
-      window.scrollTo(0, 0);
+      handleNavigate(`/project/${Data.length}`);
     } else {
-      navigate(`/project/${prevId}`);
-      window.scrollTo(0, 0);
+      handleNavigate(`/project/${prevId}`);
     }
   };
+
   const handleNext = () => {
     if (nextId > Data.length) {
-      navigate("/project/1");
-      window.scrollTo(0, 0);
+      handleNavigate("/project/1");
     } else {
-      navigate(`/project/${nextId}`);
-      window.scrollTo(0, 0);
+      handleNavigate(`/project/${nextId}`);
     }
   };
+
+  const handleNavigate = (path) => {
+    navigate(path);
+    window.scrollTo(0, 0);
+  }
 
   // Données pour le bouton
   const dataBtn = {
@@ -59,22 +60,11 @@ export default function ProjectDetails() {
     destination: "/contact"
   }
 
-  // Modification de la vitesse du scroll pour img
-  const img = useRef();
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      const scrollAmount = window.scrollY;
-      const newPosition = scrollAmount * .3;
-      if(img.current){
-        img.current.style.transform = `translateY(${newPosition}px)`;
-      }
-    })
-  }, [img])
-
+  // Gestion du titre du document
   const location = useLocation();
   const name = location.pathname;
   if(name === `/project/${id}`){
-    document.title = `${project.title} — Newflix`
+    document.title = `${project?.title} — Dylan Piriou`
   } 
 
   return (
@@ -85,19 +75,14 @@ export default function ProjectDetails() {
           <div key={`overlay2-${id}`} className="overlay-transition-2"></div>
           <Navbar />
           <div className="project-container">
-
-            {/* <Slider project={project} /> */}
-
             <div className="title-wrapper">
               <h2 tabIndex="0" key={`title-${id}`}><span>{project.title}</span></h2>
               <p tabIndex="0" key={`subtitle-${id}`}>{project.subtitle}</p>
               <p tabIndex="0" key={`date-${id}`}>— {project.date}</p>
             </div>
-
             <div className="cover-container">
               <img src={project.cover} alt={project.title} className="project-cover"/>
             </div>
-
             <div className="content-wrapper">
               <div className="content">
                 <p tabIndex="0">{project.description}</p>
@@ -108,7 +93,6 @@ export default function ProjectDetails() {
                 </div>
               </div>
             </div>
-
             <div className="img-project-container">
               {project.slider.map((img, index) => {
                 return (
@@ -118,7 +102,6 @@ export default function ProjectDetails() {
                 )
               })}
             </div>
-
             <div className="calltoaction-container">
               <div className="links-wrapper">
                 <h2 tabIndex="0">Want more juicy details about this project?</h2>
@@ -129,7 +112,6 @@ export default function ProjectDetails() {
               </div>
               <PrevNext prevProject={prevProject} nextProject={nextProject} handlePrev={() => handlePrev()} handleNext={() => handleNext()}/>
             </div>
-
           </div>
           <ScrollTop/>
         </section>
