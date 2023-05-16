@@ -94,13 +94,15 @@ export default function ProjectDetails() {
               </div>
             </div>
             <div className="img-project-container">
-              {project.slider.map((img, index) => {
+              {project.slider ? project.slider.map((img, index) => {
                 return (
                   <div className="img-project-wrapper" key={index}>
                     <img src={img} alt=""/>
                   </div>
                 )
-              })}
+              }) : (
+                    <video src={project.video} alt={project.title} controls/>
+              )}
             </div>
             <div className="calltoaction-container">
               <div className="links-wrapper">

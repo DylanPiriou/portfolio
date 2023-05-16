@@ -3,12 +3,14 @@
     "id": 1,
     "title": "Newflix",
     "subtitle": "Cinema application like Netflix.",
-    "cover": "/assets/Newflix/newflix.png",
+    "cover": "/assets/Newflix/newflix.webp",
     "slider": [
-      "/assets/Newflix/newflix1.png",
-      "/assets/Newflix/newflix2.png",
-      "/assets/Newflix/newflix3.png",
-      "/assets/Newflix/newflix4.png"
+      "/assets/Newflix/home1.webp",
+      "/assets/Newflix/home2.webp",
+      "/assets/Newflix/film.webp",
+      "/assets/Newflix/find1.webp",
+      "/assets/Newflix/find2.webp",
+      "/assets/Newflix/favoris.webp"
     ],
     "tags": ["HTML5", "SCSS", "JavaScript", "ReactJS", "API"],
     "stack": "Frontend",
@@ -20,14 +22,15 @@
     "id": 2,
     "title": "Bluel",
     "subtitle": "Dynamic web page for a Photographer.",
-    "cover": "/assets/Bluel/bluel.png",
+    "cover": "/assets/Bluel/bluel.webp",
     "tags": ["HTML5", "CSS3", "JavaScript", "API", "JWT"],
     "slider": [
-      "/assets/Bluel/bluel1.png",
-      "/assets/Bluel/bluel2.png",
-      "/assets/Bluel/bluel3.png",
-      "/assets/Bluel/bluel4.png",
-      "/assets/Bluel/bluel5.png"
+      "/assets/Bluel/bluel6.webp",
+      "/assets/Bluel/bluel1.webp",
+      "/assets/Bluel/bluel2.webp",
+      "/assets/Bluel/bluel3.webp",
+      "/assets/Bluel/bluel4.webp",
+      "/assets/Bluel/bluel5.webp"
     ],
     "stack": "Frontend",
     "date": "2023",
@@ -38,31 +41,31 @@
     "id": 3,
     "title": "Grimoire",
     "subtitle": "Backend of a book review website.",
-    "cover": "/assets/Grimoire/grimoire.png",
+    "cover": "/assets/Grimoire/grimoire.webp",
     "slider": [
-      "/assets/Grimoire/grimoire1.png",
-      "/assets/Grimoire/grimoire2.png",
-      "/assets/Grimoire/grimoire3.png",
-      "/assets/Grimoire/grimoire4.png",
-      "/assets/Grimoire/grimoire5.png",
-      "/assets/Grimoire/grimoire6.png"
+      "/assets/Grimoire/grimoire1.webp",
+      "/assets/Grimoire/grimoire2.webp",
+      "/assets/Grimoire/grimoire3.webp",
+      "/assets/Grimoire/grimoire4.webp",
+      "/assets/Grimoire/grimoire5.webp",
+      "/assets/Grimoire/grimoire6.webp"
     ],
     "tags": ["NodeJS", "Express", "MongoDB", "Helmet", "ReactJS"],
     "stack": "Backend",
     "date": "2023",
-    "description": "The project involves creating a secure backend for a website called Mon Vieux-Grimoire (developed in ReactJS), which allows users to add, delete & rate books. The backend was developed using Node.js and Express.js to create a REST API that enables users to perform CRUD operations on books. Users can also create a secure account and log in using JWT (JSON Web Token) and Helmet. To store the site's data, a NoSQL MongoDB database was used with the Mongoose framework. The overall goal of the project was to create a user-friendly and secure way for users to interact with the MongoDB database and perform CRUD operations on books.",
+    "description": "The project involves creating a secure backend for a website called Mon Vieux-Grimoire (developed in ReactJS), which allows users to add, update, delete & rate books. The backend was developed using Node.js and Express.js to create a REST API that enables users to perform CRUD operations on books. Users can also create a secure account and log in using JWT (JSON Web Token) and Helmet. To store the site's data, a NoSQL MongoDB database was used with the Mongoose framework. The overall goal of the project was to create a user-friendly and secure way for users to interact with the MongoDB database and perform CRUD operations on books.",
     "link": "https://github.com/DylanPiriou/Mon-Vieux-Grimoire"
   },
   {
     "id": 4,
     "title": "Carducci",
     "subtitle": "Debug and optimize a photographer's website.",
-    "cover": "/assets/Carducci/carducci.png",
+    "cover": "/assets/Carducci/carducci.webp",
     "slider": [
-      "/assets/Carducci/carducci1.png",
-      "/assets/Carducci/carducci2.png",
-      "/assets/Carducci/carducci3.png",
-      "/assets/Carducci/carducci4.png"
+      "/assets/Carducci/carducci1.webp",
+      "/assets/Carducci/carducci2.webp",
+      "/assets/Carducci/carducci3.webp",
+      "/assets/Carducci/carducci4.webp"
     ],
     "tags": ["HTML5", "CSS3", "JavaScript", "JQuery", "SEO", "Lighthouse"],
     "stack": "Frontend",
@@ -74,11 +77,11 @@
     "id": 5,
     "title": "Kasa",
     "subtitle": "Real estate rental web application.",
-    "cover": "/assets/Kasa/kasa.png",
+    "cover": "/assets/Kasa/kasa.webp",
     "slider": [
-      "/assets/Kasa/kasa1.png",
-      "/assets/Kasa/kasa2.png",
-      "/assets/Kasa/kasa3.png"
+      "/assets/Kasa/kasa1.webp",
+      "/assets/Kasa/kasa2.webp",
+      "/assets/Kasa/kasa3.webp"
     ],
     "tags": ["HTML5", "SCSS", "JavaScript", "ReactJS"],
     "stack": "Frontend",
@@ -90,12 +93,8 @@
     "id": 6,
     "title": "CollabText",
     "subtitle": "Collaborative web application inspired by Google Doc.",
-    "cover": "/assets/CollabText/collabtext.png",
-    "slider": [
-      "/assets/CollabText/collabtext1.png",
-      "/assets/CollabText/collabtext2.png",
-      "/assets/CollabText/collabtext3.png"
-    ],
+    "cover": "/assets/CollabText/collabtext.webp",
+    "video": "/assets/CollabText/video-ct.webm",
     "tags": [
       "HTML5",
       "SCSS",
@@ -115,16 +114,15 @@
     "id": 7,
     "title": "Portfolio",
     "subtitle": "Personal frent-end web portfolio.",
-    "cover": "/assets/Portfolio/portfolio.png",
+    "cover": "/assets/Portfolio/portfolio.webp",
     "slider": [
-      "/assets/Portfolio/portfolio1.png",
-      "/assets/Portfolio/portfolio2.png",
-      "/assets/Portfolio/portfolio3.png",
-      "/assets/Portfolio/portfolio4.png",
-      "/assets/Portfolio/portfolio5.png",
-      "/assets/Portfolio/portfolio6.png",
-      "/assets/Portfolio/portfolio7.png",
-      "/assets/Portfolio/portfolio8.png"
+      "/assets/Portfolio/home.webp",
+      "/assets/Portfolio/about.webp",
+      "/assets/Portfolio/work.webp",
+      "/assets/Portfolio/contact.webp",
+      "/assets/Portfolio/project1.webp",
+      "/assets/Portfolio/project2.webp",
+      "/assets/Portfolio/project3.webp"
     ],
     "tags": ["HTML5", "SCSS", "JavaScript", "ReactJS"],
     "stack": "Frontend",
