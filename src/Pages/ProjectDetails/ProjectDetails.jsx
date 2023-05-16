@@ -1,5 +1,5 @@
 import React, { useEffect, useRef} from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 import "./ProjectDetails.scss";
 import Data from "../../Data/projects.json";
 import NotFound from "../NotFound/NotFound";
@@ -12,6 +12,7 @@ import Technos from "../../Components/Technos/Technos";
 import Slider from "../../Components/Slider/Slider";
 
 export default function ProjectDetails() {
+
   // Récupère l'id du projet dans l'URL et vérifie qu'il existe dans le JSON
   const { id } = useParams();
   const project = Data.find((project) => project.id === +id);
@@ -69,6 +70,12 @@ export default function ProjectDetails() {
       }
     })
   }, [img])
+
+  const location = useLocation();
+  const name = location.pathname;
+  if(name === `/project/${id}`){
+    document.title = `${project.title} — Newflix`
+  } 
 
   return (
     <>
