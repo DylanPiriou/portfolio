@@ -50,10 +50,6 @@
                         @include titleAnim;
                     }
                 }
-
-                &:hover .cursor {
-                    display: flex;
-                }
             }
 
             @media (max-width: 1150px){

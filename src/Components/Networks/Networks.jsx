@@ -17,6 +17,10 @@ export default function Networks() {
                 <TfiArrowTopRight className="arrow" />
                 <span>LINKEDIN</span>
             </a>
+            <a href="/dylanpiriou_resume.pdf" download>
+                <TfiArrowTopRight className="arrow" />
+                <span>RESUME</span>
+            </a>
         </div>
     )
 }
