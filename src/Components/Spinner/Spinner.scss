@@ -1,25 +1,46 @@
 @import "/src/settings.scss";
 
-.spinner{
+.spinner-wrapper{
     position: absolute;
-    left: 22%;
-    top: 10%;
+    top: 10vh;
+    left: 20vw;
     width: 120px;
     aspect-ratio: 1;
-    font-family: $satoshi;
+    border-radius: 50%;
     color: $green;
     mix-blend-mode: difference;
+    font-family: $satoshi;
     z-index: 2;
-    animation: spinner 6s linear infinite;
+    animation: spinner 10s linear infinite;
 
-    span{
+    .arrow{
         position: absolute;
         left: 50%;
-        transform-origin: 0 60px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 22px;
+        transition: color .2s ease;
+    }
 
-        &.active{
-            color: yellowgreen;
+    .spinner{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        
+        span{
+            position: absolute;
+            // left: 50%;
+            transform-origin: 0 60px;
+    
+            &.active{
+                color: yellowgreen;
+            }
         }
+    
+    }
+
+    &:hover .arrow{
+        color: $green1;
     }
 
     @keyframes spinner {
@@ -27,8 +48,9 @@
             transform: rotate(0deg);
         }
         to{
-            transform: rotate(180deg);
+            transform: rotate(360deg);
         }
     }
-} 
+}
+
 

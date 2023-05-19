@@ -4,6 +4,7 @@
     @include flex-center;
     flex-wrap: wrap;
     gap: 2vh 20px;
+    line-height: 0;
 
     .filter-btn{
         @include flex-center;

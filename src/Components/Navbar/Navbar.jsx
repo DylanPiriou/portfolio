@@ -38,9 +38,15 @@ export default function Navbar() {
         </nav>
           <div className="burger-menu" onClick={() => handleBurger()}>
             {close ? (
-              <div className="open-icon">OPEN</div>
+              <div className="open-icon">
+                <div className="line" id="line1"></div>
+                <div className="line" id="line2"></div>
+              </div>
             ) : (
-              <div className="close-icon">CLOSE</div>
+              <div className="close-icon">
+                <div className="line" id="line1"></div>
+                <div className="line" id="line2"></div>
+              </div>
             )}
           </div>
       </div>
