@@ -36,7 +36,7 @@ export default function Navbar() {
             <span data-link="CONTACT">CONTACT</span>
           </NavLink>
         </nav>
-          <div className="burger-menu" onClick={() => handleBurger()}>
+          <div className="burger-menu" tabIndex="0" onClick={() => handleBurger()}>
             {close ? (
               <div className="open-icon">
                 <div className="line" id="line1"></div>
