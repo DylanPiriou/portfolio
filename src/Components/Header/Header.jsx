@@ -3,6 +3,7 @@ import "./Header.scss";
 import MainButton from "../MainButton/MainButton";
 import { NavLink } from "react-router-dom";
 import { getCurrentYear } from "../../utils/getCurrentYear";
+import Spinner from "../Spinner/Spinner";
 
 export default function Header() {
   // Paramètres pour le bouton
@@ -34,6 +35,7 @@ export default function Header() {
   return (
     <header ref={header}>
       <div className="title-container">
+        <Spinner/>
         <h2 tabIndex="0" ref={title}>
           <span className="text-wrapper">
             {splitText[0].map((letter, index) => {

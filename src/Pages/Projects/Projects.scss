@@ -2,11 +2,14 @@
 
 .projects{
     width: 100vw;
-    max-width: 1750px;
+    max-width: 1920px;
     height: 100dvh;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     padding-top: 10vh;
+    overflow: hidden;
 
     .overlay-transition-1{
         @include transition-1;
@@ -18,6 +21,7 @@
     
     .projects-grid{
         width: 100%;
+        max-width: 1750px;
         height: 100%;
         @include flex-center;
         flex-direction: column;
@@ -25,12 +29,12 @@
         .top-container{
             width: 100%;
             min-height: 15vh;
-            // flex: 1;
+            flex: 1;
             display: flex;
             align-items: center;
             justify-content: space-between;
             flex-wrap: wrap;
-            padding: 0 3vw;
+            padding: 0 5vw;
             border-bottom: 1px solid $black1;
 
             h2{
@@ -101,20 +105,18 @@
                 width: 40%;
                 height: 100%;
                 @include flex-center;
-                
+
                 a{
+                 cursor: none;
+
+                  img{
                     width: 100%;
                     height: 100%;
-                    cursor: none;
-                    
-                    .img-box{
-                        width: 100%;
-                        height: 100%;
-                        background-position: center;
-                        background-size: cover;
-                        transition: background .5s ease;
-                    }
+                    object-fit: contain;
+                  }
+
                 }
+
 
 
                 @media screen and (max-width: 860px) {

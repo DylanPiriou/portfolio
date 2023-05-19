@@ -16,7 +16,7 @@ export default function ScrollTop() {
   useEffect(() => {
     window.addEventListener("scroll", () => {
       const scrollPos = window.scrollY;
-      scrollPos > 1000 ? setVisible(true) : setVisible(false);
+      scrollPos > 700 ? setVisible(true) : setVisible(false);
     });
   }, []);
 

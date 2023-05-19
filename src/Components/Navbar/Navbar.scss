@@ -1,149 +1,146 @@
 @import "/src/settings.scss";
 
-.navbar{
-    position: fixed;
-    top: 0;
-    width: 100%;
-    max-width: 1750px;
-    height: 10vh;
-    @include flex-center;
-    padding: 0 3vw;
-    background: $black;
-    border-bottom: 1px solid $black1;
-    z-index: 2;
+.navbar {
+  position: fixed;
+  top: -1px;
+  width: 100%;
+  max-width: 1750px;
+  height: 10vh;
+  @include flex-center;
+  padding: 0 5vw;
+  background: $black;
+  border-bottom: 1px solid $black1;
+  z-index: 2;
 
-    .navbar-flex{
+  .navbar-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .name {
+      display: flex;
+      text-decoration: none;
+      color: $green;
+      font-size: 18px;
+      letter-spacing: 1px;
+      font-size: 300;
+
+      h1 {
+        font-size: 18px;
+        font-weight: 300;
+      }
+
+      .param {
+        font-size: 18px;
+        color: $green1;
+        font-weight: 300;
+      }
+    }
+
+    nav {
+      @include flex-center;
+      gap: 30px;
+
+      a {
+        text-decoration: none;
+        font-size: 16px;
+        color: $green;
+        overflow: hidden;
+
+        span {
+          display: inline-block;
+          position: relative;
+          transition: transform 0.3s ease;
+
+          &::before {
+            content: attr(data-link);
+            position: absolute;
+            top: -100%;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            @include flex-center;
+          }
+        }
+
+        &:hover span {
+          transform: translateY(100%);
+        }
+      }
+
+      .networks-wrapper {
+        display: none;
+      }
+
+      .active {
+        color: $green1;
+      }
+    }
+    .burger-menu {
+      display: none;
+      position: fixed;
+      right: 5vw;
+      padding: 1px 10px;
+      border-radius: 25px;
+      color: $green;
+      font-size: 16px;
+      z-index: 999;
+
+      .open-icon {
+        display: none;
+      }
+    }
+
+    @media (max-width: 1040px) {
+      nav {
+        position: fixed;
+        left: 0;
+        top: 0;
         width: 100%;
         height: 100%;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5vw;
+        background: $black;
+        transform: translateX(100%);
+        z-index: 1;
+        transition: transform 0.3s ease;
 
-        .name{
-            display: flex;
-            text-decoration: none;
-            color: $green;
-            font-size: 18px;
-            letter-spacing: 1px;
-            font-size: 300;
-            
-            h1{
-                font-size: 18px;
-                font-weight: 300;
-            }
+        a {
+          width: 100%;
+          font-size: 42px;
+          font-weight: 200;
+          padding-left: 10vw;
+          opacity: 0;
+          transition: opacity 0.3s ease;
+          transition-delay: 0.05s;
+        }
+      }
 
-            .param{
-                font-size: 18px;
-                color: $green1;
-                font-weight: 300
-            }
+      nav.active {
+        transform: translateX(0);
+        transition: transform 0.3s ease;
+
+        a {
+          opacity: 1;
+          transition: opacity 0.3s ease;
+        }
+      }
+
+      .burger-menu {
+        @include flex-center;
+
+        .open-icon {
+          display: block;
         }
 
-        nav{
-            @include flex-center;
-            gap: 3vw;
-            
-            a{
-                text-decoration: none;
-                font-size: 16px;
-                color: $green;
-                overflow: hidden;
-
-                span{
-                    display: inline-block;
-                    position: relative;
-                    transition: transform .3s ease;
-            
-                    &::before{
-                        content: attr(data-link);
-                        position: absolute;
-                        top: -100%;
-                        bottom: 0;
-                        width: 100%;
-                        height: 100%;
-                        @include flex-center;
-                    }
-                }
-
-                &:hover span{
-                    transform: translateY(100%);
-                }
-            }
-
-            .networks-wrapper{
-                display: none;
-            }
-
-            .active{
-                color: $green1;
-            }
-
+        .close-icon {
+          display: block;
         }
-        .burger-menu{
-            display: none;
-            position: fixed;
-            right: 3vw;
-            padding: 1px 10px;
-            border-radius: 25px;
-            color: $green;
-            font-size: 16px;
-            z-index: 999;
-
-            .open-icon{
-                display: none;
-            }
-        }
-
-        
-
-        @media (max-width: 1040px){
-            nav{
-                position: fixed;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 100%;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 5vw;
-                background: $black;
-                transform: translateX(100%);
-                z-index: 1;
-                transition: transform .3s ease;
-
-                a{
-                    width: 100%;
-                    font-size: 42px;
-                    font-weight: 200;
-                    padding-left: 10vw;
-                    opacity: 0;
-                    transition: opacity .3s ease;
-                    transition-delay: .05s;
-                }
-            }
-
-            nav.active{
-                transform: translateX(0);
-                transition: transform .3s ease;
-
-                a{
-                    opacity: 1;
-                    transition: opacity .3s ease;
-                }
-            }
-
-            .burger-menu{
-                @include flex-center;
-
-                .open-icon{
-                    display: block;
-                }
-
-                .close-icon{
-                    display: block;
-                }
-            }
-        }
+      }
     }
+  }
 }

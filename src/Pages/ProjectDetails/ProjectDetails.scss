@@ -1,208 +1,205 @@
 @import "/src/settings.scss";
 
 .projectDetails {
-    width: 100vw;
-    max-width: 1750px;
-    // height: 100vh;
+  width: 100vw;
+  max-width: 1920px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  .overlay-transition-1 {
+    @include transition-1;
+  }
+
+  .overlay-transition-2 {
+    @include transition-2;
+  }
+
+  .project-container {
+    width: 100%;
+    flex: 1;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
-    padding-top: 10vh;
+    gap: 10vw;
+    margin-top: 10vh;
+    padding: 0 5vw;
 
-    .overlay-transition-1 {
-        @include transition-1;
+    .title-wrapper {
+      width: 100%;
+      height: 30vw;
+      min-height: 20vh;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+
+      h2 {
+        overflow: hidden;
+
+        span {
+          display: inline-block;
+          transform: translateY(100%);
+          @include title;
+          font-size: clamp(50px, 15vw, 180px);
+          @include titleAnim;
+        }
+      }
+
+      p {
+        max-width: 850px;
+        font-size: clamp(22px, 5vw, 38px);
+        font-weight: 200;
+        opacity: 0;
+        @include subAnim;
+      }
     }
 
-    .overlay-transition-2 {
-        @include transition-2;
+    .cover-container {
+      width: 100%;
+      max-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .project-cover {
+        width: 80%;
+        aspect-ratio: 1;
+      }
     }
 
-    .project-container {
+    .content-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 5vh;
+
+        p {
+          max-width: 860px;
+          @include text;
+        }
+
+        .stack-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-wrap: wrap;
+          place-content: flex-start;
+          gap: 2vw;
+
+          span {
+            background: $black;
+            padding: 10px 15px;
+            border-radius: 50px;
+            outline: 1px solid $grey;
+            font-size: clamp(14px, 2vw, 20px);
+            cursor: default;
+            transition: outline 0.2s ease;
+
+            &:hover {
+              outline: 1px solid $green1;
+            }
+          }
+        }
+      }
+    }
+
+    .img-project-container {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+
+      .img-project-wrapper {
         width: 100%;
-        flex: 1;
+        max-width: 700px;
+        aspect-ratio: 16/9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        img {
+          width: 100%;
+          max-width: 700px;
+          object-fit: cover;
+          object-position: top;
+          filter: brightness(90%);
+        }
+      }
+
+      video {
+        width: 90%;
+      }
+    }
+
+    .calltoaction-container {
+      width: 100%;
+      height: 80vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+
+      .links-wrapper {
+        height: 40vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 10vw;
-        padding: 0 3vw;
+        gap: 5vh;
 
-        .title-wrapper {
-            width: 100%;
-            height: 30vw;
-            min-height: 20vh;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-end;
-
-            h2 {
-                overflow: hidden;
-
-                span{
-                    display: inline-block;
-                    transform: translateY(100%);
-                    @include title;
-                    font-size: clamp(50px, 15vw, 180px);
-                    @include titleAnim;
-                }
-            }
-
-            p {
-                max-width: 850px;
-                font-size: clamp(22px, 3vw, 38px);
-                font-weight: 200;
-                opacity: 0;
-                @include subAnim;
-            }
+        h2 {
+          @include altTitle;
+          text-align: center;
         }
 
-        .cover-container{
-            width: 100%;
-            max-height: 100vh;
+        .links {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5vw;
+
+          .github {
+            color: $green;
+            text-decoration: none;
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 5px;
+            padding: 10px 0;
+            font-size: clamp(12px, 2vw, 16px);
+            text-transform: uppercase;
+            position: relative;
 
-            .project-cover{
-                width: 80%;
-                aspect-ratio: 1;
+            &::after {
+              content: "";
+              position: absolute;
+              right: 0;
+              bottom: 5px;
+              width: 100%;
+              height: 1px;
+              background: $green;
+              transition: all 0.2s linear;
             }
+
+            &:hover::after {
+              width: 0;
+            }
+          }
         }
-
-        .content-wrapper {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
-            .content {
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                justify-content: center;
-                gap: 5vh;
-
-                p {
-                    max-width: 860px;
-                    @include text;
-                }
-
-                .stack-wrapper {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    flex-wrap: wrap;
-                    place-content: flex-start;
-                    gap: 2vw;
-
-                    span {
-                        background: $black;
-                        padding: 10px 15px;
-                        border-radius: 50px;
-                        outline: 1px solid $grey;
-                        font-size: clamp(14px, 2vw, 20px);
-                        cursor: default;
-                        transition: outline .2s ease;
-
-                        &:hover{
-                            outline: 1px solid $green1;
-                        }
-                    }
-                }
-            }
-        }
-
-        .img-project-container{
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 10px;
-            
-            .img-project-wrapper {
-                width: 100%;
-                max-width: 700px;
-                aspect-ratio: 16/9;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                position: relative;
-                background: red;
-                
-                img {
-                    width: 100%;
-                    max-width: 700px;
-                    object-fit: cover;
-                    object-position: top;
-                    filter: brightness(90%);
-                }
-            }
-
-            video{
-                width: 90%;
-            }
-        }
-
-        .calltoaction-container{
-            width: 100%;
-            height: 100vw;
-            max-height: 80vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-between;
-
-            .links-wrapper {
-                flex: 1;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 5vh;
-    
-                h2 {
-                    @include altTitle;
-                    text-align: center;
-                }
-    
-                .links {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    gap: 3vw;
-    
-                    .github {
-                        color: $green;
-                        text-decoration: none;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        gap: 5px;
-                        padding: 10px 0;
-                        font-size: clamp(12px, 2vw, 16px);
-                        text-transform: uppercase;
-                        position: relative;
-    
-                        &::after {
-                            content: "";
-                            position: absolute;
-                            right: 0;
-                            bottom: 5px;
-                            width: 100%;
-                            height: 1px;
-                            background: $green;
-                            transition: all 0.2s linear;
-                        }
-    
-                        &:hover::after {
-                            width: 0;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
+  }
 }

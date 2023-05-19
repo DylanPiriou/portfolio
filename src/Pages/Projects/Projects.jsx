@@ -19,11 +19,6 @@ export default function Projects() {
     setProjectId(id);
   };
 
-  // Objet de style. URL de l'image = state
-  const imgStyle = {
-    backgroundImage: `url(${imgUrl})`,
-  };
-
   // Création du chemin dynamique au clique sur l'image
   const currentProject = Data.find((project) => project.id === projectId);
   const projectLink = currentProject ? `/project/${projectId}` : "#";
@@ -91,8 +86,7 @@ export default function Projects() {
           </div>
           <div className="img-container">
             <NavLink to={projectLink}>
-              <div className="img-box" style={imgStyle}>
-              </div>
+              <img src={imgUrl} alt=""/>
             </NavLink>
           </div>
           <Cursor />

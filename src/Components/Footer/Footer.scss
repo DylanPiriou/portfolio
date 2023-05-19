@@ -1,25 +1,26 @@
 @import "/src/settings.scss";
 
-footer{
-    width: 100%;
-    height: 20%;
+footer {
+  width: 100%;
+  max-width: 1750px;
+  height: 20%;
+  @include flex-center;
+  border-top: 1px solid $black1;
+
+  .footer-wrapper {
     @include flex-center;
-    border-top: 1px solid $black1;
 
-    .footer-wrapper{
-        @include flex-center;
-
-        span{
-            font-size: clamp(32px, 8vw, 52px);
-            // font-weight: 400;
-        }
-
-        .footer-flex{
-            display: flex;
-            flex-direction: column;
-            font-size: clamp(12px, 3vw, 16px);
-            font-family: $satoshi;
-            // font-weight: 200;
-        }
+    span {
+      font-size: clamp(32px, 8vw, 52px);
+      // font-weight: 400;
     }
+
+    .footer-flex {
+      display: flex;
+      flex-direction: column;
+      font-size: clamp(12px, 5vw, 16px);
+      font-family: $satoshi;
+      // font-weight: 200;
+    }
+  }
 }

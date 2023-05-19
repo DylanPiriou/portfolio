@@ -24,7 +24,7 @@ export default function Contact() {
           <div className="bottom-wrapper">
             <Networks/>
               <div className="text-wrapper">
-                <p tabIndex="0">Feel free to contact me to discuss your next project, or simply have a chat. Let's work together to create something amazing!</p>
+                <p tabIndex="0">Feel free to contact me to discuss your next project, or simply have a chat.</p>
               </div>
 
           </div>

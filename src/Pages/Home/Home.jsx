@@ -16,7 +16,7 @@ export default function Home() {
   }, [loaded])
 
   return (
-    <div className="home">
+    <>
       {loaded ? (
         <div className="home">
         <Navbar/>
@@ -25,8 +25,10 @@ export default function Home() {
         <img className="hero-illustration" src={Img} alt="dylan piriou" />
         </div>
       ) : (
-        <Loader/>
+        <div className="home">
+          <Loader/>
+        </div>
       )}
-    </div>
+    </>
   )
 }
