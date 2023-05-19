@@ -11,7 +11,7 @@
     mix-blend-mode: difference;
     font-family: $satoshi;
     z-index: 2;
-    animation: spinner 10s linear infinite;
+    animation: opacity 3s forwards, spinner 10s linear infinite;
 
     .arrow{
         position: absolute;
@@ -41,6 +41,15 @@
 
     &:hover .arrow{
         color: $green1;
+    }
+
+    @keyframes opacity {
+        from{
+            opacity: 0;
+        }
+        to{
+            opacity: 1;
+        }
     }
 
     @keyframes spinner {
