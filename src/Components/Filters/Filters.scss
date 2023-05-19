@@ -3,7 +3,7 @@
 .filter-btns__wrapper{
     @include flex-center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2vh 20px;
 
     .filter-btn{
         @include flex-center;
@@ -36,6 +36,7 @@
             width: 100%;
             @include flex-center;
             height: 3vh;
+            border-radius: 50px;
             background: rgb(8, 8, 8);
 
             .icon-box,

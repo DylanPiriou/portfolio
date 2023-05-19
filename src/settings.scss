@@ -62,7 +62,7 @@ $green2: #6e7263;
     background: $black;
     animation: slide1 0.6s ease forwards;
     animation-delay: -0.1s;
-    z-index: 4;
+    z-index: 10;
 
     @keyframes slide1 {
         from {
@@ -85,7 +85,7 @@ $green2: #6e7263;
     background: $green1;
     animation: slide2 .2s cubic-bezier(.77,.25,.39,.98) forwards;
     animation-delay: .4s;
-    z-index: 3;
+    z-index: 9;
 
     @keyframes slide2 {
         from {

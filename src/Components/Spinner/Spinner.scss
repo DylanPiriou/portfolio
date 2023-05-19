@@ -9,7 +9,7 @@
     font-family: $satoshi;
     color: $green;
     mix-blend-mode: difference;
-    z-index: 999;
+    z-index: 2;
     animation: spinner 6s linear infinite;
 
     span{
