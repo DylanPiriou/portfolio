@@ -1,5 +1,6 @@
 import "./ProjectCard.scss";
 import { NavLink } from 'react-router-dom';
+import { TfiArrowTopRight } from "react-icons/tfi";
 
 export default function ProjectCard({ data, handleHover }) {
   return (
@@ -15,6 +16,7 @@ export default function ProjectCard({ data, handleHover }) {
         </span>
         <h2>
             <span className="title">{data.title}</span>
+            <TfiArrowTopRight className="arrow"/>
         </h2>
       </div>
     </NavLink>

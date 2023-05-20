@@ -25,7 +25,7 @@ export default function Cursor({ left, right, text }) {
     <button className="cursor" style={{ left: pos.x, top: pos.y }}>
       {left ? <TfiArrowLeft className="icon" /> : 
       right ? <TfiArrowRight className="icon" /> : 
-      text ? <GiBread className="icon"/> :
+      text ? text :
       <TfiArrowTopRight className="icon" />}
     </button>
   );

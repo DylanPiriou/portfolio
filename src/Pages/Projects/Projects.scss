@@ -42,12 +42,12 @@
                 font-size: clamp(18px, 2vw, 24px);
                 font-weight: 200;
                 letter-spacing: 2px;
+                padding: 10px 0;
             }
 
             @media(max-width: 750px){
                 &{
                     flex-direction: column;
-                    align-items: flex-start;
                     justify-content: center;
                     gap: 1vh;
                 }
@@ -60,16 +60,6 @@
             @include flex-center;
             flex: 1;
             margin-bottom: 5vh;
-
-            &::before{
-                content: "";
-                position: absolute;
-                left: 0;
-                top: 0;
-                width: 100%;
-                height: 1px;
-                background: linear-gradient(to right, transparent, $black1, transparent)
-            }
 
             .titles-container{
                 width: 60%;
