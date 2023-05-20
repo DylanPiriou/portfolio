@@ -14,6 +14,7 @@ export default function Cursor({ left, right, text }) {
 
   useEffect(() => {
     window.addEventListener("mousemove", (e) => {
+      e.preventDefault();
       setPos({
         x: e.pageX - 50,
         y: e.pageY - 50,

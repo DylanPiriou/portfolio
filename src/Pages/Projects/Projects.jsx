@@ -54,8 +54,9 @@ export default function Projects() {
     <section className="projects">
       <div className="overlay-transition-1"></div>
       <div className="overlay-transition-2"></div>
-      <div className="projects-grid">
         <Navbar />
+      <div className="projects-grid">
+        <div className="navbar-container"></div>
         <div className="top-container">
           <h2 tabIndex="0">Selected Projects</h2>
           <Filters
@@ -89,7 +90,7 @@ export default function Projects() {
               <img src={imgUrl} alt=""/>
             </NavLink>
           </div>
-          <Cursor text={"DISCOVER"}/>
+          <Cursor text={"PROJECT"}/>
         </div>
       </div>
     </section>

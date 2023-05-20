@@ -1,6 +1,7 @@
 @import "/src/settings.scss";
 
 .filter-btns__wrapper{
+    width: fit-content;
     @include flex-center;
     flex-wrap: wrap;
     gap: 2vh 20px;
