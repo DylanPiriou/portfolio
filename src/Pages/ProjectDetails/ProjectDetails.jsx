@@ -97,7 +97,7 @@ export default function ProjectDetails() {
               {project.slider ? project.slider.map((img, index) => {
                 return (
                   <div className="img-project-wrapper" key={index}>
-                    <img src={img} alt=""/>
+                    <img src={img} alt={project.title} />
                   </div>
                 )
               }) : (

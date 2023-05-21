@@ -87,7 +87,7 @@ export default function Projects() {
           </div>
           <div className="img-container">
             <NavLink to={projectLink}>
-              <img src={imgUrl} alt=""/>
+              <img src={imgUrl} alt="project" />
             </NavLink>
           </div>
           <Cursor text={"CLICK"}/>
