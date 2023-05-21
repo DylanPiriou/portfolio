@@ -90,7 +90,7 @@ export default function Projects() {
               <img src={imgUrl} alt=""/>
             </NavLink>
           </div>
-          <Cursor text={"PROJECT"}/>
+          <Cursor text={"CLICK"}/>
         </div>
       </div>
     </section>

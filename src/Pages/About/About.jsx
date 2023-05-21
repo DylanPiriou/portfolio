@@ -4,6 +4,7 @@ import Navbar from "../../Components/Navbar/Navbar";
 import Stack from "../../Components/Stack/Stack";
 import Networks from "../../Components/Networks/Networks";
 import Data from "../../Data/about.json";
+import Cursor from "../../Components/Cursor/Cursor";
 
 export default function About() {
   const title = useRef();
@@ -21,6 +22,7 @@ export default function About() {
     <section className="about">
       <div className="overlay-transition-1"></div>
       <div className="overlay-transition-2"></div>
+      <Cursor />
       <Navbar />
       <div className="about-container">
 
@@ -49,8 +51,8 @@ export default function About() {
             );
           })}
         </div>
-        <Stack/>
       </div>
+      <Stack/>
     </section>
   );
 }

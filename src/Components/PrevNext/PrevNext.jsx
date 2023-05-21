@@ -12,7 +12,7 @@ export default function PrevNext({ prevProject, nextProject, handlePrev, handleN
             >
                 <span tabIndex="0">Previous project</span>
                 {prevProject.title}
-                <Cursor left="left" />
+                <Cursor window={window} left="left" />
             </div>
             <div className="line"></div>
             <div
@@ -22,7 +22,7 @@ export default function PrevNext({ prevProject, nextProject, handlePrev, handleN
             >
                 <span tabIndex="0">Next project</span>
                 {nextProject.title}
-                <Cursor right="right" />
+                <Cursor window={window} right="right" />
             </div>
         </div>
     );

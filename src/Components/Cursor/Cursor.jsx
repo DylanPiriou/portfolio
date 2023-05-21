@@ -3,7 +3,6 @@ import "./Cursor.scss";
 import { TfiArrowLeft } from "react-icons/tfi";
 import { TfiArrowTopRight } from "react-icons/tfi";
 import { TfiArrowRight } from "react-icons/tfi";
-import { GiBread } from "react-icons/gi"
 
 export default function Cursor({ left, right, text }) {
   // Gestion des coordonnées du pointer personnalisé
@@ -16,8 +15,8 @@ export default function Cursor({ left, right, text }) {
     window.addEventListener("mousemove", (e) => {
       e.preventDefault();
       setPos({
-        x: e.pageX - 50,
-        y: e.pageY - 50,
+        x: e.clientX - 40,
+        y: e.clientY - 40,
       });
     });
   }, []);
