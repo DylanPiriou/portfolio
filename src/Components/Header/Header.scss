@@ -84,7 +84,7 @@ header {
           transition: color 1s linear;
 
           #second span {
-            animation-delay: 0.3s;
+            animation-delay: 0.2s;
           }
 
           #third span {
@@ -98,7 +98,8 @@ header {
             span {
               display: block;
               transform: translateY(100%);
-              animation: spanFadeIn 0.8s forwards, opacity 1s forwards;
+              animation: spanFadeIn .8s forwards, opacity 1s forwards;
+              animation-delay: -.2s;
 
               @keyframes spanFadeIn {
                 from {
