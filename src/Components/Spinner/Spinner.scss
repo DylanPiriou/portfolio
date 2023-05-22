@@ -1,56 +1,53 @@
 @import "/src/settings.scss";
 
-.spinner-wrapper{
+.spinner-wrapper {
+  position: absolute;
+  top: 10vh;
+  left: 20vw;
+  width: 120px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  color: $green1;
+  mix-blend-mode: difference;
+  font-family: $satoshi;
+  z-index: 2;
+  animation: spinner 10s linear infinite;
+
+  .arrow {
     position: absolute;
-    top: 10vh;
-    left: 20vw;
-    width: 120px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    color: $green;
-    mix-blend-mode: difference;
-    font-family: $satoshi;
-    z-index: 2;
-    animation: spinner 10s linear infinite;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+    transition: color 0.2s ease;
+  }
 
-    .arrow{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        font-size: 22px;
-        transition: color .2s ease;
-    }
+  .spinner {
+    position: absolute;
+    left: 50%;
+    top: 0;
 
-    .spinner{
-        position: absolute;
-        left: 50%;
-        top: 0;
-        
-        span{
-            position: absolute;
-            // left: 50%;
-            transform-origin: 0 60px;
-    
-            &.active{
-                color: yellowgreen;
-            }
-        }
-    
-    }
+    span {
+      position: absolute;
+      // left: 50%;
+      transform-origin: 0 60px;
 
-    &:hover .arrow{
-        color: $green1;
+      &.active {
+        color: yellowgreen;
+      }
     }
+  }
 
-    @keyframes spinner {
-        from{
-            transform: rotate(0deg);
-        }
-        to{
-            transform: rotate(360deg);
-        }
+  &:hover .arrow {
+    color: $green2;
+  }
+
+  @keyframes spinner {
+    from {
+      transform: rotate(0deg);
     }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
-
-

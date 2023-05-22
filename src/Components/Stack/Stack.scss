@@ -8,8 +8,6 @@
   justify-content: center;
   font-family: $satoshi;
   margin-bottom: 5vh;
-  padding: 0 5vw;
-  // overflow: hidden;
 
   .stack-flex {
     width: 100%;
@@ -19,28 +17,27 @@
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    border-top: 1px dashed $black1;
+    border-top: 1px dashed $black2;
     cursor: none;
-
+    
     @media screen and (max-width: 860px) {
       & {
         cursor: pointer;
       }
     }
-
+    
     .stack {
       width: 100%;
       flex: 1;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      color: $green;
+      padding: 0 5vw;
+      color: $green1;
       font-size: 22px;
-      // padding: 0 5vw;
       overflow: hidden;
       transition: color 0.2s ease;
-      border-bottom: 1px dashed $black1;
-      // background: red;
+      border-bottom: 1px dashed $black2;
 
       .technos-box {
         width: fit-content;
@@ -58,7 +55,7 @@
               font-size: clamp(12px, 4vw, 32px);
 
               &:nth-child(even) {
-                color: $green1;
+                color: $green2;
               }
             }
           }
@@ -66,7 +63,7 @@
       }
 
       &:hover {
-        color: $green1;
+        color: $green2;
       }
 
       &:hover .txt-wrapper {

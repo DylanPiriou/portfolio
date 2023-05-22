@@ -1,25 +1,25 @@
 @import "/src/settings.scss";
 
-.cursor{
-    display: none;
-    align-items: center;
-    justify-content: center;
-    line-height: 0;
-    position: fixed;
-    border: none;
-    outline: 2px solid $green1;
-    width: 80px;
-    aspect-ratio: 1;
-    border-radius: 50%;
-    letter-spacing: 1px;
-    font-weight: 500;
-    font-family: $font-family;
-    color: $green;
-    background: rgb(0, 0, 0, 0.2);
-    pointer-events: none;
-    z-index: 999;
+.cursor {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  line-height: 0;
+  position: fixed;
+  border: none;
+  outline: 2px solid $green2;
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-family: $font-family;
+  color: $green1;
+  background: rgb(0, 0, 0, 0.2);
+  pointer-events: none;
+  z-index: 999;
 
-    .icon{
-        font-size: 32px;
-    }
+  .icon {
+    font-size: 32px;
+  }
 }

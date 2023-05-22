@@ -1,125 +1,121 @@
 // fonts
-@import url("https://fonts.cdnfonts.com/css/cabinet-grotesk");
 @import url("https://fonts.cdnfonts.com/css/satoshi");
-@import url('https://fonts.cdnfonts.com/css/safira-march-personal-use');
-@import url('https://fonts.cdnfonts.com/css/neue-power');
+@import url("https://fonts.cdnfonts.com/css/neue-power");
 
 $font-family: "Neue Power", sans-serif;
 $satoshi: "Satoshi", sans-serif;
-$serif: 'Safira March Personal Use', sans-serif;
 
 // couleurs
 $white: #f8f8f8;
 $grey: #bebebe;
-$black: #0e0e0e;
-$black1: #3a3a3a;
-$green: #f5ffe9;
-$green1: #ceff1d;
-$green2: #6e7263;
+$black1: #0e0e0e;
+$black2: #3a3a3a;
+$green1: #f5ffe9;
+$green2: #ceff1d;
 
 // mixin
 @mixin flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin title {
-    font-size: clamp(42px, 7vw, 120px);
-    font-weight: 400;
-    line-height: 100%;
+  font-size: clamp(42px, 7vw, 120px);
+  font-weight: 400;
+  line-height: 100%;
 }
 
 @mixin altTitle {
-    font-size: clamp(24px, 5vw, 60px);
-    font-weight: 400;
-    line-height: 100%;
+  font-size: clamp(24px, 5vw, 60px);
+  font-weight: 400;
+  line-height: 100%;
 }
 
 @mixin text {
-    font-family: $satoshi;
-    font-weight: 200;
-    line-height: 200%;
-    font-size: clamp(16px, 2vw, 20px);
-    opacity: 0.9;
+  font-family: $satoshi;
+  font-weight: 200;
+  line-height: 200%;
+  font-size: clamp(16px, 2vw, 20px);
+  opacity: 0.9;
 }
 
 @mixin altText {
-    font-family: $satoshi;
-    font-weight: 200;
-    line-height: 180%;
-    font-size: clamp(14px, 1vw, 16px);
-    opacity: 0.9;
+  font-family: $satoshi;
+  font-weight: 200;
+  line-height: 180%;
+  font-size: clamp(14px, 1vw, 16px);
+  opacity: 0.9;
 }
 
 @mixin transition-1 {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    transform: translateX(0);
-    background: $black;
-    animation: slide1 0.6s ease forwards;
-    animation-delay: -0.1s;
-    z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(0);
+  background: $black1;
+  animation: slide1 0.6s ease forwards;
+  animation-delay: -0.1s;
+  z-index: 10;
 
-    @keyframes slide1 {
-        from {
-            transform: translateX(0);
-        }
-
-        to {
-            transform: translateX(-100%);
-        }
+  @keyframes slide1 {
+    from {
+      transform: translateX(0);
     }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 @mixin transition-2 {
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    transform: translateX(0);
-    background: $green1;
-    animation: slide2 .2s cubic-bezier(.77,.25,.39,.98) forwards;
-    animation-delay: .4s;
-    z-index: 9;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  transform: translateX(0);
+  background: $green2;
+  animation: slide2 0.2s cubic-bezier(0.77, 0.25, 0.39, 0.98) forwards;
+  animation-delay: 0.4s;
+  z-index: 9;
 
-    @keyframes slide2 {
-        from {
-            transform: translateX(0);
-        }
-
-        to {
-            transform: translateX(-100%);
-        }
+  @keyframes slide2 {
+    from {
+      transform: translateX(0);
     }
+
+    to {
+      transform: translateX(-100%);
+    }
+  }
 }
 
 @mixin titleAnim {
-    animation: slideTop .8s ease forwards;
-    animation-delay: .5s;
-    @keyframes slideTop {
-        from{
-            transform: translateY(100%);
-        }
-        to{
-            transform: translateY(0);
-        }
+  animation: slideTop 0.8s ease forwards;
+  animation-delay: 0.5s;
+  @keyframes slideTop {
+    from {
+      transform: translateY(100%);
     }
+    to {
+      transform: translateY(0);
+    }
+  }
 }
 
 @mixin subAnim {
-    animation: opacityEffect .8s ease forwards;
-    animation-delay: .7s;
-    @keyframes opacityEffect {
-        from{
-            opacity: 0;
-        }
-        to{
-            opacity: 1;
-        }
+  animation: opacityEffect 0.8s ease forwards;
+  animation-delay: 0.7s;
+  @keyframes opacityEffect {
+    from {
+      opacity: 0;
     }
+    to {
+      opacity: 1;
+    }
+  }
 }

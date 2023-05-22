@@ -5,7 +5,7 @@ footer {
   max-width: 1750px;
   height: 20%;
   @include flex-center;
-  border-top: 1px solid $black1;
+  border-top: 1px solid $black2;
 
   .footer-wrapper {
     @include flex-center;

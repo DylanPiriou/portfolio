@@ -8,8 +8,8 @@
   height: 10vh;
   @include flex-center;
   padding: 0 5vw;
-  background: $black;
-  border-bottom: 1px solid $black1;
+  background: $black1;
+  border-bottom: 1px solid $black2;
   z-index: 3;
 
   .navbar-flex {
@@ -22,7 +22,7 @@
     .name {
       display: flex;
       text-decoration: none;
-      color: $green;
+      color: $green1;
       font-size: 18px;
       letter-spacing: 1px;
       font-size: 300;
@@ -34,7 +34,7 @@
 
       .param {
         font-size: 18px;
-        color: $green1;
+        color: $green2;
         font-weight: 300;
       }
     }
@@ -46,7 +46,7 @@
       a {
         text-decoration: none;
         font-size: 16px;
-        color: $green;
+        color: $green1;
         overflow: hidden;
 
         span {
@@ -75,7 +75,7 @@
       }
 
       .active {
-        color: $green1;
+        color: $green2;
       }
     }
 
@@ -94,19 +94,19 @@
         position: relative;
         // background: red;
 
-        .line{
+        .line {
           position: absolute;
           left: 0;
           width: 100%;
           height: 2px;
-          background: $green;
+          background: $green1;
         }
 
-        #line1{
+        #line1 {
           top: 40%;
         }
 
-        #line2{
+        #line2 {
           top: 60%;
         }
       }
@@ -116,20 +116,20 @@
         aspect-ratio: 1;
         position: relative;
 
-        .line{
+        .line {
           position: absolute;
           left: 0;
           width: 100%;
           height: 2px;
-          background: $green;
+          background: $green1;
         }
 
-        #line1{
+        #line1 {
           top: 50%;
           transform: rotate(45deg);
         }
 
-        #line2{
+        #line2 {
           top: 50%;
           transform: rotate(-45deg);
         }
@@ -147,7 +147,7 @@
         flex-direction: column;
         align-items: flex-start;
         gap: 5vw;
-        background: $black;
+        background: $black1;
         transform: translateX(100%);
         z-index: 1;
         transition: transform 0.3s ease;

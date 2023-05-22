@@ -1,23 +1,23 @@
 @import "/src/settings.scss";
 
-.scrollTop{
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    width: 35px;
-    aspect-ratio: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50px;
-    border: none;
-    outline: 1px solid $black1;
-    background:#0002;
-    cursor: pointer;
-    z-index: 999;
+.scrollTop {
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 35px;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  border: none;
+  outline: 1px solid $black2;
+  background: #0002;
+  cursor: pointer;
+  z-index: 999;
 
-    .arrow{
-        color: $green;
-        font-size: 20px;
-    }
+  .arrow {
+    color: $green1;
+    font-size: 20px;
+  }
 }
