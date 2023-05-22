@@ -9,6 +9,7 @@ import { TfiArrowTopRight } from "react-icons/tfi";
 import ScrollTop from "../../Components/ScrollTop/ScrollTop";
 import PrevNext from "../../Components/PrevNext/PrevNext";
 import Technos from "../../Components/Technos/Technos";
+import Gallery from "../../Components/Gallery/Gallery";
 
 export default function ProjectDetails() {
 
@@ -93,17 +94,7 @@ export default function ProjectDetails() {
                 </div>
               </div>
             </div>
-            <div className="img-project-container">
-              {project.slider ? project.slider.map((img, index) => {
-                return (
-                  <div className="img-project-wrapper" key={index}>
-                    <img src={img} alt={project.title} />
-                  </div>
-                )
-              }) : (
-                    <video src={project.video} alt={project.title} controls/>
-              )}
-            </div>
+            <Gallery project={project} /> 
             <div className="calltoaction-container">
               <div className="links-wrapper">
                 <h2 tabIndex="0">Want more juicy details about this project?</h2>

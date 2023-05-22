@@ -1,0 +1,15 @@
+@import "/src/settings.scss";
+
+.techno-btn {
+    background: $black1;
+    padding: 10px 15px;
+    border-radius: 50px;
+    outline: 1px solid $grey;
+    font-size: clamp(14px, 2vw, 20px);
+    cursor: default;
+    transition: outline 0.2s ease;
+
+    &:hover {
+      outline: 1px solid $green2;
+    }
+  }

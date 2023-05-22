@@ -1,0 +1,28 @@
+@import "/src/settings.scss";
+
+.img-project-container {
+  width: 100%;
+  @include flex-center;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  .img-project-wrapper {
+    width: 100%;
+    max-width: 700px;
+    aspect-ratio: 16/9;
+    @include flex-center;
+    position: relative;
+
+    img {
+      width: 100%;
+      max-width: 700px;
+      object-fit: cover;
+      object-position: top;
+      filter: brightness(90%);
+    }
+  }
+
+  video {
+    width: 90%;
+  }
+}

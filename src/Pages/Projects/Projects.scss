@@ -4,9 +4,7 @@
   width: 100vw;
   max-width: 1920px;
   height: 100dvh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flex-center;
   flex-direction: column;
 
   .overlay-transition-1 {

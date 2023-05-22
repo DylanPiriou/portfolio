@@ -34,9 +34,7 @@
       font-weight: 200;
 
       span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         color: $green2;
         position: relative;
 
@@ -58,24 +56,11 @@
       align-items: flex-end;
       justify-content: flex-end;
       @include title;
-      // font-size: clamp(50px, 10vw, 180px);
       position: relative;
 
       .title {
         transition: transform 0.2s ease;
       }
-
-      // &::after {
-      //   content: "";
-      //   position: absolute;
-      //   left: 0;
-      //   bottom: 0;
-      //   width: 0;
-      //   background: linear-gradient(to left, transparent, $green2, transparent);
-      //   height: 50%;
-      //   z-index: -1;
-      //   transition: width 0.2s ease-in-out;
-      // }
     }
 
     .arrow {
@@ -95,10 +80,6 @@
   &:hover .title {
     transform: translateX(-5vw);
   }
-
-  // &:hover h2::after {
-  //   width: 100%;
-  // }
 
   @media screen and (max-width: 860px) {
     & {
