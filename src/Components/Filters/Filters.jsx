@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import "./Filters.scss";
 import { AiOutlineSearch } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";

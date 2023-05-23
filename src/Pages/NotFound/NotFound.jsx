@@ -1,6 +1,5 @@
 import React from 'react';
 import "./NotFound.scss";
-import { NavLink } from "react-router-dom";
 import Navbar from '../../Components/Navbar/Navbar';
 import MainButton from '../../Components/MainButton/MainButton';
 

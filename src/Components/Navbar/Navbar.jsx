@@ -1,8 +1,6 @@
 import React, { useRef, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import "./Navbar.scss";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { RxCross1 } from "react-icons/rx";
 
 export default function Navbar() {
   // Logique pour récupérer le paramètre dans l'URL
