@@ -24,7 +24,7 @@ header {
       color: $green1;
       transform-style: preserve-3d;
       transform: translateZ(50px);
-      cursor: url("/hand.webp"), auto;
+      cursor: url("/assets/hand.webp"), auto;
       transition: transform 0.2s linear;
       z-index: 1;
 
