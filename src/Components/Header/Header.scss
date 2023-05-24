@@ -97,9 +97,8 @@ header {
 
             span {
               display: block;
-              transform: translateY(100%);
-              animation: spanFadeIn .8s forwards, opacity 1s forwards;
-              animation-delay: -.2s;
+              transform: translateY(110%);
+              animation: spanFadeIn 0.8s forwards, opacity 1s forwards;
 
               @keyframes spanFadeIn {
                 from {
